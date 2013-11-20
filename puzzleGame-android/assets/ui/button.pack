@@ -1,0 +1,21 @@
+
+button.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+button.down
+  rotate: false
+  xy: 0, 0
+  size: 64, 64
+  split: 6, 6, 6, 6
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+button.up
+  rotate: false
+  xy: 64, 0
+  size: 64, 64
+  split: 6, 6, 6, 6
+  orig: 64, 64
+  offset: 0, 0
+  index: -1

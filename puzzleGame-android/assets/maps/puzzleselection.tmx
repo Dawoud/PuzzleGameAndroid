@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="30" height="20" tilewidth="16" tileheight="16">
+ <imagelayer name="image layer" width="30" height="20">
+  <image source="ilmakuva450.jpg"/>
+ </imagelayer>
+ <objectgroup name="objects" width="30" height="20">
+  <object name="section2" x="273" y="173">
+   <properties>
+    <property name="SID" value="2"/>
+   </properties>
+   <polygon points="0,0 1,13 -77,49 -39,67 -38,81 -60,93 -114,70 -141,85 -188,59 -188,46 -173,39 -228,15 -230,5 -211,-3 -144,24 -41,-11"/>
+  </object>
+  <object name="section3" x="127" y="139">
+   <properties>
+    <property name="SID" value="3"/>
+   </properties>
+   <polygon points="0,0 -1,-5 -10,-6 -11,-31 11,-33 35,-34 98,-31 149,-24 187,-19 245,-3 245,21 234,24 191,15 177,20 143,13 141,4 117,0 110,7 89,5 89,-4 52,-4 50,6 0,5"/>
+  </object>
+  <object name="section1" x="377" y="237">
+   <properties>
+    <property name="SID" value="1"/>
+   </properties>
+   <polygon points="0,0 0,-45 49,-78 97,-58 98,-1 97,30"/>
+  </object>
+  <object name="section0" x="279" y="29">
+   <properties>
+    <property name="SID" value="0"/>
+   </properties>
+   <polygon points="0,0 -33,12 -31,26 -2,30 35,22 85,18 101,4"/>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="30" height="20" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="Snow town" tilewidth="16" tileheight="16">
+  <image source="snowtiles_1.gif" trans="000000" width="160" height="48"/>
+  <tile id="0">
+   <properties>
+    <property name="puzzleID" value="1"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="puzzleID" value="2"/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="puzzleID" value="0"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Snow" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzjZmBg4B7Fo3gUj+JRjII5B4EbRjHpmGMQuGEUj2IQBgANWxnE
+  </data>
+ </layer>
+ <layer name="Tile Layer 1" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzFln0LgyAQxo2obVF/JG3tpe37f8ydcIIcd3mZ1gM/DFGfR8OrwRyv4QRPre7Aj+nvkRJ+D2AGFuCL/j1DTs3IE/ig96LM6jOmyPm9gBZ5oz/VyGSlGUejVwU0pL0w4yyTlWa0Ri+/zzp4Dn25PVRIje0edUL/2h6kOVvOW1ojZc6EON0iXBPGSHNC31S5M/P3V3smOXztim/4HidTrrZR3y33JiYub476FPPk6rFUn3LWbm4dqT6V+mZ4tYSjtMf3jH8O5/kHOX0Ilg==
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1" width="30" height="20">
+  <object name="puzzleHouse3" x="96" y="98">
+   <polygon points="0,0 0,31 95,29 96,-33 48,-55 0,-32"/>
+  </object>
+  <object name="puzzleHouse1" x="304" y="70" width="66" height="57">
+   <properties>
+    <property name="ID" value="1"/>
+   </properties>
+  </object>
+  <object name="puzzleHouse0" x="429" y="143" width="35" height="51">
+   <properties>
+    <property name="ID" value="0"/>
+   </properties>
+  </object>
+  <object x="240" y="238" width="64" height="65"/>
+ </objectgroup>
+</map>
