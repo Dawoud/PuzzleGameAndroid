@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="53714" started-at="2013-11-20T13:30:50Z" finished-at="2013-11-20T13:31:44Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="53714" started-at="2013-11-20T13:30:50Z" finished-at="2013-11-20T13:31:44Z">
+      <class name="GameTst">
+        <test-method status="PASS" signature="a_star()[pri:0, instance:GameTst@15ea6975]" name="a_star" duration-ms="53695" started-at="2013-11-20T15:30:50Z" finished-at="2013-11-20T15:31:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a_star -->
+      </class> <!-- GameTst -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

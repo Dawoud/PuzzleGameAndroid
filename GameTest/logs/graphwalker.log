@@ -1,0 +1,1900 @@
+2013-11-19 19:09:53,943 [main] INFO  - Done merging
+2013-11-19 19:09:57,195 [Thread-0] INFO  - Edge: 'e_loading', INDEX=8 
+2013-11-19 19:09:59,732 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:09:59,743 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:09:59,749 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:09:59,749 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:09:59,750 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:09:59,760 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:09:59,760 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:09:59,761 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:09:59,765 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:09:59,766 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:09:59,771 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:09:59,771 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:09:59,777 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:09:59,777 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:09:59,777 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:09:59,777 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:09:59,783 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:09:59,783 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-19 19:09:59,793 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:09:59,793 [Thread-0] INFO  - Edge: '', INDEX=19 
+2013-11-19 19:09:59,794 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:09:59,794 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:09:59,794 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:09:59,795 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-19 19:09:59,817 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:09:59,817 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:09:59,828 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:10:51,557 [main] INFO  - Done merging
+2013-11-19 19:10:54,602 [Thread-0] INFO  - Edge: 'e_loading', INDEX=8 
+2013-11-19 19:10:57,046 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:10:57,056 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:10:57,061 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:10:57,062 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:10:57,062 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:10:57,072 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:10:57,072 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:10:57,073 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-19 19:10:57,079 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:10:57,080 [Thread-0] INFO  - Edge: '', INDEX=19 
+2013-11-19 19:10:57,080 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:10:57,080 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:10:57,081 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:10:57,081 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-19 19:10:57,086 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:10:57,087 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:10:57,092 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:10:57,092 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:10:57,098 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:10:57,098 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:10:57,103 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:10:57,103 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:10:57,104 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:10:57,104 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:10:57,109 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:10:57,109 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:10:57,114 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:10:57,208 [main] INFO  - Done merging
+2013-11-19 19:10:57,224 [Thread-2] INFO  - Edge: 'e_loading', INDEX=8 
+2013-11-19 19:10:57,225 [Thread-2] ERROR - InvocationTargetException for: Edge: 'e_loading', INDEX=8 : AndroidDebugBridge.init() has already been called.
+2013-11-19 19:10:57,227 [Thread-2] ERROR - java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.graphwalker.ModelBasedTesting.executeMethod(ModelBasedTesting.java:904)
+	at org.graphwalker.ModelBasedTesting.executePath(ModelBasedTesting.java:799)
+	at org.graphwalker.ModelBasedTesting.executePath(ModelBasedTesting.java:677)
+	at org.graphwalker.multipleModels.ModelHandler$ModelRunnable.run(ModelHandler.java:88)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: AndroidDebugBridge.init() has already been called.
+	at com.android.ddmlib.AndroidDebugBridge.init(AndroidDebugBridge.java:197)
+	at com.android.chimpchat.adb.AdbBackend.<init>(AdbBackend.java:66)
+	at com.android.chimpchat.adb.AdbBackend.<init>(AdbBackend.java:47)
+	at AcessAndy.e_loading(AcessAndy.java:92)
+	... 9 more
+
+2013-11-19 19:10:57,227 [Thread-2] ERROR - java.lang.RuntimeException: InvocationTargetException.
+	at org.graphwalker.ModelBasedTesting.executeMethod(ModelBasedTesting.java:912)
+	at org.graphwalker.ModelBasedTesting.executePath(ModelBasedTesting.java:799)
+	at org.graphwalker.ModelBasedTesting.executePath(ModelBasedTesting.java:677)
+	at org.graphwalker.multipleModels.ModelHandler$ModelRunnable.run(ModelHandler.java:88)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: AndroidDebugBridge.init() has already been called.
+	at com.android.ddmlib.AndroidDebugBridge.init(AndroidDebugBridge.java:197)
+	at com.android.chimpchat.adb.AdbBackend.<init>(AdbBackend.java:66)
+	at com.android.chimpchat.adb.AdbBackend.<init>(AdbBackend.java:47)
+	at AcessAndy.e_loading(AcessAndy.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.graphwalker.ModelBasedTesting.executeMethod(ModelBasedTesting.java:904)
+	... 4 more
+
+2013-11-19 19:10:57,230 [main] ERROR - Model has crashed: Game
+2013-11-19 19:12:02,952 [main] INFO  - Done merging
+2013-11-19 19:12:06,206 [Thread-0] INFO  - Edge: 'e_loading', INDEX=8 
+2013-11-19 19:12:08,651 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:12:08,672 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:12:08,672 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:12:08,673 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:12:08,679 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:12:08,679 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:12:08,679 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:12:08,680 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:12:08,685 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:12:08,686 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:12:08,690 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:12:08,691 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:12:08,695 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:12:08,696 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-19 19:12:08,701 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:12:08,701 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:12:08,702 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:12:08,702 [Thread-0] INFO  - Edge: '', INDEX=19 
+2013-11-19 19:12:08,702 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:12:08,703 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-19 19:12:08,708 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:12:08,708 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:12:08,713 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:12:08,723 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:12:08,728 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:12:08,728 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:12:08,728 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:12:08,818 [main] INFO  - Done merging
+2013-11-19 19:12:08,835 [Thread-2] INFO  - Edge: 'e_loading', INDEX=8 
+2013-11-19 19:12:08,835 [Thread-2] ERROR - InvocationTargetException for: Edge: 'e_loading', INDEX=8 : AndroidDebugBridge.init() has already been called.
+2013-11-19 19:12:08,838 [Thread-2] ERROR - java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.graphwalker.ModelBasedTesting.executeMethod(ModelBasedTesting.java:904)
+	at org.graphwalker.ModelBasedTesting.executePath(ModelBasedTesting.java:799)
+	at org.graphwalker.ModelBasedTesting.executePath(ModelBasedTesting.java:677)
+	at org.graphwalker.multipleModels.ModelHandler$ModelRunnable.run(ModelHandler.java:88)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: AndroidDebugBridge.init() has already been called.
+	at com.android.ddmlib.AndroidDebugBridge.init(AndroidDebugBridge.java:197)
+	at com.android.chimpchat.adb.AdbBackend.<init>(AdbBackend.java:66)
+	at com.android.chimpchat.adb.AdbBackend.<init>(AdbBackend.java:47)
+	at AcessAndy.e_loading(AcessAndy.java:92)
+	... 9 more
+
+2013-11-19 19:12:08,838 [Thread-2] ERROR - java.lang.RuntimeException: InvocationTargetException.
+	at org.graphwalker.ModelBasedTesting.executeMethod(ModelBasedTesting.java:912)
+	at org.graphwalker.ModelBasedTesting.executePath(ModelBasedTesting.java:799)
+	at org.graphwalker.ModelBasedTesting.executePath(ModelBasedTesting.java:677)
+	at org.graphwalker.multipleModels.ModelHandler$ModelRunnable.run(ModelHandler.java:88)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: AndroidDebugBridge.init() has already been called.
+	at com.android.ddmlib.AndroidDebugBridge.init(AndroidDebugBridge.java:197)
+	at com.android.chimpchat.adb.AdbBackend.<init>(AdbBackend.java:66)
+	at com.android.chimpchat.adb.AdbBackend.<init>(AdbBackend.java:47)
+	at AcessAndy.e_loading(AcessAndy.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.graphwalker.ModelBasedTesting.executeMethod(ModelBasedTesting.java:904)
+	... 4 more
+
+2013-11-19 19:12:08,840 [main] ERROR - Model has crashed: Game
+2013-11-19 19:13:51,298 [main] INFO  - Done merging
+2013-11-19 19:13:54,479 [Thread-0] INFO  - Edge: 'e_loading', INDEX=8 
+2013-11-19 19:13:56,921 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:13:56,931 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:13:56,939 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:13:56,939 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:13:56,940 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:13:56,950 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:13:56,950 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:13:56,951 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-19 19:13:56,956 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:13:56,956 [Thread-0] INFO  - Edge: '', INDEX=19 
+2013-11-19 19:13:56,957 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:13:56,957 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:13:56,957 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:13:56,958 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-19 19:13:56,962 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:13:56,962 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:13:56,967 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:13:56,967 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:13:56,971 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:13:56,972 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:13:56,976 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:13:56,976 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:13:56,977 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:13:56,977 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:13:56,981 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:13:56,982 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:13:56,986 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:13:57,090 [main] INFO  - Done merging
+2013-11-19 19:13:57,106 [Thread-2] INFO  - Edge: 'e_loading', INDEX=8 
+2013-11-19 19:13:57,106 [Thread-2] ERROR - InvocationTargetException for: Edge: 'e_loading', INDEX=8 : AndroidDebugBridge.init() has already been called.
+2013-11-19 19:13:57,108 [Thread-2] ERROR - java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.graphwalker.ModelBasedTesting.executeMethod(ModelBasedTesting.java:904)
+	at org.graphwalker.ModelBasedTesting.executePath(ModelBasedTesting.java:799)
+	at org.graphwalker.ModelBasedTesting.executePath(ModelBasedTesting.java:677)
+	at org.graphwalker.multipleModels.ModelHandler$ModelRunnable.run(ModelHandler.java:88)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: AndroidDebugBridge.init() has already been called.
+	at com.android.ddmlib.AndroidDebugBridge.init(AndroidDebugBridge.java:197)
+	at com.android.chimpchat.adb.AdbBackend.<init>(AdbBackend.java:66)
+	at com.android.chimpchat.adb.AdbBackend.<init>(AdbBackend.java:47)
+	at AcessAndy.e_loading(AcessAndy.java:92)
+	... 9 more
+
+2013-11-19 19:13:57,109 [Thread-2] ERROR - java.lang.RuntimeException: InvocationTargetException.
+	at org.graphwalker.ModelBasedTesting.executeMethod(ModelBasedTesting.java:912)
+	at org.graphwalker.ModelBasedTesting.executePath(ModelBasedTesting.java:799)
+	at org.graphwalker.ModelBasedTesting.executePath(ModelBasedTesting.java:677)
+	at org.graphwalker.multipleModels.ModelHandler$ModelRunnable.run(ModelHandler.java:88)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: AndroidDebugBridge.init() has already been called.
+	at com.android.ddmlib.AndroidDebugBridge.init(AndroidDebugBridge.java:197)
+	at com.android.chimpchat.adb.AdbBackend.<init>(AdbBackend.java:66)
+	at com.android.chimpchat.adb.AdbBackend.<init>(AdbBackend.java:47)
+	at AcessAndy.e_loading(AcessAndy.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.graphwalker.ModelBasedTesting.executeMethod(ModelBasedTesting.java:904)
+	... 4 more
+
+2013-11-19 19:13:57,112 [main] ERROR - Model has crashed: Game
+2013-11-19 19:17:57,980 [main] INFO  - Done merging
+2013-11-19 19:17:58,152 [Thread-0] INFO  - Edge: 'e_loading', INDEX=8 
+2013-11-19 19:18:00,592 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:00,603 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:18:00,603 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,603 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:18:00,607 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:00,608 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:18:00,613 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,613 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:18:00,617 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:00,618 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:18:00,622 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,622 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:18:00,625 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:18:00,625 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:18:00,628 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,629 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:18:00,632 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:00,642 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:18:00,642 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,642 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:18:00,646 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:18:00,646 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:18:00,649 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,649 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:18:00,652 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:00,662 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:18:00,665 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:18:00,665 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:18:00,665 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:00,685 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:18:00,688 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:18:00,688 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:18:00,688 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:00,698 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:18:00,698 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,699 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:18:00,704 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:00,725 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:18:00,731 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:18:00,731 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:18:00,731 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:00,741 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:18:00,741 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,742 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:18:00,747 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:18:00,748 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:18:00,752 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,753 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:18:00,757 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:00,768 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:18:00,768 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,769 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-19 19:18:00,774 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:00,775 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:18:00,775 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:00,776 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-19 19:18:00,780 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,781 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:18:00,786 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:00,796 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:18:00,796 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,797 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:18:00,803 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:18:00,803 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:18:00,808 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,809 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:18:00,813 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:18:00,813 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:18:00,818 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,819 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:18:00,824 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:18:00,824 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:18:00,828 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,829 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-19 19:18:00,834 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:00,834 [Thread-0] INFO  - Edge: '', INDEX=19 
+2013-11-19 19:18:00,835 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:00,835 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-19 19:18:00,839 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,840 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:18:00,844 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:00,844 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:18:00,848 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,848 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:18:00,851 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:18:00,852 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:18:00,855 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,856 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:18:00,859 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:00,859 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:18:00,862 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,863 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-19 19:18:00,874 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:00,874 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-19 19:18:00,877 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,878 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-19 19:18:00,880 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:00,881 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:18:00,881 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:00,881 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-19 19:18:00,884 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,884 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:18:00,887 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:00,897 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:18:00,897 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,897 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:18:00,901 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:00,901 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:18:00,904 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,905 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:18:00,908 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:18:00,908 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:18:00,911 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:00,911 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:18:00,914 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:00,915 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:00,915 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:30,858 [main] INFO  - Done merging
+2013-11-19 19:18:31,023 [Thread-0] INFO  - Edge: 'e_loading', INDEX=8 
+2013-11-19 19:18:33,479 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:33,489 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:18:33,494 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:18:33,494 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:18:33,494 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:33,515 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:18:33,515 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:33,516 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-19 19:18:33,522 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:33,522 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-19 19:18:33,527 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:33,528 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:18:33,534 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:33,534 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:33,535 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:33,535 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:33,536 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:33,536 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:33,537 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:33,537 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:18:33,542 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:33,543 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:18:33,549 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:33,559 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:18:33,559 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:33,560 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:18:33,566 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:33,567 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:33,567 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:33,568 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:33,568 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:33,568 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:33,569 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:33,569 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:18:33,574 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:33,575 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-19 19:18:33,579 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:33,579 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:18:33,579 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:33,580 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:18:33,580 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:33,581 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:18:33,581 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:33,582 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:18:33,582 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:33,582 [Thread-0] INFO  - Edge: '', INDEX=19 
+2013-11-19 19:18:33,582 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:33,583 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-19 19:18:33,588 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:33,588 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:18:33,593 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:33,593 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:33,593 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:33,594 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:18:33,598 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:33,599 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:18:33,604 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:33,614 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:18:33,618 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:18:33,619 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:18:33,619 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:33,629 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:18:33,629 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:33,630 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-19 19:18:33,635 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:33,636 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-19 19:18:33,644 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:33,644 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-19 19:18:33,648 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:33,648 [Thread-0] INFO  - Edge: '', INDEX=19 
+2013-11-19 19:18:33,649 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:33,649 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:18:33,649 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:33,650 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-19 19:18:33,654 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:33,654 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:18:33,658 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:33,658 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:18:33,661 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:33,661 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:18:33,665 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:33,685 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:18:33,689 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:18:33,690 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:18:33,690 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:33,700 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:18:33,703 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:18:33,704 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:18:33,704 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:33,714 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:18:33,714 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:33,714 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:18:33,718 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:18:33,718 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:18:33,723 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:52,026 [main] INFO  - Done merging
+2013-11-19 19:18:52,176 [Thread-0] INFO  - Edge: 'e_loading', INDEX=8 
+2013-11-19 19:18:54,623 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:54,633 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:18:54,633 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,634 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:18:54,640 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:54,641 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:54,641 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:54,641 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:54,641 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:54,642 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:54,642 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:54,642 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:54,642 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:54,643 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:18:54,646 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,647 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-19 19:18:54,650 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:54,650 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-19 19:18:54,653 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,654 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:18:54,656 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:54,666 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:18:54,666 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,666 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:18:54,669 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:54,670 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:18:54,674 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,674 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:18:54,677 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:18:54,677 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:18:54,680 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,681 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:18:54,683 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:54,683 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:54,683 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:54,684 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:54,684 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:54,684 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:54,684 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:54,684 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:54,685 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:54,685 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:54,685 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:54,685 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:18:54,688 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,688 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:18:54,691 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:18:54,691 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:18:54,694 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,694 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:18:54,697 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:54,707 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:18:54,710 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:18:54,710 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:18:54,710 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:54,730 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:18:54,733 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:18:54,733 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:18:54,733 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:54,743 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:18:54,746 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:18:54,746 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:18:54,746 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:54,757 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:18:54,757 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,758 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:18:54,761 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:18:54,761 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:18:54,765 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,766 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:18:54,769 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:18:54,769 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:18:54,772 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,773 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:18:54,775 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:54,775 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:54,775 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:54,775 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:54,775 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:54,776 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:18:54,778 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,779 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:18:54,781 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:54,782 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:18:54,786 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,786 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:18:54,789 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:18:54,789 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:18:54,792 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,793 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:18:54,795 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:18:54,796 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:18:54,798 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,799 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:18:54,802 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:54,812 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:18:54,812 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,813 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:18:54,817 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:54,827 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:18:54,830 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:18:54,831 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:18:54,831 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:54,841 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:18:54,841 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,841 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:18:54,847 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:54,857 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:18:54,857 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,857 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:18:54,862 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:18:54,862 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:18:54,871 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,871 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-19 19:18:54,875 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:54,875 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:18:54,875 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:54,876 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:18:54,876 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:54,876 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:18:54,876 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:54,877 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-19 19:18:54,879 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,879 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:18:54,883 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:18:54,883 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:18:54,886 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,886 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:18:54,889 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:54,889 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:54,889 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:54,890 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:18:54,892 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,893 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:18:54,895 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:54,905 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:18:54,905 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,905 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:18:54,909 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:54,909 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:18:54,912 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,913 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-19 19:18:54,915 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:54,916 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-19 19:18:54,919 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,919 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-19 19:18:54,922 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:54,922 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:18:54,922 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:54,922 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-19 19:18:54,925 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,925 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:18:54,928 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:18:54,928 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:18:54,930 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,931 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:18:54,934 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:54,935 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:54,935 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:54,935 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:18:54,938 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:54,938 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:18:54,941 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:54,987 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:18:54,991 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:18:54,992 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:18:54,992 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:55,002 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:18:55,002 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:55,003 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:18:55,006 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:18:55,007 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:18:55,013 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:55,013 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:18:55,017 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:55,027 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:18:55,027 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:55,027 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:18:55,030 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:18:55,050 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:18:55,050 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:55,050 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:18:55,054 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:55,055 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:55,055 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:55,055 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:18:55,061 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:55,061 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:18:55,068 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:55,068 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:55,068 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:55,068 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:18:55,071 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:55,072 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:18:55,075 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:55,075 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:55,075 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:55,075 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:55,076 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:55,076 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:55,076 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:55,076 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:55,076 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:55,077 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:55,077 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:55,077 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:55,077 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:55,078 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:55,078 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:55,078 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:18:55,078 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:18:55,078 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:18:55,081 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:55,082 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:18:55,085 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:18:55,085 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:18:55,088 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:18:55,089 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-19 19:18:55,092 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:18:55,092 [Thread-0] INFO  - Edge: '', INDEX=19 
+2013-11-19 19:18:55,093 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:25:46,713 [main] INFO  - Done merging
+2013-11-19 19:25:46,891 [Thread-0] INFO  - Edge: 'e_loading', INDEX=8 
+2013-11-19 19:26:56,612 [main] INFO  - Done merging
+2013-11-19 19:26:56,789 [Thread-0] INFO  - Edge: 'e_loading', INDEX=8 
+2013-11-19 19:28:47,312 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:28:47,322 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:28:47,326 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:28:47,326 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:28:47,326 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:28:47,336 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:28:47,339 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:28:47,340 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:28:47,340 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:28:47,350 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:28:47,350 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:28:47,350 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:28:47,354 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:28:47,354 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:28:47,358 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:28:47,358 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:28:47,362 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:28:47,362 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:28:47,365 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:28:47,366 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:28:47,369 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:28:47,379 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:28:47,382 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:28:47,383 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:28:47,383 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:28:47,393 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:28:47,396 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:28:47,397 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:28:47,397 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:28:47,417 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:28:47,417 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:28:47,417 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:28:47,421 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:28:47,422 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:28:47,426 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:28:47,426 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:28:47,429 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:28:47,440 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:28:47,440 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:28:47,441 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:28:47,444 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:28:47,444 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:28:47,448 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:28:47,448 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:28:47,452 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:28:47,452 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:28:47,456 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:28:47,456 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:28:47,460 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:28:47,460 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:28:47,463 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:28:47,464 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:28:47,467 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:28:47,467 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:28:47,470 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:28:47,470 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:28:47,474 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:28:47,475 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:28:47,478 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:28:47,479 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:28:47,483 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:28:47,483 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:28:47,484 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:28:47,484 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:28:47,484 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:28:47,484 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:28:47,485 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:28:47,485 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:28:47,485 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:28:47,485 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:28:47,489 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:28:47,489 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-19 19:28:47,492 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:28:47,493 [Thread-0] INFO  - Edge: '', INDEX=19 
+2013-11-19 19:28:47,493 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:28:47,493 [Thread-0] INFO  - Edge: '', INDEX=19 
+2013-11-19 19:28:47,493 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:28:47,494 [Thread-0] INFO  - Edge: '', INDEX=19 
+2013-11-19 19:28:47,494 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:28:47,494 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:28:47,494 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:28:47,495 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:28:47,495 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:28:47,495 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:28:47,496 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:28:47,496 [Thread-0] INFO  - Edge: '', INDEX=19 
+2013-11-19 19:28:47,496 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:28:47,496 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:28:47,497 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:28:47,497 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-19 19:28:47,503 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:29:25,508 [main] INFO  - Done merging
+2013-11-19 19:29:25,667 [Thread-0] INFO  - Edge: 'e_loading', INDEX=8 
+2013-11-19 19:29:37,099 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:29:37,109 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:29:37,109 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:29:37,109 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-19 19:29:37,114 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:29:37,114 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:29:37,114 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:29:37,115 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-19 19:29:37,119 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:29:37,119 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:29:37,122 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:29:37,133 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:29:37,136 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:29:37,136 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:29:37,137 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:29:37,147 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-19 19:29:37,151 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-19 19:29:37,152 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-19 19:29:37,152 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:29:37,162 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:29:37,162 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:29:37,163 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-19 19:29:37,166 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:29:37,167 [Thread-0] INFO  - Edge: '', INDEX=19 
+2013-11-19 19:29:37,167 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:29:37,167 [Thread-0] INFO  - Edge: '', INDEX=19 
+2013-11-19 19:29:37,167 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:29:37,168 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:29:37,168 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:29:37,168 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-19 19:29:37,168 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-19 19:29:37,169 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-19 19:29:37,173 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:29:37,173 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-19 19:29:37,176 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:29:37,177 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:29:37,177 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:29:37,177 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:29:37,177 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:29:37,178 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-19 19:29:37,178 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-19 19:29:37,178 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-19 19:29:37,181 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:29:37,182 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-19 19:29:37,185 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-19 19:29:37,196 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-19 19:29:37,196 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-19 19:29:37,196 [Thread-0] INFO  - Edge: 'e_pressOptions', INDEX=13 
+2013-11-19 19:29:37,200 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-19 19:29:37,200 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-19 19:29:37,203 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:47:28,861 [main] INFO  - Done merging
+2013-11-20 13:47:29,078 [Thread-0] INFO  - Edge: 'e_loading', INDEX=8 
+2013-11-20 13:48:09,758 [main] INFO  - Done merging
+2013-11-20 13:48:09,923 [Thread-0] INFO  - Edge: 'e_loading', INDEX=8 
+2013-11-20 13:49:41,142 [main] INFO  - Done merging
+2013-11-20 13:49:41,301 [Thread-0] INFO  - Edge: 'e_loading', INDEX=8 
+2013-11-20 13:50:19,627 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 13:50:19,637 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-20 13:50:19,644 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-20 13:50:19,644 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-20 13:50:19,644 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 13:50:19,655 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-20 13:50:19,660 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-20 13:50:19,660 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-20 13:50:19,661 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 13:50:19,671 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-20 13:50:19,676 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-20 13:50:19,677 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-20 13:50:19,677 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 13:50:19,687 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-20 13:50:19,693 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-20 13:50:19,693 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-20 13:50:19,693 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 13:50:19,704 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-20 13:50:19,709 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:50:19,710 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=13 
+2013-11-20 13:50:19,715 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-20 13:50:19,716 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-20 13:50:19,723 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:50:19,724 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-20 13:50:19,734 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 13:50:19,744 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-20 13:50:19,748 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-20 13:50:19,748 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-20 13:50:19,749 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 13:50:19,759 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-20 13:50:19,763 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-20 13:50:19,763 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-20 13:50:19,763 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 13:50:19,773 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-20 13:50:19,777 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:50:19,778 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-20 13:50:19,781 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-20 13:50:19,782 [Thread-0] INFO  - Edge: '', INDEX=19 
+2013-11-20 13:50:19,782 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-20 13:50:19,782 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 13:50:19,782 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-20 13:50:19,783 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-20 13:50:19,787 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:50:19,787 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=13 
+2013-11-20 13:50:19,792 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-20 13:50:19,792 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-20 13:50:19,797 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:50:19,797 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-20 13:50:19,801 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 13:50:19,811 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-20 13:50:19,815 [Thread-0] INFO  - Vertex: 'v_FirstPuzzle', INDEX=3  DATA: loading=true;
+2013-11-20 13:50:19,816 [Thread-0] INFO  - Edge: 'e_escape', INDEX=21 
+2013-11-20 13:50:19,816 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 13:50:19,826 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-20 13:50:19,830 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:50:19,830 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=13 
+2013-11-20 13:50:19,834 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-20 13:50:19,835 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-20 13:50:19,839 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:50:19,840 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=13 
+2013-11-20 13:50:19,845 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-20 13:50:19,846 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-20 13:50:19,849 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:50:19,849 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-20 13:50:19,853 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-20 13:50:19,853 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 13:50:19,853 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-20 13:50:19,854 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 13:50:19,854 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-20 13:50:19,854 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 13:50:19,854 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-20 13:50:19,855 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-20 13:50:19,866 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:50:19,867 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-20 13:50:19,870 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-20 13:50:19,871 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-20 13:50:19,871 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-20 13:50:19,871 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-20 13:50:19,871 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-20 13:50:19,871 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-20 13:50:19,872 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-20 13:50:19,872 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 13:50:19,875 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:57:27,190 [main] INFO  - Done merging
+2013-11-20 13:57:27,336 [Thread-0] INFO  - Edge: 'e_loading', INDEX=8 
+2013-11-20 13:57:35,744 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 13:57:35,755 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-20 13:57:35,761 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:57:35,761 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-20 13:57:35,766 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 13:57:35,787 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-20 13:57:35,792 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:57:35,793 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=13 
+2013-11-20 13:57:35,798 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-20 13:57:35,799 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-20 13:57:35,803 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:57:35,804 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=13 
+2013-11-20 13:57:35,809 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-20 13:57:35,810 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-20 13:57:35,814 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:57:35,815 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-20 13:57:35,821 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-20 13:57:35,821 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 13:57:35,827 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:57:35,828 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-20 13:57:35,832 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 13:57:35,842 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-20 13:57:35,842 [Thread-0] ERROR - In model: File: d:\mbt\mod.graphml, Label: v_GameMenu, Num of vertices: 7, Num of edges: 14
+2013-11-20 13:57:35,843 [Thread-0] ERROR - Method: Edge: 'e_NewGame', INDEX=9, is missing in class: class AcessAndy
+2013-11-20 13:57:35,844 [Thread-0] ERROR - java.lang.RuntimeException: NoSuchMethodException.
+	at org.graphwalker.ModelBasedTesting.executeMethod(ModelBasedTesting.java:920)
+	at org.graphwalker.ModelBasedTesting.executePath(ModelBasedTesting.java:799)
+	at org.graphwalker.ModelBasedTesting.executePath(ModelBasedTesting.java:677)
+	at org.graphwalker.multipleModels.ModelHandler$ModelRunnable.run(ModelHandler.java:88)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoSuchMethodException: AcessAndy.e_NewGame()
+	at java.lang.Class.getMethod(Unknown Source)
+	at org.graphwalker.ModelBasedTesting.executeMethod(ModelBasedTesting.java:903)
+	... 4 more
+
+2013-11-20 13:57:35,847 [main] ERROR - Model has crashed: Game
+2013-11-20 13:59:35,762 [main] INFO  - Done merging
+2013-11-20 13:59:35,922 [Thread-0] INFO  - Edge: 'e_loading', INDEX=8 
+2013-11-20 13:59:43,542 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 13:59:43,553 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-20 13:59:43,559 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:59:43,560 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-20 13:59:43,565 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-20 13:59:43,565 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 13:59:43,570 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:59:43,571 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-20 13:59:43,576 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-20 13:59:43,577 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-20 13:59:43,577 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-20 13:59:43,578 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 13:59:43,583 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:59:43,584 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-20 13:59:43,588 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 13:59:43,599 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-20 13:59:43,604 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:59:43,605 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-20 13:59:43,610 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-20 13:59:43,611 [Thread-0] INFO  - Edge: '', INDEX=19 
+2013-11-20 13:59:43,611 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-20 13:59:43,612 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 13:59:43,612 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-20 13:59:43,613 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-20 13:59:43,618 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:59:43,619 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=14 
+2013-11-20 13:59:43,624 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=7  DATA: loading=true;
+2013-11-20 13:59:43,624 [Thread-0] INFO  - Edge: 'e_back', INDEX=17 
+2013-11-20 13:59:43,630 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 13:59:43,631 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-20 13:59:43,635 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 13:59:43,646 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-20 13:59:43,647 [Thread-0] ERROR - In model: File: d:\mbt\mod.graphml, Label: v_GameMenu, Num of vertices: 7, Num of edges: 14
+2013-11-20 13:59:43,647 [Thread-0] ERROR - Method: Edge: 'e_NewGame', INDEX=9, is missing in class: class AcessAndy
+2013-11-20 13:59:43,648 [Thread-0] ERROR - java.lang.RuntimeException: NoSuchMethodException.
+	at org.graphwalker.ModelBasedTesting.executeMethod(ModelBasedTesting.java:920)
+	at org.graphwalker.ModelBasedTesting.executePath(ModelBasedTesting.java:799)
+	at org.graphwalker.ModelBasedTesting.executePath(ModelBasedTesting.java:677)
+	at org.graphwalker.multipleModels.ModelHandler$ModelRunnable.run(ModelHandler.java:88)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoSuchMethodException: AcessAndy.e_NewGame()
+	at java.lang.Class.getMethod(Unknown Source)
+	at org.graphwalker.ModelBasedTesting.executeMethod(ModelBasedTesting.java:903)
+	... 4 more
+
+2013-11-20 13:59:43,657 [main] ERROR - Model has crashed: Game
+2013-11-20 14:00:58,549 [main] INFO  - Done merging
+2013-11-20 14:00:58,724 [Thread-0] INFO  - Edge: 'e_loading', INDEX=8 
+2013-11-20 14:01:21,035 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:01:21,045 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-20 14:01:21,051 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 14:01:21,052 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-20 14:01:21,057 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:01:21,067 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=10 
+2013-11-20 14:01:21,070 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 14:01:21,071 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=12 
+2013-11-20 14:01:21,074 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-20 14:01:21,074 [Thread-0] INFO  - Edge: '', INDEX=20 
+2013-11-20 14:01:21,074 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=5  DATA: loading=true;
+2013-11-20 14:01:21,075 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:01:21,078 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 14:01:21,078 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=13 
+2013-11-20 14:01:21,081 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=6  DATA: loading=true;
+2013-11-20 14:01:21,082 [Thread-0] INFO  - Edge: 'e_back', INDEX=16 
+2013-11-20 14:01:21,087 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=4  DATA: loading=true;
+2013-11-20 14:01:21,087 [Thread-0] INFO  - Edge: 'e_back', INDEX=11 
+2013-11-20 14:01:21,090 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:01:21,110 [Thread-0] INFO  - Edge: 'e_NewGame', INDEX=9 
+2013-11-20 14:01:21,110 [Thread-0] ERROR - In model: File: d:\mbt\mod.graphml, Label: v_GameMenu, Num of vertices: 7, Num of edges: 14
+2013-11-20 14:01:21,110 [Thread-0] ERROR - Method: Edge: 'e_NewGame', INDEX=9, is missing in class: class AcessAndy
+2013-11-20 14:01:21,111 [Thread-0] ERROR - java.lang.RuntimeException: NoSuchMethodException.
+	at org.graphwalker.ModelBasedTesting.executeMethod(ModelBasedTesting.java:920)
+	at org.graphwalker.ModelBasedTesting.executePath(ModelBasedTesting.java:799)
+	at org.graphwalker.ModelBasedTesting.executePath(ModelBasedTesting.java:677)
+	at org.graphwalker.multipleModels.ModelHandler$ModelRunnable.run(ModelHandler.java:88)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoSuchMethodException: AcessAndy.e_NewGame()
+	at java.lang.Class.getMethod(Unknown Source)
+	at org.graphwalker.ModelBasedTesting.executeMethod(ModelBasedTesting.java:903)
+	... 4 more
+
+2013-11-20 14:01:21,120 [main] ERROR - Model has crashed: Game
+2013-11-20 14:05:19,206 [main] INFO  - Done merging
+2013-11-20 14:05:19,373 [Thread-0] INFO  - Edge: 'e_loading', INDEX=7 
+2013-11-20 14:05:31,502 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:05:31,513 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:05:31,516 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:05:31,516 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:05:31,522 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:05:31,522 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:05:31,526 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:05:31,526 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:05:31,529 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:05:31,530 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:05:31,530 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:05:31,530 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:05:31,530 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:05:31,530 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:05:31,530 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:05:31,531 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:05:31,531 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:05:31,531 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:05:31,531 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:05:31,531 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:05:31,532 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:05:31,532 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:05:31,532 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:05:31,532 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:05:31,532 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:05:31,533 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:05:31,533 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:05:31,533 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:05:31,533 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:05:31,534 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:05:31,534 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:05:31,534 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:05:31,537 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:05:31,538 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:05:31,541 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:05:31,542 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:05:31,545 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:05:31,545 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:05:31,548 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:05:31,548 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:05:31,548 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:05:31,549 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:05:31,549 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:05:31,549 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:05:31,549 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:05:31,550 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:05:31,553 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:05:31,553 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:05:31,557 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:05:31,558 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 14:05:31,558 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:05:31,558 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 14:05:31,558 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:05:31,559 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 14:05:31,559 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:05:31,559 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:05:31,562 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:05:31,563 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:05:31,566 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:06:50,618 [main] INFO  - Done merging
+2013-11-20 14:06:50,779 [Thread-0] INFO  - Edge: 'e_loading', INDEX=7 
+2013-11-20 14:07:00,224 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:07:00,245 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:07:00,251 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:07:00,252 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:07:00,259 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:07:00,259 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:07:00,264 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:07:00,265 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:07:00,270 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:07:00,280 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:07:00,285 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:07:00,286 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:07:00,291 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:07:00,292 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:07:00,297 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:07:00,298 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:07:00,303 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:07:00,303 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:07:00,308 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:07:00,309 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:07:00,315 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:07:00,315 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 14:07:00,316 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:07:00,316 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:07:00,321 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:07:00,322 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:07:00,327 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:07:00,337 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:07:00,342 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:07:00,343 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:07:00,348 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:07:00,349 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 14:07:00,349 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:07:00,350 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:07:00,355 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:07:00,356 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:07:00,361 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:07:00,361 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:07:00,364 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:07:00,365 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:07:00,368 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:07:00,378 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:07:00,381 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:07:00,381 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:07:00,384 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:07:00,385 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:07:00,388 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:07:00,389 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:07:00,391 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:07:00,392 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:07:00,392 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:07:00,392 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:07:00,395 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:07:00,396 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:07:00,399 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:07:00,399 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:07:00,399 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:08:08,662 [main] INFO  - Done merging
+2013-11-20 14:08:08,883 [Thread-0] INFO  - Edge: 'e_loading', INDEX=7 
+2013-11-20 14:08:16,437 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:08:16,457 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:08:16,461 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:08:16,461 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:08:16,465 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:08:16,465 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:08:16,466 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:08:16,466 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:08:16,466 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:08:16,466 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:08:16,466 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:08:16,467 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:08:16,470 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:08:16,470 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:08:16,473 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:08:16,474 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 14:08:16,474 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:08:16,474 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 14:08:16,474 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:08:16,474 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:08:16,477 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:08:16,478 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:08:16,481 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:08:16,482 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:08:16,482 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:08:16,482 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:08:16,485 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:08:16,486 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:08:16,489 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:08:16,489 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 14:08:16,489 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:08:16,489 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 14:08:16,489 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:08:16,489 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:08:16,493 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:08:16,493 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:08:16,496 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:08:16,496 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:08:16,500 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:08:16,500 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:08:16,503 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:08:16,504 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:08:16,507 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:08:16,507 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:08:16,510 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:10:34,390 [main] INFO  - Done merging
+2013-11-20 14:10:37,186 [Thread-0] INFO  - Edge: 'e_loading', INDEX=7 
+2013-11-20 14:10:42,013 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:10:42,023 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:10:42,027 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:10:42,027 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:10:42,049 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:10:42,050 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:10:42,050 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:10:42,050 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:10:42,050 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:10:42,050 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:10:42,054 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:10:42,054 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:10:42,058 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:10:42,058 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:10:42,061 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:10:42,061 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:10:42,065 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:10:42,065 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 14:10:42,065 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:10:42,065 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:10:42,069 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:10:42,069 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:10:42,072 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:12:20,303 [main] INFO  - Done merging
+2013-11-20 14:12:20,464 [Thread-0] INFO  - Edge: 'e_loading', INDEX=7 
+2013-11-20 14:12:25,326 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:12:25,336 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:12:25,341 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:12:25,342 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:12:25,348 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:12:25,358 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:12:25,363 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:12:25,364 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:12:25,368 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:12:25,369 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:12:25,369 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:12:25,370 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:12:25,370 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:12:25,371 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:12:25,371 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:12:25,372 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:12:25,372 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:12:25,373 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:12:25,373 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:12:25,374 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:12:25,378 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:12:25,379 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:12:25,385 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:12:25,385 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:12:25,390 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:12:25,391 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:12:25,396 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:12:25,396 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:12:25,397 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:12:25,397 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:12:25,398 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:12:25,398 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:12:25,399 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:12:25,399 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:12:25,400 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:12:25,400 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:12:25,401 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:12:25,401 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:12:25,402 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:12:25,402 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:12:25,407 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:12:25,408 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:12:25,411 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:12:25,412 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:12:25,415 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:12:25,416 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:12:25,418 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:12:25,428 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:12:25,431 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:12:25,431 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:12:25,434 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:12:25,435 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:12:25,438 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:12:25,438 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:12:25,443 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:12:25,463 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:12:25,468 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:12:25,469 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:12:25,473 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:12:25,473 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:12:25,476 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:12:25,477 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:12:25,479 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:12:25,489 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:12:25,492 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:12:25,493 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:12:25,496 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:12:25,496 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:12:25,499 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:12:25,500 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:12:25,503 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:12:25,503 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:12:25,508 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:12:25,508 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:12:25,511 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:12:25,521 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:12:25,524 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:12:25,525 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:12:25,528 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:12:25,528 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:12:25,531 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:12:25,531 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:12:25,535 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:12:25,535 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 14:12:25,535 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:16:30,360 [main] INFO  - Done merging
+2013-11-20 14:16:30,537 [Thread-0] INFO  - Edge: 'e_loading', INDEX=7 
+2013-11-20 14:16:35,062 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:16:35,072 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:16:35,177 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:16:35,177 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:16:35,280 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:16:35,281 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:16:35,281 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:16:35,282 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:16:35,386 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:16:35,387 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:16:35,492 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:16:35,493 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 14:16:35,493 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:16:35,493 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 14:16:35,494 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:16:35,494 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 14:16:35,494 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:16:35,495 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 14:16:35,495 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:16:35,496 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:16:35,603 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:16:35,604 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:16:35,708 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:16:35,708 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:16:35,815 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:16:35,816 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:16:35,921 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:16:35,931 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:16:36,036 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:16:36,037 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:16:36,142 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:16:36,143 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:16:36,247 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:16:36,247 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:16:36,351 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:16:36,351 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:16:36,730 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:16:36,731 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:16:36,836 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:16:36,837 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:16:36,837 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:16:36,838 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:16:36,838 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:17:15,814 [main] INFO  - Done merging
+2013-11-20 14:17:15,987 [Thread-0] INFO  - Edge: 'e_loading', INDEX=7 
+2013-11-20 14:17:29,049 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:17:29,069 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:17:29,175 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:17:29,175 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:17:29,280 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:17:29,280 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:17:29,280 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:17:29,281 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:17:29,384 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:17:29,384 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:17:29,488 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:17:29,498 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:17:29,602 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:17:29,602 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:17:29,706 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:17:29,706 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 14:17:29,706 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:17:29,707 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 14:17:29,707 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:17:29,707 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:17:29,812 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:17:29,812 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:17:29,916 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:17:29,916 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:17:30,020 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:17:30,020 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:17:30,124 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:17:30,124 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:17:30,227 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:17:30,227 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:17:30,330 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:17:30,330 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:17:30,331 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:17:30,331 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:17:30,331 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:17:30,332 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:17:30,332 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:17:30,332 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:17:30,333 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:17:30,333 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:17:30,333 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:17:30,334 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:17:30,334 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:17:30,334 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:17:30,439 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:17:30,439 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:17:31,274 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:17:31,275 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:17:31,379 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:14,540 [main] INFO  - Done merging
+2013-11-20 14:18:14,756 [Thread-0] INFO  - Edge: 'e_loading', INDEX=7 
+2013-11-20 14:18:22,986 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:18:23,006 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:18:23,112 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:23,112 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:18:23,216 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:18:23,216 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:18:23,322 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:23,323 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:18:23,428 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:18:23,448 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:18:23,553 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:23,554 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:18:23,658 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:18:23,678 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:18:23,783 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:23,784 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:18:23,889 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:18:23,890 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:18:23,890 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:18:23,891 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:18:23,891 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:18:23,892 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:18:23,892 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:18:23,893 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:18:23,893 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:18:23,894 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:18:23,894 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:18:23,895 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:18:24,000 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:24,001 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:18:24,106 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:18:24,107 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:18:24,212 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:24,213 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:18:24,503 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:18:24,513 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:18:24,616 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:24,616 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:18:24,720 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:18:24,720 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:18:24,823 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:24,823 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:18:24,927 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:18:24,927 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:18:25,031 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:25,031 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:18:25,135 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:18:25,135 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:18:25,519 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:25,519 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:18:25,623 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:18:25,623 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:18:25,727 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:25,727 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:18:25,832 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:18:25,832 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:18:25,936 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:25,936 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:18:26,040 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:18:26,050 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:18:26,153 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:26,153 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:18:26,979 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:18:26,980 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:18:27,085 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:27,085 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:18:27,189 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:18:27,189 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:18:27,293 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:27,294 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:18:27,399 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:18:27,409 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:18:27,514 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:27,516 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:18:27,621 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:18:27,622 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:18:28,112 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:28,113 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:18:28,220 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:18:28,220 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:18:28,326 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:28,327 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:18:28,433 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:18:28,453 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:18:28,559 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:28,560 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:18:28,666 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:18:28,666 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:18:28,773 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:28,774 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:18:28,878 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:18:28,879 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:18:28,984 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:28,985 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:18:29,090 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:18:29,090 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:18:29,195 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:29,195 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:18:29,300 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:18:29,300 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:18:29,404 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:29,405 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:18:29,509 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:18:29,519 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:18:29,622 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:29,622 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:18:29,727 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:18:29,727 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:18:29,832 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:18:29,832 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:18:29,938 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:18:29,939 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 14:18:29,939 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:22:36,213 [main] INFO  - Done merging
+2013-11-20 14:22:36,369 [Thread-0] INFO  - Edge: 'e_loading', INDEX=7 
+2013-11-20 14:22:43,290 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:22:43,300 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:22:43,405 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:22:43,405 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:22:43,509 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:22:43,510 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 14:22:43,510 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:22:43,511 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:22:43,616 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:22:43,617 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:22:43,721 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:22:43,722 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:22:43,722 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:22:43,723 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:22:43,723 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:22:43,724 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:22:43,724 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:22:43,725 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:22:43,725 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:22:43,726 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:22:43,831 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:22:43,834 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:22:43,939 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:22:43,941 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:22:44,046 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:22:44,047 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:22:44,152 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:52:12,455 [main] INFO  - Done merging
+2013-11-20 14:52:12,621 [Thread-0] INFO  - Edge: 'e_loading', INDEX=7 
+2013-11-20 14:52:19,618 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:52:19,628 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:52:20,631 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:52:20,632 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:52:21,638 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:52:21,648 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:52:22,654 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:52:22,655 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:52:23,661 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:52:23,662 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 14:52:23,662 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:52:23,663 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:52:24,669 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:52:24,670 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:52:25,676 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:52:25,676 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:52:26,682 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:52:26,683 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:52:27,689 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:52:27,690 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:52:28,696 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:52:28,697 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:52:29,703 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:52:29,713 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:52:30,719 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:52:30,720 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:52:31,727 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:52:31,728 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:52:32,734 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:52:32,734 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:52:33,739 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:52:33,749 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:52:34,755 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:52:34,756 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:52:35,762 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:52:35,763 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:52:35,763 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:52:35,764 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:52:35,764 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:52:35,765 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:52:35,765 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:52:35,766 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:52:35,766 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:52:35,767 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:52:36,774 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:56:00,301 [main] INFO  - Done merging
+2013-11-20 14:56:00,449 [Thread-0] INFO  - Edge: 'e_loading', INDEX=7 
+2013-11-20 14:56:06,871 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:56:06,881 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:56:08,887 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:56:08,888 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:56:10,894 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:56:10,895 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:56:12,901 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:56:12,902 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:56:14,909 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:56:14,910 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:56:16,916 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:56:16,917 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:56:18,922 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:56:18,923 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:56:18,923 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:56:18,924 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:56:20,929 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:56:20,930 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:56:22,935 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:56:22,936 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:56:24,941 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:56:24,942 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:56:26,948 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:56:26,949 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:56:28,955 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:56:28,956 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:56:30,962 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:56:30,963 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:56:32,969 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:56:32,970 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 14:56:34,976 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 14:56:34,977 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 14:56:36,982 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:56:36,983 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:56:38,988 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:56:38,989 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:56:40,995 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:56:40,996 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:56:43,001 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:56:43,002 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:56:43,002 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:56:43,003 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:56:45,009 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:56:45,010 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 14:56:47,016 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:56:47,017 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 14:56:47,017 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:56:47,018 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:56:47,018 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:56:47,019 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 14:56:47,019 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 14:56:47,020 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 14:56:49,027 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:56:49,028 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 14:56:51,035 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 14:56:51,045 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 14:56:53,050 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:56:53,051 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:56:55,056 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:56:55,057 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 14:56:57,063 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 14:56:57,064 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 14:56:59,069 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 14:56:59,070 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 14:56:59,070 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:11:13,268 [main] INFO  - Done merging
+2013-11-20 15:11:13,437 [Thread-0] INFO  - Edge: 'e_loading', INDEX=7 
+2013-11-20 15:11:21,135 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 15:11:21,145 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 15:11:23,152 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:11:23,152 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 15:11:25,157 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:11:25,157 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 15:11:25,157 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:11:25,158 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 15:11:25,158 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:11:25,158 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 15:11:27,162 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:11:27,162 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 15:11:29,166 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:11:29,166 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 15:11:29,166 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:11:29,167 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 15:11:31,170 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:11:31,170 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 15:11:33,174 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:11:33,174 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 15:11:33,174 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:11:33,175 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 15:11:33,175 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:11:33,175 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 15:11:35,181 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:11:35,182 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 15:11:37,188 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 15:11:37,198 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 15:11:39,202 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:11:39,203 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 15:11:41,211 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 15:11:41,211 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 15:11:43,218 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:11:43,219 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 15:11:45,225 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:11:45,226 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 15:11:45,226 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:11:45,227 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 15:11:45,227 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:11:45,228 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 15:11:45,228 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:11:45,229 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 15:11:47,235 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:11:47,236 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 15:11:49,245 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 15:11:49,246 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 15:11:51,251 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:11:51,252 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 15:11:53,258 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 15:11:53,268 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 15:11:55,273 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:11:55,273 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 15:11:57,278 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:11:57,278 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 15:11:57,278 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:11:57,279 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 15:11:59,284 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:11:59,284 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 15:12:01,289 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 15:12:01,289 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 15:12:03,294 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:12:03,295 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 15:12:05,301 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 15:12:05,301 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 15:12:07,305 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:12:07,305 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 15:12:09,309 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:12:09,309 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 15:12:09,309 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:12:09,309 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 15:12:11,314 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:12:11,314 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 15:12:13,320 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 15:12:13,321 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 15:12:15,327 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:12:15,328 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 15:12:17,333 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:12:17,333 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 15:12:17,334 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:12:17,334 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 15:12:17,334 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:12:17,335 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 15:12:17,335 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:13:48,736 [main] INFO  - Done merging
+2013-11-20 15:13:48,944 [Thread-0] INFO  - Edge: 'e_loading', INDEX=7 
+2013-11-20 15:14:03,542 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 15:14:03,552 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 15:14:08,557 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:14:08,558 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 15:14:13,564 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:14:13,565 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 15:14:13,565 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:14:13,566 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 15:14:13,566 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:14:13,567 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 15:14:13,567 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:14:13,568 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 15:14:18,575 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:14:18,576 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 15:14:23,581 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:14:23,581 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 15:14:28,586 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:14:28,587 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 15:14:36,160 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:14:36,161 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 15:14:41,167 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:14:41,168 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 15:14:46,174 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 15:14:46,184 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 15:14:51,191 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:14:51,191 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 15:14:56,197 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:14:56,198 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 15:14:56,198 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:14:56,199 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 15:15:01,206 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:15:01,207 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 15:15:06,213 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:15:06,213 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 15:15:11,219 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:15:11,220 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 15:15:16,226 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:15:16,227 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 15:15:21,233 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:15:21,234 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 15:15:26,240 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:15:26,241 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 15:15:26,241 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:15:26,242 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 15:15:26,242 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:15:26,243 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 15:15:31,250 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:15:31,251 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 15:15:36,257 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:15:36,258 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 15:15:36,258 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:15:36,259 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 15:15:36,259 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:15:36,260 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 15:15:41,265 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:15:41,266 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 15:15:46,272 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:15:46,273 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 15:15:51,280 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:15:51,281 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 15:15:56,287 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:15:56,288 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 15:15:56,288 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:15:56,289 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 15:16:01,295 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:16:01,296 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 15:16:06,303 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:16:06,304 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 15:16:06,304 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:16:06,305 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 15:16:11,311 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:16:11,312 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 15:16:16,318 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:16:16,319 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 15:16:16,319 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:16:16,320 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 15:16:16,320 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:16:16,320 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 15:16:16,321 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:16:16,321 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 15:16:16,322 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:16:16,324 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 15:16:16,324 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:16:16,325 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 15:16:16,325 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:16:16,325 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 15:16:21,332 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:16:21,333 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 15:16:26,339 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:16:26,340 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 15:16:26,340 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:16:26,341 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 15:16:26,341 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:16:26,342 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 15:16:31,348 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:16:31,348 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 15:16:36,353 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 15:16:36,354 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 15:16:41,361 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:27:35,372 [main] INFO  - Done merging
+2013-11-20 15:27:37,952 [Thread-0] INFO  - Edge: 'e_loading', INDEX=7 
+2013-11-20 15:27:47,076 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 15:27:47,086 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 15:27:52,092 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:27:52,092 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 15:27:57,097 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:27:57,097 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 15:27:57,098 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:27:57,098 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 15:28:02,104 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:28:02,104 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 15:28:07,109 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:28:07,109 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 15:28:07,110 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:28:07,110 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 15:28:07,110 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:28:07,111 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 15:28:12,116 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:28:12,116 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 15:28:17,123 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 15:28:17,123 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 15:28:22,129 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:28:22,129 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 15:28:27,135 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 15:30:51,199 [main] INFO  - Done merging
+2013-11-20 15:30:53,720 [Thread-0] INFO  - Edge: 'e_loading', INDEX=7 
+2013-11-20 15:31:04,487 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;
+2013-11-20 15:31:04,497 [Thread-0] INFO  - Edge: 'e_PressOptions', INDEX=8 
+2013-11-20 15:31:09,502 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:31:09,502 [Thread-0] INFO  - Edge: 'e_pressMusic', INDEX=10 
+2013-11-20 15:31:14,509 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:31:14,509 [Thread-0] INFO  - Edge: '', INDEX=18 
+2013-11-20 15:31:14,510 [Thread-0] INFO  - Vertex: 'v_Music', INDEX=4  DATA: loading=true;
+2013-11-20 15:31:14,510 [Thread-0] INFO  - Edge: 'e_back', INDEX=13 
+2013-11-20 15:31:19,516 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:31:19,516 [Thread-0] INFO  - Edge: 'e_pressLang', INDEX=12 
+2013-11-20 15:31:24,522 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:31:24,522 [Thread-0] INFO  - Edge: '', INDEX=16 
+2013-11-20 15:31:24,523 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:31:24,523 [Thread-0] INFO  - Edge: '', INDEX=17 
+2013-11-20 15:31:24,523 [Thread-0] INFO  - Vertex: 'v_Language', INDEX=6  DATA: loading=true;
+2013-11-20 15:31:24,524 [Thread-0] INFO  - Edge: 'e_back', INDEX=15 
+2013-11-20 15:31:29,530 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:31:29,530 [Thread-0] INFO  - Edge: 'e_pressSound', INDEX=11 
+2013-11-20 15:31:34,535 [Thread-0] INFO  - Vertex: 'v_Sound', INDEX=5  DATA: loading=true;
+2013-11-20 15:31:34,535 [Thread-0] INFO  - Edge: 'e_back', INDEX=14 
+2013-11-20 15:31:39,541 [Thread-0] INFO  - Vertex: 'v_OptionsMenu', INDEX=3  DATA: loading=true;
+2013-11-20 15:31:39,541 [Thread-0] INFO  - Edge: 'e_back', INDEX=9 
+2013-11-20 15:31:44,547 [Thread-0] INFO  - Vertex: 'v_GameMenu', INDEX=2  DATA: loading=true;

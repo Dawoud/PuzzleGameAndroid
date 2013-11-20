@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="C:/Users/Dawoud/Desktop/monkeyrunner.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dawoud/Desktop/chimpchat.jar" sourcepath="C:/Users/Dawoud/Desktop/chimpchat.jar"/>
+	<classpathentry kind="lib" path="D:/adt-bundle-windows-x86_64-20130917/adt-bundle-windows-x86_64-20130917/sdk/tools/lib/common.jar"/>
+	<classpathentry kind="lib" path="D:/adt-bundle-windows-x86_64-20130917/adt-bundle-windows-x86_64-20130917/sdk/tools/lib/ddmlib.jar"/>
+	<classpathentry kind="lib" path="D:/adt-bundle-windows-x86_64-20130917/adt-bundle-windows-x86_64-20130917/sdk/tools/lib/org-eclipse-core-commands-3.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dawoud/Desktop/graphwalker-2.6.3-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dawoud/Downloads/adt-bundle-windows-x86_64-20130917/adt-bundle-windows-x86_64-20130917/eclipse/plugins/org.testng.eclipse_6.8.6.20130914_0724/lib/testng.jar" sourcepath="C:/Users/Dawoud/Downloads/adt-bundle-windows-x86_64-20130917/adt-bundle-windows-x86_64-20130917/eclipse/plugins/org.testng.eclipse_6.8.6.20130914_0724/lib/testng-sources.jar"/>
+	<classpathentry kind="lib" path="D:/adt-bundle-windows-x86_64-20130917/adt-bundle-windows-x86_64-20130917/uiautomator.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
