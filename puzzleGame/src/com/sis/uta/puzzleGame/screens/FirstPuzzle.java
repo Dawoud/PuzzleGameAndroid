@@ -21,6 +21,12 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 
 public class FirstPuzzle implements Screen{
 	
+	private Game game;
+	
+	public FirstPuzzle(Game game) {
+		this.game = game;
+	}
+
 	private Stage stage;
 	private TextureAtlas atlas;
 	private Skin skin;
@@ -166,7 +172,7 @@ public class FirstPuzzle implements Screen{
 				
 				
 				if(correctanswer) {
-					((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection());
+					((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
 				}
 				else
 				{
@@ -189,7 +195,7 @@ public class FirstPuzzle implements Screen{
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
 				// TODO Auto-generated method stub
-				((Game)Gdx.app.getApplicationListener()).setScreen(new SectionSelect());
+				((Game)Gdx.app.getApplicationListener()).setScreen(new SectionSelect(game));
 			}
 		});
 		

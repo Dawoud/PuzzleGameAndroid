@@ -12,12 +12,13 @@ import com.badlogic.gdx.maps.MapLayer;
 import com.badlogic.gdx.maps.MapProperties;
 import com.badlogic.gdx.maps.objects.PolygonMapObject;
 import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 
-public class SectionSelect implements Screen {
+public class SectionSelect extends MapScreen {
 
-	private TiledMap map;
+	
 	private OrthogonalTiledMapRenderer renderer;
 	private OrthographicCamera camera;
 	
@@ -35,6 +36,15 @@ public class SectionSelect implements Screen {
 	private Sprite background;
 	private SpriteBatch batch;
 	
+	private float scale;
+	
+	private Game game;
+	
+	public SectionSelect(Game game)
+	{
+		this.game = game;
+	}
+	
 	@Override
 	public void render(float delta) {
 		Gdx.gl.glClearColor(0,0,0,1);
@@ -49,18 +59,25 @@ public class SectionSelect implements Screen {
 		renderer.setView(camera);
 		renderer.render();
 		
-		if(Gdx.input.justTouched())
-		{
-			Gdx.app.log("Map", "Map clicked");
-			checkInputLocation();
-		}
+//		if(Gdx.input.justTouched())
+//		{
+//			Gdx.app.log("SectionSelect", "Map clicked");
+//			checkInputLocation();
+//		}
 	}
 
 	@Override
 	public void resize(int width, int height) {
 		/* reset camera when resized */
 		
-		
+		scale = width/height;
+//		
+//		camera.viewportHeight = height;
+//		camera.viewportWidth = width;
+//		
+//		camera.position.set(width / 2f, height / 2f ,0);
+//		
+//		camera.update();
 	}
 
 	@Override
@@ -73,15 +90,16 @@ public class SectionSelect implements Screen {
 		background.setSize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 
 		/* Load map, created by Tiled */
-		map = new TmxMapLoader().load("maps/puzzleselection.tmx");
+		map = new TmxMapLoader().load("maps/puzzleselectionbetter.tmx");
 
 		/* create new renderer with the map */
+		float unitscale = 1/16f;
 		renderer = new OrthogonalTiledMapRenderer(map);
 		
 		/* camera */
 		camera = new OrthographicCamera();
 		
-		Gdx.input.setInputProcessor(null);
+		Gdx.input.setInputProcessor(new TiledMapInputProcesser(game));
 		
 		/* Stuff that is needed if our map expands so we need scrolling */
 		prop = map.getProperties();
@@ -100,6 +118,8 @@ public class SectionSelect implements Screen {
 		camera.position.set(mapPixelWidth / 2f, mapPixelHeight / 2f ,0);
 		
 		camera.update();
+		
+		
 		
 	}
 
@@ -128,10 +148,9 @@ public class SectionSelect implements Screen {
 
 	}
 	
-	private void checkInputLocation()
+	public void changeScreen(int input)
 	{
-		/* Resolve where the user clicked */
-		switch(checkTile(Gdx.input.getX() , Gdx.input.getY()))
+		switch(input)
 		{
 			/* empty space, continue */
 			case -1:
@@ -139,15 +158,46 @@ public class SectionSelect implements Screen {
 				
 			/* Main menu area clicked, return */
 			case 0:
-				((Game)Gdx.app.getApplicationListener()).setScreen(new MainMenu());
+				((Game)Gdx.app.getApplicationListener()).setScreen(new MainMenu(game));
 				break;
 			
 			/* Puzzle area clicked, start first puzzle */
 			case 1:
-				((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection());
+				((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
 				break;
 			
 			case 2:
+				
+				Gdx.app.log("SectionSelect", "Second section not implemented yet");
+				break;
+			case 3:
+				Gdx.app.log("SectionSelect", "Third section not implemented yet");
+				break;
+		}
+	}
+	
+	private void checkInputLocation()
+	{
+		Gdx.app.log("1. Map", "input x: " + Gdx.input.getX() + " y: " + Gdx.input.getY() );
+		/* Resolve where the user clicked */
+		switch(checkTile((int)Math.floor(Gdx.input.getX()/16), (int)Math.floor((mapPixelHeight - Gdx.input.getY())/16)))
+		{
+			/* empty space, continue */
+			case -1:
+				break;
+				
+			/* Main menu area clicked, return */
+			case 0:
+				((Game)Gdx.app.getApplicationListener()).setScreen(new MainMenu(game));
+				break;
+			
+			/* Puzzle area clicked, start first puzzle */
+			case 1:
+				((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
+				break;
+			
+			case 2:
+				
 				Gdx.app.log("SectionSelect", "Second section not implemented yet");
 				break;
 			case 3:
@@ -157,29 +207,30 @@ public class SectionSelect implements Screen {
 	}
 	
 	/* Method to check if given coordinates are access points to menus/puzzles */
-	private int checkTile(float x, float y)
+	private int checkTile(int x, int y)
 	{
 		Gdx.app.log("1.Map", "Checking tile: X " + x + " Y " + y);
 		
 		int answer = -1;
 		
 		
-		MapLayer clickableLayers = (MapLayer) map.getLayers().get("objects");
+		TiledMapTileLayer clickableLayers = (TiledMapTileLayer) map.getLayers().get("inputlocations");
 		
-		PolygonMapObject obj;
 		for(int i = 0; i < 4; ++i)
 		{
-			Gdx.app.log("1.Map", "checking object " + i);
-			obj = (PolygonMapObject) clickableLayers.getObjects().get("section" + i);
-			if(obj.getPolygon().contains(x, mapPixelHeight - y))
+			Gdx.app.log("SectionSelect", "checking object " + i);
+			if(clickableLayers.getCell(x, y) != null)
 			{
-				answer = i;
-				break;
+				if(clickableLayers.getCell( x, y ).getTile().getProperties().containsKey("puzzle" + i) )
+				{
+					answer = i;
+					break;
+				}
 			}
 		}
 		
 		
-		Gdx.app.log("1.map", "Got ID prop: " + answer);
+		Gdx.app.log("SectionSelect", "Got ID prop: " + answer);
 
 		return answer;
 	}

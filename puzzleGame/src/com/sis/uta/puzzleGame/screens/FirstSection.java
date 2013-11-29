@@ -12,11 +12,17 @@ import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 
-public class FirstSection implements Screen {
+public class FirstSection extends MapScreen {
 
-	private TiledMap map;
+	public FirstSection(Game game) {
+		super();
+		this.game = game;
+	}
+
 	private OrthogonalTiledMapRenderer renderer;
 	private OrthographicCamera camera;
+	
+	private Game game;
 	
 	/* Arrays for checking what was clicked, untill I figure out how to use
 	 * objects in tiledmaps
@@ -124,12 +130,12 @@ public class FirstSection implements Screen {
 				
 			/* Main menu area clicked, return */
 			case 0:
-			((Game)Gdx.app.getApplicationListener()).setScreen(new SectionSelect());
+			((Game)Gdx.app.getApplicationListener()).setScreen(new SectionSelect(game));
 			break;
 			
 			/* Puzzle area clicked, start first puzzle */
 			case 1:
-			((Game)Gdx.app.getApplicationListener()).setScreen(new FirstPuzzle());
+			((Game)Gdx.app.getApplicationListener()).setScreen(new FirstPuzzle(game));
 			break;
 		}
 	}

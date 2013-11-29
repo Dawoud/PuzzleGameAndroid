@@ -20,7 +20,7 @@ public class puzzleGame extends Game {
 	@Override
 	public void create() {		
 
-		setScreen(new Splash());
+		setScreen(new Splash(this));
 		
 	}
 

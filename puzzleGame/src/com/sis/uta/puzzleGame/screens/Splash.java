@@ -14,8 +14,14 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.sis.uta.puzzleGame.tween.SpriteAccessor;
 
-public class Splash implements Screen{
+public class Splash implements Screen {
+	
+	public Splash(Game game) {
+		this.game = game;
+	}
 
+	private Game game;
+	
 	private SpriteBatch batch;
 	private Sprite splash;
 	
@@ -56,7 +62,7 @@ public class Splash implements Screen{
 			@Override
 			public void onEvent(int arg0, BaseTween<?> arg1) {
 				// TODO Auto-generated method stub
-				((Game)Gdx.app.getApplicationListener()).setScreen(new MainMenu());
+				((Game)Gdx.app.getApplicationListener()).setScreen(new MainMenu(game));
 			}
 		}).start(tweenManager);
 //		Tween.to(splash, SpriteAccessor.ALPHA, 2).target(0).delay(2).start(tweenManager);

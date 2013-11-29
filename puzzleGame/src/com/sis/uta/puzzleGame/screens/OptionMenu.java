@@ -23,6 +23,13 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 
 public class OptionMenu implements Screen {
 	
+	public OptionMenu(Game game) {
+
+		this.game = game;
+	}
+
+	private Game game;
+	
 	private Stage stage;
 	private TextureAtlas atlas;
 	private Skin skin;
@@ -99,7 +106,7 @@ public class OptionMenu implements Screen {
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
 				// TODO Auto-generated method stub
-				((Game)Gdx.app.getApplicationListener()).setScreen(new MainMenu());
+				((Game)Gdx.app.getApplicationListener()).setScreen(new MainMenu(game));
 			}
 		});
 		
