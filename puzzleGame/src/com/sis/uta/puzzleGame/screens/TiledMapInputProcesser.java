@@ -8,6 +8,10 @@ import com.badlogic.gdx.maps.MapLayer;
 import com.badlogic.gdx.maps.MapProperties;
 import com.badlogic.gdx.maps.objects.RectangleMapObject;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
+import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
+import com.badlogic.gdx.scenes.scene2d.ui.Window;
+import com.badlogic.gdx.scenes.scene2d.ui.Window.WindowStyle;
 
 public class TiledMapInputProcesser implements InputProcessor {
 
@@ -46,29 +50,60 @@ public class TiledMapInputProcesser implements InputProcessor {
 	@Override
 	public boolean touchUp(int screenX, int screenY, int pointer, int button) {
 		// TODO Auto-generated method stub
-		switch(checkTile(screenX, screenY))
+		if(((Game)Gdx.app.getApplicationListener()).getScreen() instanceof SectionSelect)
+		{	
+			switch(checkTile(screenX, screenY))
+			{
+				/* empty space, continue */
+				case -1:
+					break;
+					
+				/* Main menu area clicked, return */
+				case 0:
+					((Game)Gdx.app.getApplicationListener()).setScreen(new MainMenu(game));
+					break;
+				
+				/* Puzzle area clicked, start first puzzle */
+				case 1:
+					((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
+					break;
+				
+				case 2:
+					((MapScreen)((Game)Gdx.app.getApplicationListener()).getScreen()).startDialog("Second section not implemented yet");
+					Gdx.app.log("SectionSelect", "Second section not implemented yet");
+					break;
+				case 3:
+					((MapScreen)((Game)Gdx.app.getApplicationListener()).getScreen()).startDialog("Third section not implemented yet");
+					Gdx.app.log("SectionSelect", "Third section not implemented yet");
+					break;
+			}
+		}
+		else
 		{
-			/* empty space, continue */
-			case -1:
-				break;
-				
-			/* Main menu area clicked, return */
-			case 0:
-				((Game)Gdx.app.getApplicationListener()).setScreen(new MainMenu(game));
-				break;
+			switch(checkTile(screenX, screenY))
+			{
+				case -1:
+					break;
 			
-			/* Puzzle area clicked, start first puzzle */
-			case 1:
-				((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
-				break;
-			
-			case 2:
+				case 0:
+					((Game)Gdx.app.getApplicationListener()).setScreen(new SectionSelect(game));
+					break;
 				
-				Gdx.app.log("SectionSelect", "Second section not implemented yet");
-				break;
-			case 3:
-				Gdx.app.log("SectionSelect", "Third section not implemented yet");
-				break;
+				case 1:
+					((Game)Gdx.app.getApplicationListener()).setScreen(new FirstPuzzle(game));
+					break;
+				case 2:
+					((MapScreen)((Game)Gdx.app.getApplicationListener()).getScreen()).startDialog("Second puzzle is not implemented yet");
+					Gdx.app.log("SectionSelect", "Second puzzle is not implemented yet");
+					break;
+					
+				case 3:
+					((MapScreen)((Game)Gdx.app.getApplicationListener()).getScreen()).startDialog("Third puzzle is not implemented yet");
+					Gdx.app.log("SectionSelect", "Third puzzle is not implemented yet");
+					break;
+					
+					
+			}	
 		}
 		return true;
 	}

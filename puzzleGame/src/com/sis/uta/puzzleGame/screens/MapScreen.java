@@ -22,4 +22,6 @@ public abstract class MapScreen implements Screen {
 		
 	}
 
+	public abstract void startDialog(String string);
+
 }

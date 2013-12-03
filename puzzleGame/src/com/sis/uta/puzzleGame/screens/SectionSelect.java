@@ -15,6 +15,9 @@ import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 
 public class SectionSelect extends MapScreen {
 
@@ -37,6 +40,7 @@ public class SectionSelect extends MapScreen {
 	private SpriteBatch batch;
 	
 	private float scale;
+	private Stage stage;
 	
 	private Game game;
 	
@@ -56,8 +60,11 @@ public class SectionSelect extends MapScreen {
 		background.draw(batch);
 		batch.end();
 		
-		renderer.setView(camera);
-		renderer.render();
+		stage.act();
+		stage.draw();
+		
+		/*renderer.setView(camera);
+		renderer.render();*/
 		
 //		if(Gdx.input.justTouched())
 //		{
@@ -95,6 +102,8 @@ public class SectionSelect extends MapScreen {
 		/* create new renderer with the map */
 		float unitscale = 1/16f;
 		renderer = new OrthogonalTiledMapRenderer(map);
+		
+		stage = new Stage();
 		
 		/* camera */
 		camera = new OrthographicCamera();
@@ -233,6 +242,22 @@ public class SectionSelect extends MapScreen {
 		Gdx.app.log("SectionSelect", "Got ID prop: " + answer);
 
 		return answer;
+	}
+
+	@Override
+	public void startDialog(String string) {
+		Gdx.input.setInputProcessor(stage);
+		Skin skin = new Skin(Gdx.files.internal("data/uiskin.json"));
+		Dialog dialog = new Dialog("Information", skin)
+		{
+			protected void result (Object object)
+			{
+				Gdx.input.setInputProcessor(new TiledMapInputProcesser(game));
+			}
+		}
+		.text(string).button("  OK  ").show(stage);
+		
+		
 	}
 
 }

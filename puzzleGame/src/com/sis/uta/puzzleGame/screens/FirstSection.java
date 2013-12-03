@@ -11,6 +11,9 @@ import com.badlogic.gdx.maps.objects.RectangleMapObject;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 
 public class FirstSection extends MapScreen {
 
@@ -37,6 +40,8 @@ public class FirstSection extends MapScreen {
 
 	private int mapPixelWidth;
 	private int mapPixelHeight;
+	
+	private Stage stage;
 
 	@Override
 	public void render(float delta) {
@@ -46,11 +51,13 @@ public class FirstSection extends MapScreen {
 		renderer.setView(camera);
 		renderer.render();
 		
-		if(Gdx.input.justTouched())
-		{
-			Gdx.app.log("Map", "Map clicked");
-			checkInputLocation();
-		}
+		stage.act();
+		stage.draw();
+//		if(Gdx.input.justTouched())
+//		{
+//			Gdx.app.log("Map", "Map clicked");
+//			checkInputLocation();
+//		}
 	}
 
 	@Override
@@ -72,11 +79,13 @@ public class FirstSection extends MapScreen {
 		/* camera */
 		camera = new OrthographicCamera();
 		
-		Gdx.input.setInputProcessor(null);
+		Gdx.input.setInputProcessor(new TiledMapInputProcesser(game));
 		
 		/* Stuff that is needed if our map expands so we need scrolling */
 		prop = map.getProperties();
 
+		stage = new Stage();
+		
 		mapWidth = prop.get("width", Integer.class);
 		mapHeight = prop.get("height", Integer.class);
 		tilePixelWidth = prop.get("tilewidth", Integer.class);
@@ -166,6 +175,21 @@ public class FirstSection extends MapScreen {
 		Gdx.app.log("1.map", "Got ID prop: " + answer);
 
 		return answer;
+	}
+
+	@Override
+	public void startDialog(String string) {
+		Gdx.input.setInputProcessor(stage);
+		Skin skin = new Skin(Gdx.files.internal("data/uiskin.json"));
+		Dialog dialog = new Dialog("Information", skin)
+		{
+			protected void result (Object object)
+			{
+				Gdx.input.setInputProcessor(new TiledMapInputProcesser(game));
+			}
+		}
+		.text(string).button("  OK  ").show(stage);
+		
 	}
 
 }
