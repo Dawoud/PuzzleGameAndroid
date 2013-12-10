@@ -98,8 +98,7 @@ public class TiledMapInputProcesser implements InputProcessor {
 					break;
 					
 				case 3:
-					((MapScreen)((Game)Gdx.app.getApplicationListener()).getScreen()).startDialog("Third puzzle is not implemented yet");
-					Gdx.app.log("SectionSelect", "Third puzzle is not implemented yet");
+					((Game)Gdx.app.getApplicationListener()).setScreen(new ThirdPuzzle(game));
 					break;
 					
 					
