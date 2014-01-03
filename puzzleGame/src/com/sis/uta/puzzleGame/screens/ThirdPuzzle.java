@@ -10,6 +10,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
+import com.badlogic.gdx.math.Polygon;
 
 public class ThirdPuzzle implements Screen {
 
@@ -19,6 +20,8 @@ public class ThirdPuzzle implements Screen {
 	}
 
 	private Game game;
+	
+	private Triangle[] trianglesclasses;
 	
 	private ShapeRenderer renderer;
 	
@@ -49,13 +52,13 @@ public class ThirdPuzzle implements Screen {
 		// render first filled triangles
 		renderer.begin(ShapeType.Filled);
 		int n = 0;
-		renderer.setColor(1, 1, 1, 1);
 		for(int i = 0; i < trianglescount; ++i)
 		{	
-			//renderer.setColor(colours[i]);
-		
-			renderer.triangle(triangles[n], triangles[n+1], triangles[n+2], triangles[n+3], triangles[n+4], triangles[n+5]);
-			n += 6;
+			
+			Triangle triangled = trianglesclasses[i];
+			renderer.setColor(triangled.getColour());
+			float[] xn = triangled.getVertices();
+			renderer.triangle(xn[0], xn[1], xn[2], xn[3], xn[4], xn[5]);
 		}
 		renderer.end();
 
@@ -64,17 +67,33 @@ public class ThirdPuzzle implements Screen {
 		n = 0;
 		for(int i = 0; i < trianglescount; ++i)
 		{
-			renderer.setColor(0,0,0,1);
+			renderer.setColor(Color.BLACK);
 		
-			renderer.triangle(triangles[n], triangles[n+1], triangles[n+2], triangles[n+3], triangles[n+4], triangles[n+5]);
-			n += 6;
+			Triangle triangled = trianglesclasses[i];
+			float[] xn = triangled.getVertices();
+			renderer.triangle(xn[0], xn[1], xn[2], xn[3], xn[4], xn[5]);
 		}
 		renderer.end();
 		
 		// currently just get back when screen is touched
 		if(Gdx.input.justTouched())
 		{
-			((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
+
+			Gdx.app.log("Thirdpuzzle", "checking puzzles, total of "+ trianglesclasses.length);
+			for(int i = 0; i < trianglesclasses.length; ++i)
+			{
+
+				Gdx.app.log("Thirdpuzzle", "checking " + i + " triangle with coordinates x: "+ Gdx.input.getX() + " y: " +Gdx.input.getY() );
+				
+				if(trianglesclasses[i].contains(Gdx.input.getX(), Gdx.graphics.getHeight()-Gdx.input.getY()))
+				{
+					Gdx.app.log("Thirdpuzzle", "found one!");
+					trianglesclasses[i].setColour(new Color(Color.GREEN));
+					break;
+				}
+			}
+			
+//			((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
 		}
 		
 	}
@@ -109,6 +128,17 @@ public class ThirdPuzzle implements Screen {
 		Gdx.input.setInputProcessor(null);
 		
 		createTriangles();
+		
+		trianglesclasses = new Triangle[triangles.length/6];
+		
+		int n = 0;
+		for(int i = 0; i < triangles.length;)
+		{
+			Triangle triangle = new Triangle(new float[] {triangles[i], triangles[i+1], triangles[i+2], triangles[i+3], triangles[i+4], triangles[i+5]}, true);
+			trianglesclasses[n] = triangle;
+			i += 6;
+			n++;
+		}
 		
 //		Create random colours to triangles, just because
 		Random rand = new Random();
@@ -157,7 +187,7 @@ public class ThirdPuzzle implements Screen {
 
 	@Override
 	public void dispose() {
-		renderer.dispose();
+		//renderer.dispose();
 
 	}
 	
@@ -179,16 +209,17 @@ public class ThirdPuzzle implements Screen {
 		triangles = new float[trianglescount* 3 * 2];
 		
 		// first of the first row, placement of whole structure is based on these values
-		triangles[0] = (middleX - 50);
-		triangles[1] = (middleY + 100);
+		triangles[0] = (middleX - xunit*2);
+		triangles[1] = (middleY + yunit*4);
 		
-		triangles[2] = ((middleX - 50) - xunit);
-		triangles[3] = ((middleY + 100) - (yunit*2));
+		triangles[2] = ((middleX - xunit*2) - xunit);
+		triangles[3] = ((middleY + yunit*4) - (yunit*2));
 		
-		triangles[4] = ((middleX - 50) + xunit);
-		triangles[5] = ((middleY + 100) - (yunit*2));
+		triangles[4] = ((middleX - xunit*2) + xunit);
+		triangles[5] = ((middleY + yunit*4) - (yunit*2));
 		
 		int i = 6;
+		
 		
 //		rest of the first row 
 		for(trianglecounter = 1; trianglecounter < 5; ++trianglecounter)
@@ -331,4 +362,49 @@ public class ThirdPuzzle implements Screen {
 		
 		return i;
 	}
+	
+	private class Triangle extends Polygon {
+
+		
+		
+		private Color colour;
+		private boolean changeable;
+		private float[] vertices;
+		
+		public Triangle(float[] vertices, boolean changeable)
+		{
+			super(vertices);
+			colour = new Color(Color.WHITE);
+			this.vertices = vertices;
+			this.changeable = changeable;
+			
+			if(!changeable)
+			{
+				colour = new Color(Color.BLUE);
+			}
+			
+		}
+
+
+		public Color getColour() {
+			return colour;
+		}
+
+
+		public void setColour(Color colour) {
+			if(changeable)
+				this.colour = colour;
+		}
+
+
+		public boolean isChangeable() {
+			return changeable;
+		}
+		
+		public float[] getVertices() {
+			return vertices;
+		}
+		
+	}
+
 }

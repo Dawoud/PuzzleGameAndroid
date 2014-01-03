@@ -195,12 +195,11 @@ public class FirstPuzzle implements Screen{
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
 				// TODO Auto-generated method stub
-				((Game)Gdx.app.getApplicationListener()).setScreen(new SectionSelect(game));
+				((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
 			}
 		});
 		
 		LabelStyle headingStyle=new LabelStyle(white, Color.WHITE);
-		
 		
 		heading=new Label("Use once every number from 1 to 9 to fill the table.\n " +
 				"The sum of numbers in each row, each column\n" +
