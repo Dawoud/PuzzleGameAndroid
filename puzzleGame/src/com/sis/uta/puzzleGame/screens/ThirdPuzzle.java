@@ -35,6 +35,8 @@ public class ThirdPuzzle implements Screen {
 	private int trianglescount;
 
 	private Color[] colours;
+	
+	private Color chosencolor;
 
 	private float yunit;
 
@@ -51,7 +53,6 @@ public class ThirdPuzzle implements Screen {
 		
 		// render first filled triangles
 		renderer.begin(ShapeType.Filled);
-		int n = 0;
 		for(int i = 0; i < trianglescount; ++i)
 		{	
 			
@@ -64,7 +65,7 @@ public class ThirdPuzzle implements Screen {
 
 		// render outlines to triangles
 		renderer.begin(ShapeType.Line);
-		n = 0;
+		
 		for(int i = 0; i < trianglescount; ++i)
 		{
 			renderer.setColor(Color.BLACK);
@@ -82,18 +83,70 @@ public class ThirdPuzzle implements Screen {
 			Gdx.app.log("Thirdpuzzle", "checking puzzles, total of "+ trianglesclasses.length);
 			for(int i = 0; i < trianglesclasses.length; ++i)
 			{
-
-				Gdx.app.log("Thirdpuzzle", "checking " + i + " triangle with coordinates x: "+ Gdx.input.getX() + " y: " +Gdx.input.getY() );
 				
 				if(trianglesclasses[i].contains(Gdx.input.getX(), Gdx.graphics.getHeight()-Gdx.input.getY()))
 				{
 					Gdx.app.log("Thirdpuzzle", "found one!");
-					trianglesclasses[i].setColour(new Color(Color.GREEN));
+					trianglesclasses[i].setColour(chosencolor);
 					break;
 				}
 			}
 			
 //			((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
+		}
+		
+		renderer.begin(ShapeType.Filled);
+		renderer.setColor(new Color(Color.CYAN));
+		renderer.rect(0, Gdx.graphics.getHeight()-100, 100, 100);
+		renderer.setColor(new Color(chosencolor));
+		renderer.rect(0, 0, 100, 100);
+		renderer.setColor(new Color(Color.PINK));
+		renderer.rect(Gdx.graphics.getWidth()-100, Gdx.graphics.getHeight()-100, 100, 100);
+		renderer.end();
+		
+		if(Gdx.input.justTouched())
+		{
+			if(Gdx.input.getX() < 100)
+			{
+				if(Gdx.input.getY() < 100)
+				{	
+			
+					boolean allok = false;
+					Gdx.app.log("Thirdpuzzle", "Checking triangle colours");
+					for(int i = 0; i < trianglesclasses.length; ++i)
+					{
+						if(!trianglesclasses[i].checkTriangles())
+						{
+							Gdx.app.log("Thirdpuzzle", "Two triangles adjacent each other have the same color :(");
+							allok = false;
+							break;
+						}
+						else
+						{
+							allok = true;
+						}
+						
+					}
+					if(allok)
+					{
+						
+						game.setScreen(new FirstSection(game));
+					}
+				}
+				else if(Gdx.input.getY() > (Gdx.graphics.getHeight() - 100))
+				{
+					if(chosencolor.equals(Color.GREEN))
+						chosencolor = new Color(Color.BLUE);
+					else if (chosencolor.equals(Color.BLUE))
+						chosencolor = new Color(Color.MAGENTA);
+					else if (chosencolor.equals(Color.MAGENTA))
+						chosencolor = new Color(Color.GREEN);
+				}
+			}
+			else if(Gdx.input.getX() > Gdx.graphics.getWidth()-100 && Gdx.input.getY() < 100)
+			{
+				game.setScreen(new FirstSection(game));
+			}
 		}
 		
 	}
@@ -130,15 +183,48 @@ public class ThirdPuzzle implements Screen {
 		createTriangles();
 		
 		trianglesclasses = new Triangle[triangles.length/6];
-		
+		boolean changeable = true;
 		int n = 0;
 		for(int i = 0; i < triangles.length;)
 		{
-			Triangle triangle = new Triangle(new float[] {triangles[i], triangles[i+1], triangles[i+2], triangles[i+3], triangles[i+4], triangles[i+5]}, true);
+			System.out.println(i % 3);
+			if(Math.random() < 0.7 && (n % 4) == 0)
+			{
+				changeable = false;
+			}
+			Triangle triangle = new Triangle(new float[] {triangles[i], triangles[i+1], triangles[i+2], triangles[i+3], triangles[i+4], triangles[i+5]},  changeable);
 			trianglesclasses[n] = triangle;
 			i += 6;
 			n++;
+			changeable = true;
 		}
+		
+		trianglesclasses[0].setAdjacentTriangles(null, trianglesclasses[1], trianglesclasses[6]);
+		trianglesclasses[1].setAdjacentTriangles(trianglesclasses[0], trianglesclasses[2], null);
+		trianglesclasses[2].setAdjacentTriangles(trianglesclasses[1], trianglesclasses[3], trianglesclasses[8]);
+		trianglesclasses[3].setAdjacentTriangles(trianglesclasses[2], trianglesclasses[4], null);
+		trianglesclasses[4].setAdjacentTriangles(trianglesclasses[3], null, trianglesclasses[10]);
+		trianglesclasses[5].setAdjacentTriangles(null, trianglesclasses[6], trianglesclasses[12]);
+		trianglesclasses[6].setAdjacentTriangles(trianglesclasses[5], trianglesclasses[7], trianglesclasses[0]);
+		trianglesclasses[7].setAdjacentTriangles(trianglesclasses[6], trianglesclasses[8], trianglesclasses[14]);
+		trianglesclasses[8].setAdjacentTriangles(trianglesclasses[7], trianglesclasses[9], trianglesclasses[2]);
+		trianglesclasses[9].setAdjacentTriangles(trianglesclasses[8], trianglesclasses[10], trianglesclasses[16]);
+		trianglesclasses[10].setAdjacentTriangles(trianglesclasses[9], trianglesclasses[11], trianglesclasses[4]);
+		trianglesclasses[11].setAdjacentTriangles(trianglesclasses[10], null, trianglesclasses[18]);
+		trianglesclasses[12].setAdjacentTriangles(null, trianglesclasses[13], trianglesclasses[5]);
+		trianglesclasses[13].setAdjacentTriangles(trianglesclasses[12], trianglesclasses[14], trianglesclasses[19]);
+		trianglesclasses[14].setAdjacentTriangles(trianglesclasses[13], trianglesclasses[15], trianglesclasses[7]);
+		trianglesclasses[15].setAdjacentTriangles(trianglesclasses[14], trianglesclasses[16], trianglesclasses[21]);
+		trianglesclasses[16].setAdjacentTriangles(trianglesclasses[15], trianglesclasses[17], trianglesclasses[9]);
+		trianglesclasses[17].setAdjacentTriangles(trianglesclasses[16], trianglesclasses[18], trianglesclasses[23]);
+		trianglesclasses[18].setAdjacentTriangles(trianglesclasses[17], null, trianglesclasses[11]);
+		trianglesclasses[19].setAdjacentTriangles(null, trianglesclasses[20], trianglesclasses[13]);
+		trianglesclasses[20].setAdjacentTriangles(trianglesclasses[19], trianglesclasses[21], null);
+		trianglesclasses[21].setAdjacentTriangles(trianglesclasses[20], trianglesclasses[22], trianglesclasses[15]);
+		trianglesclasses[22].setAdjacentTriangles(trianglesclasses[21], trianglesclasses[23], null);
+		trianglesclasses[23].setAdjacentTriangles(trianglesclasses[22], null, trianglesclasses[17]);
+		
+//		while(createStaticTriangles()) {};
 		
 //		Create random colours to triangles, just because
 		Random rand = new Random();
@@ -164,7 +250,10 @@ public class ThirdPuzzle implements Screen {
 			colours[i] = randomColor;
 		}
 		
+		chosencolor = new Color(Color.GREEN);
+		
 	}
+
 
 	@Override
 	public void hide() {
@@ -365,8 +454,7 @@ public class ThirdPuzzle implements Screen {
 	
 	private class Triangle extends Polygon {
 
-		
-		
+		private Triangle[] adjacentTriangles;
 		private Color colour;
 		private boolean changeable;
 		private float[] vertices;
@@ -380,12 +468,46 @@ public class ThirdPuzzle implements Screen {
 			
 			if(!changeable)
 			{
-				colour = new Color(Color.BLUE);
-			}
+				Color[] colors = new Color[] {new Color(Color.BLUE), new Color(Color.MAGENTA)};
+				
+				if(Math.random() < 0.5)
+				{
+					this.colour = colors[1];
+				}
+				else
+				{
+					this.colour = colors[0];
+				}
 			
+			}
 		}
 
+		
+		/** Method to check if adjacent triangles are same color as this one.
+		 * @return true if adjacent triangles were other color than this triangle
+		 */
+		public boolean checkTriangles()
+		{
+			if(this.colour.equals(Color.WHITE))
+			{
+				return false;
+			}
+			for(int i = 0; i < adjacentTriangles.length; ++i)
+			{
+				if(adjacentTriangles[i] != null)
+				{
+					if(adjacentTriangles[i].getColour().equals(this.colour))
+					{
+						return false;
+					}
+				}
+			}
+			
+			return true;
+		}
 
+		
+		
 		public Color getColour() {
 			return colour;
 		}
@@ -396,15 +518,20 @@ public class ThirdPuzzle implements Screen {
 				this.colour = colour;
 		}
 
-
-		public boolean isChangeable() {
-			return changeable;
-		}
 		
 		public float[] getVertices() {
 			return vertices;
 		}
 		
+
+
+		public void setAdjacentTriangles(Triangle a, Triangle b, Triangle c) {
+			this.adjacentTriangles = new Triangle[3];
+			adjacentTriangles[0] = a;
+			adjacentTriangles[1] = b;
+			adjacentTriangles[2] = c;
+		}
+
 	}
 
 }
