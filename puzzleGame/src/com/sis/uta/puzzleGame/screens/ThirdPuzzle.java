@@ -8,6 +8,9 @@ import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.Sprite;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import com.badlogic.gdx.math.Polygon;
@@ -44,6 +47,10 @@ public class ThirdPuzzle implements Screen {
 
 	private int trianglecounter;
 	
+	private SpriteBatch batch;
+	private Sprite checkButton, backButton;
+	private Texture checkTexture, backTexture;
+	
 	@Override
 	public void render(float delta) {
 
@@ -74,6 +81,7 @@ public class ThirdPuzzle implements Screen {
 			float[] xn = triangled.getVertices();
 			renderer.triangle(xn[0], xn[1], xn[2], xn[3], xn[4], xn[5]);
 		}
+		renderer.flush();
 		renderer.end();
 		
 		// currently just get back when screen is touched
@@ -96,13 +104,23 @@ public class ThirdPuzzle implements Screen {
 		}
 		
 		renderer.begin(ShapeType.Filled);
-		renderer.setColor(new Color(Color.CYAN));
-		renderer.rect(0, Gdx.graphics.getHeight()-100, 100, 100);
+//		renderer.setColor(new Color(Color.CYAN));
+//		renderer.rect(0, Gdx.graphics.getHeight()-100, 100, 100);
 		renderer.setColor(new Color(chosencolor));
 		renderer.rect(0, 0, 100, 100);
-		renderer.setColor(new Color(Color.PINK));
-		renderer.rect(Gdx.graphics.getWidth()-100, Gdx.graphics.getHeight()-100, 100, 100);
+//		renderer.setColor(new Color(Color.PINK));
+//		renderer.rect(Gdx.graphics.getWidth()-100, Gdx.graphics.getHeight()-100, 100, 100);
+		renderer.flush();
 		renderer.end();
+		
+		
+		
+		batch.begin();
+		checkButton.draw(batch);
+		backButton.draw(batch);
+		batch.flush();
+		batch.end();
+		
 		
 		if(Gdx.input.justTouched())
 		{
@@ -162,6 +180,18 @@ public class ThirdPuzzle implements Screen {
 	public void show() {
 		
 		renderer = new ShapeRenderer();
+		
+		batch=new SpriteBatch();
+		
+		checkTexture=new Texture("data/checkbutton.png");
+		checkButton=new Sprite(checkTexture);
+		checkButton.setSize(100, 100);
+		checkButton.setPosition(0, Gdx.graphics.getHeight()-100);
+		
+		backTexture=new Texture("data/backbutton.png");
+		backButton=new Sprite(backTexture);
+		backButton.setSize(100, 100);
+		backButton.setPosition(Gdx.graphics.getWidth()-100, Gdx.graphics.getHeight()-100);
 		
 		camera = new OrthographicCamera();
 		
