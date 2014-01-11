@@ -1,5 +1,6 @@
 package com.sis.uta.puzzleGame.screens;
 
+import java.awt.Checkbox;
 import java.io.IOException;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
@@ -11,6 +12,8 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.Button;
+import com.badlogic.gdx.scenes.scene2d.ui.ButtonGroup;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
@@ -62,35 +65,35 @@ public class SecondPuzzle implements Screen{
 		Gdx.input.setInputProcessor(stage);
 		
 		CharSequence taskName = null;
-		int[] results = null;
+		String value1 = null, value2 = null, value3 = null, value4 = null;
+		//String[] results = null;
 		int required;
 		
 		//parsing
 		try {
 		      XmlReader xmlReader = new XmlReader();
-		      FileHandle file = Gdx.files.internal("Age.xml");
+		      FileHandle file = Gdx.files.internal("data/x.xml");
 		      XmlReader.Element root = xmlReader.parse(file);
 		      XmlReader.Element taskElement = root.getChildByName("task");
 
-		      	//String taskName = taskElement.getAttribute("name");
-		      	taskName = taskElement.getAttribute("name");
-		        required = taskElement.getInt("required", 1);
-
-		        XmlReader.Element resultsElement = taskElement.getChildByName("results");
-		        final int resultCount = resultsElement.getChildCount();
-		        results = new int[resultCount];
-
-		        for (int j = 0; resultCount > j; ++j) {
-		          XmlReader.Element result = resultsElement.getChild(j);
-		          int value = result.getInt("value");
-		          results[j] = value;
-		        }
-
-		        //Task task = new Task(taskName, results);
-
-		        //this.tasks = task;
-		        //int requiredTaskCount = required;
+		      	//taskName = taskElement.getAttribute("name");
+		      	taskName = root.getAttribute("name");
+		        required = root.getInt("required", 1);
+//		        XmlReader.Element resultsElement = root.getChildByName("results");
+//		        final int resultCount = resultsElement.getChildCount();
+//		        results = new String[resultCount];
+//
+//		        for (int j = 0; resultCount < j; ++j) {
+//		          XmlReader.Element result = resultsElement.getChild(j);
+//		          String value = result.getAttribute("value");
+//		          results[j] = value;
+//		        }
 		        
+		        XmlReader.Element resultsElement = root.getChildByName("result");
+		        value1 = resultsElement.getAttribute("value1");
+		        value2 = resultsElement.getAttribute("value2");
+		        value3 = resultsElement.getAttribute("value3");
+		        value4 = resultsElement.getAttribute("value4");		        
 		        
 		    } catch (IOException e) {
 		      e.printStackTrace();
@@ -145,20 +148,28 @@ public class SecondPuzzle implements Screen{
 		});
 		
 		LabelStyle headingStyle=new LabelStyle(white, Color.WHITE);
-		
-		heading=new Label(taskName, headingStyle);
-		//heading=new Label("dgdfh", headingStyle);
+		heading = new Label(taskName, headingStyle);
 		heading.setFontScale(0.6f);
 		heading.setWrap(true);
 		heading.setColor(Color.WHITE);
+		heading.setWidth(0);
 		
-		table.add(heading);
+		TextButton button1 = new TextButton("1", textButtonStyle);
+		TextButton button2 = new TextButton("2", textButtonStyle);
+		ButtonGroup answers = new ButtonGroup(button1, button2);
+		answers.setChecked("1");
+				
+		table.add(heading).row().setWidgetHeight(10);
 //		int resultCount = results.length;
 //		for (int j = 0; resultCount > j; ++j) {
 //			table.row();
 //			String str = Integer.toString(results[j]);
 //			table.add(str);
 //		}
+		//table.add(results[0]);
+		//table.add(result1);
+		table.add(button1);
+		table.add(button2);
 		table.row();
 		table.add(buttonCheck).minWidth(Gdx.graphics.getWidth()/4).minHeight(Gdx.graphics.getHeight()/11).row();
 		table.add(buttonBack).minWidth(Gdx.graphics.getWidth()/4).minHeight(Gdx.graphics.getHeight()/11).row();
