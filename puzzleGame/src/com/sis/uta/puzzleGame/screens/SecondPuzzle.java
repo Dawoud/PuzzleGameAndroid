@@ -159,7 +159,7 @@ public class SecondPuzzle implements Screen{
 		ButtonGroup answers = new ButtonGroup(button1, button2);
 		answers.setChecked("1");
 				
-		table.add(heading).row().setWidgetHeight(10);
+		table.add(heading);
 //		int resultCount = results.length;
 //		for (int j = 0; resultCount > j; ++j) {
 //			table.row();
@@ -168,8 +168,9 @@ public class SecondPuzzle implements Screen{
 //		}
 		//table.add(results[0]);
 		//table.add(result1);
-		table.add(button1);
-		table.add(button2);
+//		table.row();
+//		table.add(button1);
+//		table.add(button2);
 		table.row();
 		table.add(buttonCheck).minWidth(Gdx.graphics.getWidth()/4).minHeight(Gdx.graphics.getHeight()/11).row();
 		table.add(buttonBack).minWidth(Gdx.graphics.getWidth()/4).minHeight(Gdx.graphics.getHeight()/11).row();
