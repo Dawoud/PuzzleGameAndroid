@@ -201,29 +201,31 @@ public class FirstPuzzle implements Screen{
 		
 		LabelStyle headingStyle=new LabelStyle(white, Color.WHITE);
 		
-		heading=new Label("Use once every number from 1 to 9 to fill the table.\n " +
-				"The sum of numbers in each row, each column\n" +
-				" and each diagonal must be equal to 15.", headingStyle);
-		heading.setFontScale(0.6f);
+		heading=new Label("Use once numbers from 1 to 9 to fill the table in.\n " +
+						"The sum of numbers in each row, column and\n " + 
+						"diagonal must be equal to 15.", headingStyle);
+		heading.setFontScale(0.65f);
 		heading.setWrap(true);
 		heading.setColor(Color.WHITE);
+		//heading.setAlignment(2);
 		
 		table.add(heading);
 		table.row();
-		table.add(a11).maxWidth(Gdx.graphics.getWidth()/6).maxHeight(Gdx.graphics.getHeight()/9);
-		table.add(a12).maxWidth(Gdx.graphics.getWidth()/6).maxHeight(Gdx.graphics.getHeight()/9);
-		table.add(a13).maxWidth(Gdx.graphics.getWidth()/6).maxHeight(Gdx.graphics.getHeight()/9);
+		table.add(a11);
+		table.add(a12);
+		table.add(a13);
 		table.row();
-		table.add(a21).maxWidth(Gdx.graphics.getWidth()/6).maxHeight(Gdx.graphics.getHeight()/9);
-		table.add(a22).maxWidth(Gdx.graphics.getWidth()/6).maxHeight(Gdx.graphics.getHeight()/9);
-		table.add(a23).maxWidth(Gdx.graphics.getWidth()/6).maxHeight(Gdx.graphics.getHeight()/9);
+		table.add(a21);
+		table.add(a22);
+		table.add(a23);
 		table.row();
-		table.add(a31).maxWidth(Gdx.graphics.getWidth()/6).maxHeight(Gdx.graphics.getHeight()/9);
-		table.add(a32).maxWidth(Gdx.graphics.getWidth()/6).maxHeight(Gdx.graphics.getHeight()/9);
-		table.add(a33).maxWidth(Gdx.graphics.getWidth()/6).maxHeight(Gdx.graphics.getHeight()/9);
+		table.add(a31);
+		table.add(a32);
+		table.add(a33);
+		//table.add(a33).maxWidth(Gdx.graphics.getWidth()/6).maxHeight(Gdx.graphics.getHeight()/9);
 		table.row();
-		table.add(buttonCheck).minWidth(Gdx.graphics.getWidth()/4).minHeight(Gdx.graphics.getHeight()/9).row();
-		table.add(buttonBack).minWidth(Gdx.graphics.getWidth()/4).minHeight(Gdx.graphics.getHeight()/9).row();
+		table.add(buttonCheck).minWidth(Gdx.graphics.getWidth()/3).minHeight(Gdx.graphics.getHeight()/9);
+		table.add(buttonBack).minWidth(Gdx.graphics.getWidth()/3).minHeight(Gdx.graphics.getHeight()/9).row();
 		
 		stage.addActor(table);
 		
