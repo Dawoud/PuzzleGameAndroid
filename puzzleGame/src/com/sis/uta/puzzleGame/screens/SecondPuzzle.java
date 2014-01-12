@@ -13,6 +13,7 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
+import com.badlogic.gdx.scenes.scene2d.ui.Button.ButtonStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.ButtonGroup;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
@@ -31,7 +32,7 @@ public class SecondPuzzle implements Screen{
 	private TextureAtlas atlas;
 	private Skin skin;
 	private Table table;
-	private TextButton buttonBack, buttonCheck;
+	private TextButton buttonBack, button1, button2, button3, button4, button5;
 	private BitmapFont white, black;
 	private Label heading;
 	
@@ -76,9 +77,8 @@ public class SecondPuzzle implements Screen{
 		      XmlReader.Element root = xmlReader.parse(file);
 		      XmlReader.Element taskElement = root.getChildByName("task");
 
-		      	//taskName = taskElement.getAttribute("name");
-		      	taskName = root.getAttribute("name");
-		        required = root.getInt("required", 1);
+		      taskName = root.getAttribute("name");
+		      required = root.getInt("required", 1);
 //		        XmlReader.Element resultsElement = root.getChildByName("results");
 //		        final int resultCount = resultsElement.getChildCount();
 //		        results = new String[resultCount];
@@ -105,8 +105,9 @@ public class SecondPuzzle implements Screen{
 		skin=new Skin(atlas);
 		
 		table=new Table(skin);
-		
 		table.setBounds(0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+		table.layout();
+		table.left();
 		
 		white=new BitmapFont(Gdx.files.internal("font/white.fnt"), false);
 		black=new BitmapFont(Gdx.files.internal("font/black.fnt"), false);
@@ -123,20 +124,6 @@ public class SecondPuzzle implements Screen{
 		textFieldStyle.focusedFontColor = Color.PINK;
 		textFieldStyle.background = skin.getDrawable("button.up");
 		textFieldStyle.font = black;
-		
-		buttonCheck=new TextButton("Check", textButtonStyle);
-		buttonCheck.addListener(new ClickListener(){
-			@Override
-			public void clicked(InputEvent event, float x, float y) {
-				// TODO Auto-generated method stub
-				//check the result
-				boolean correctanswer;
-				correctanswer = true;
-				if(correctanswer) {
-					((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
-				}
-			}
-		});
 		
 		buttonBack=new TextButton("Back", textButtonStyle);
 		buttonBack.addListener(new ClickListener(){
@@ -155,11 +142,31 @@ public class SecondPuzzle implements Screen{
 		heading.setWidth(0);
 		
 		TextButton button1 = new TextButton("1", textButtonStyle);
+		button1.left();
+		button1.addListener(new ClickListener(){
+			@Override
+			public void clicked(InputEvent event, float x, float y) {
+				//add checking
+				((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
+			}
+		});  
 		TextButton button2 = new TextButton("2", textButtonStyle);
+		button1.left();
+		button1.addListener(new ClickListener(){
+			@Override
+			public void clicked(InputEvent event, float x, float y) {
+				//add checking
+				((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
+			}
+		});  
+		
 		ButtonGroup answers = new ButtonGroup(button1, button2);
-		answers.setChecked("1");
+		//answers.setChecked("1");
+		answers.setMaxCheckCount(1);
 				
+		table.row().minWidth(Gdx.graphics.getWidth()).minHeight(Gdx.graphics.getHeight()/3);
 		table.add(heading);
+		
 //		int resultCount = results.length;
 //		for (int j = 0; resultCount > j; ++j) {
 //			table.row();
@@ -167,13 +174,13 @@ public class SecondPuzzle implements Screen{
 //			table.add(str);
 //		}
 		//table.add(results[0]);
-		//table.add(result1);
-//		table.row();
-//		table.add(button1);
-//		table.add(button2);
-		table.row();
-		table.add(buttonCheck).minWidth(Gdx.graphics.getWidth()/3).minHeight(Gdx.graphics.getHeight()/9);
-		table.add(buttonBack).minWidth(Gdx.graphics.getWidth()/3).minHeight(Gdx.graphics.getHeight()/9).row();
+		
+		table.row().minWidth(Gdx.graphics.getWidth()/3).minHeight(Gdx.graphics.getHeight()/9);
+		table.add(button1);
+		table.row().minWidth(Gdx.graphics.getWidth()/3).minHeight(Gdx.graphics.getHeight()/9);
+		table.add(button2);
+		table.row().minWidth(Gdx.graphics.getWidth()/3).minHeight(Gdx.graphics.getHeight()/9);
+		table.add(buttonBack);
 		
 		stage.addActor(table);
 				
