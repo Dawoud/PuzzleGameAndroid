@@ -61,12 +61,12 @@ public class FirstPuzzle implements Screen{
 		Gdx.input.setInputProcessor(stage);
 		
 		atlas=new TextureAtlas("ui/button.pack");
-		//Skin skin = new Skin(Gdx.files.internal("data/packfp.json"));
 		skin=new Skin(atlas);
 		
 		table=new Table(skin);
-		
 		table.setBounds(0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+		table.layout();
+		table.left();
 		
 		white=new BitmapFont(Gdx.files.internal("font/white.fnt"), false);
 		black=new BitmapFont(Gdx.files.internal("font/black.fnt"), false);
@@ -201,15 +201,14 @@ public class FirstPuzzle implements Screen{
 		
 		LabelStyle headingStyle=new LabelStyle(white, Color.WHITE);
 		
-		heading=new Label("Use once numbers from 1 to 9 to fill the table in.\n " +
-						"The sum of numbers in each row, column and\n " + 
-						"diagonal must be equal to 15.", headingStyle);
-		heading.setFontScale(0.65f);
+		heading=new Label("Use once numbers from 1 to 9 to fill the table in. The sum of numbers in each row, column and diagonal must be equal to 15.", headingStyle);
+		heading.setFontScale(0.6f);
 		heading.setWrap(true);
 		heading.setColor(Color.WHITE);
-		//heading.setAlignment(2);
+		heading.setWidth(0);
 		
-		table.add(heading);
+		table.row().minWidth(Gdx.graphics.getWidth());
+		table.add(heading).colspan(3);
 		table.row();
 		table.add(a11);
 		table.add(a12);
@@ -222,10 +221,9 @@ public class FirstPuzzle implements Screen{
 		table.add(a31);
 		table.add(a32);
 		table.add(a33);
-		//table.add(a33).maxWidth(Gdx.graphics.getWidth()/6).maxHeight(Gdx.graphics.getHeight()/9);
 		table.row();
 		table.add(buttonCheck).minWidth(Gdx.graphics.getWidth()/3).minHeight(Gdx.graphics.getHeight()/9);
-		table.add(buttonBack).minWidth(Gdx.graphics.getWidth()/3).minHeight(Gdx.graphics.getHeight()/9).row();
+		table.add(buttonBack).minWidth(Gdx.graphics.getWidth()/3).minHeight(Gdx.graphics.getHeight()/9);
 		
 		stage.addActor(table);
 		

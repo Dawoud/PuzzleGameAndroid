@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>    
-<task name="Father is 11 times the age of his son. The age of his son is 10 times the age of his daughter.His wife is 100 times the age of his daughter. What is the sum of all the ages in the family?" required="1">      
+<task name="Father is 11 times the age of his son. The age of his son is 10 times the age of his daughter. His wife is 100 times the age of his daughter. What is the sum of all the ages in the family?" required="1">      
     <result value1="75" value2="60" value3="70" value4="65"  value5="80"></result>    
 </task>
