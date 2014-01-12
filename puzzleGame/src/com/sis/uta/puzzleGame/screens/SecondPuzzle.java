@@ -1,6 +1,5 @@
 package com.sis.uta.puzzleGame.screens;
 
-import java.awt.Checkbox;
 import java.io.IOException;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
@@ -12,8 +11,6 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.badlogic.gdx.scenes.scene2d.ui.Button;
-import com.badlogic.gdx.scenes.scene2d.ui.Button.ButtonStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.ButtonGroup;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
@@ -150,9 +147,10 @@ public class SecondPuzzle implements Screen{
 				((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
 			}
 		});  
+		
 		TextButton button2 = new TextButton("2", textButtonStyle);
-		button1.left();
-		button1.addListener(new ClickListener(){
+		button2.left();
+		button2.addListener(new ClickListener(){
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
 				//add checking
@@ -160,12 +158,42 @@ public class SecondPuzzle implements Screen{
 			}
 		});  
 		
-		ButtonGroup answers = new ButtonGroup(button1, button2);
+		TextButton button3 = new TextButton("3", textButtonStyle);
+		button3.left();
+		button3.addListener(new ClickListener(){
+			@Override
+			public void clicked(InputEvent event, float x, float y) {
+				//add checking
+				((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
+			}
+		});  
+		
+		TextButton button4 = new TextButton("4", textButtonStyle);
+		button4.left();
+		button4.addListener(new ClickListener(){
+			@Override
+			public void clicked(InputEvent event, float x, float y) {
+				//add checking
+				((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
+			}
+		});  
+		
+		TextButton button5 = new TextButton("5", textButtonStyle);
+		button5.left();
+		button5.addListener(new ClickListener(){
+			@Override
+			public void clicked(InputEvent event, float x, float y) {
+				//add checking
+				((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
+			}
+		});  
+		
+		ButtonGroup answers = new ButtonGroup(button1, button2, button3, button4, button5);
 		//answers.setChecked("1");
 		answers.setMaxCheckCount(1);
 				
-		table.row().minWidth(Gdx.graphics.getWidth()).minHeight(Gdx.graphics.getHeight()/3);
-		table.add(heading);
+		table.row().minWidth(Gdx.graphics.getWidth()).colspan(2);
+		table.add(heading).colspan(2);
 		
 //		int resultCount = results.length;
 //		for (int j = 0; resultCount > j; ++j) {
@@ -180,6 +208,11 @@ public class SecondPuzzle implements Screen{
 		table.row().minWidth(Gdx.graphics.getWidth()/3).minHeight(Gdx.graphics.getHeight()/9);
 		table.add(button2);
 		table.row().minWidth(Gdx.graphics.getWidth()/3).minHeight(Gdx.graphics.getHeight()/9);
+		table.add(button3);
+		table.row().minWidth(Gdx.graphics.getWidth()/3).minHeight(Gdx.graphics.getHeight()/9);
+		table.add(button4);
+		table.row().minWidth(Gdx.graphics.getWidth()/3).minHeight(Gdx.graphics.getHeight()/9);
+		table.add(button5);
 		table.add(buttonBack);
 		
 		stage.addActor(table);
