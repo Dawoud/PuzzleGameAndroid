@@ -172,8 +172,8 @@ public class SecondPuzzle implements Screen{
 //		table.add(button1);
 //		table.add(button2);
 		table.row();
-		table.add(buttonCheck).minWidth(Gdx.graphics.getWidth()/4).minHeight(Gdx.graphics.getHeight()/11).row();
-		table.add(buttonBack).minWidth(Gdx.graphics.getWidth()/4).minHeight(Gdx.graphics.getHeight()/11).row();
+		table.add(buttonCheck).minWidth(Gdx.graphics.getWidth()/3).minHeight(Gdx.graphics.getHeight()/9);
+		table.add(buttonBack).minWidth(Gdx.graphics.getWidth()/3).minHeight(Gdx.graphics.getHeight()/9).row();
 		
 		stage.addActor(table);
 				
