@@ -5,15 +5,21 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.Sprite;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.maps.MapLayer;
 import com.badlogic.gdx.maps.MapProperties;
 import com.badlogic.gdx.maps.objects.RectangleMapObject;
 import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
+import com.sis.uta.puzzleGame.controller.PlayerController;
+import com.sis.uta.puzzleGame.model.Player;
 
 public class FirstSection extends MapScreen {
 
@@ -27,9 +33,7 @@ public class FirstSection extends MapScreen {
 	
 	private Game game;
 	
-	/* Arrays for checking what was clicked, untill I figure out how to use
-	 * objects in tiledmaps
-	 */
+	private Player player;
 
 	/* Variables when we have bigger maps and need to check scrolling */
 	private MapProperties prop;
@@ -42,6 +46,7 @@ public class FirstSection extends MapScreen {
 	private int mapPixelHeight;
 	
 	private Stage stage;
+	private SpriteBatch spriteBatch;
 
 	@Override
 	public void render(float delta) {
@@ -53,11 +58,10 @@ public class FirstSection extends MapScreen {
 		
 		stage.act();
 		stage.draw();
-//		if(Gdx.input.justTouched())
-//		{
-//			Gdx.app.log("Map", "Map clicked");
-//			checkInputLocation();
-//		}
+		
+		renderer.getSpriteBatch().begin();
+		player.draw(renderer.getSpriteBatch());
+		renderer.getSpriteBatch().end();
 	}
 
 	@Override
@@ -79,7 +83,12 @@ public class FirstSection extends MapScreen {
 		/* camera */
 		camera = new OrthographicCamera();
 		
-		Gdx.input.setInputProcessor(new TiledMapInputProcesser(game));
+		/* Player */ 
+		
+		
+		spriteBatch = new SpriteBatch();
+		
+	
 		
 		/* Stuff that is needed if our map expands so we need scrolling */
 		prop = map.getProperties();
@@ -101,6 +110,9 @@ public class FirstSection extends MapScreen {
 		
 		camera.update();
 		
+		player = new Player(new Sprite(new Texture("maps/character.png")), mapPixelWidth - tilePixelWidth, mapPixelHeight - tilePixelHeight, (TiledMapTileLayer)map.getLayers().get("collisionlayer"), game);
+		
+		Gdx.input.setInputProcessor(new TiledMapInputProcesser(game));
 	}
 
 	@Override
@@ -125,57 +137,10 @@ public class FirstSection extends MapScreen {
 	public void dispose() {
 		map.dispose();
 		renderer.dispose();
+		player.getTexture().dispose();
 
 	}
 	
-	private void checkInputLocation()
-	{
-		/* Resolve where the user clicked */
-		switch(checkTile(Gdx.input.getX() , Gdx.input.getY()))
-		{
-			/* empty space, continue */
-			case -1:
-			break;
-				
-			/* Main menu area clicked, return */
-			case 0:
-			((Game)Gdx.app.getApplicationListener()).setScreen(new SectionSelect(game));
-			break;
-			
-			/* Puzzle area clicked, start first puzzle */
-			case 1:
-			((Game)Gdx.app.getApplicationListener()).setScreen(new FirstPuzzle(game));
-			break;
-		}
-	}
-	
-	/* Method to check if given coordinates are access points to menus/puzzles */
-	private int checkTile(float x, float y)
-	{
-		Gdx.app.log("1.Map", "Checking tile: X " + x + " Y " + y);
-		
-		int answer = -1;
-		
-		
-		MapLayer clickableLayers = (MapLayer) map.getLayers().get("Object Layer 1");
-		
-		RectangleMapObject obj;
-		for(int i = 0; i < 2; ++i)
-		{
-			Gdx.app.log("1.Map", "checking object " + i);
-			obj = (RectangleMapObject) clickableLayers.getObjects().get("puzzleHouse" + i);
-			if(obj.getRectangle().contains(x, mapPixelHeight - y))
-			{
-				answer = i;
-				break;
-			}
-		}
-		
-		
-		Gdx.app.log("1.map", "Got ID prop: " + answer);
-
-		return answer;
-	}
 
 	@Override
 	public void startDialog(String string) {
