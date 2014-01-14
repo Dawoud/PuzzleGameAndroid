@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectlist>
+	<object>
+		<name>o1</name>
+		<x>115</x>
+		<y>105</y>
+	</object>
+	<object>
+		<name>o2</name>
+		<x>350</x>
+		<y>270</y>
+	</object>
+	<object>
+		<name>o3</name>
+		<x>100</x>
+		<y>460</y>
+	</object>
+</objectlist>
