@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="30" height="20" tilewidth="16" tileheight="16">
- <tileset firstgid="1" name="Snow town" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="puzzle1" tilewidth="16" tileheight="16">
   <image source="snowtiles_1.gif" trans="000000" width="160" height="48"/>
   <tile id="0">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="puzzle1" value=""/>
+   </properties>
+  </tile>
+  <tile id="2">
    <properties>
     <property name="puzzle1" value=""/>
    </properties>
@@ -38,7 +44,7 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="31" name="Snow Town2" tilewidth="16" tileheight="16">
+ <tileset firstgid="31" name="puzzle0" tilewidth="16" tileheight="16">
   <image source="snowtiles_1.gif" width="160" height="48"/>
   <tile id="0">
    <properties>
@@ -51,6 +57,11 @@
   <tile id="0">
    <properties>
     <property name="puzzle2" value=""/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="blocked" value=""/>
    </properties>
   </tile>
   <tile id="23">
@@ -107,14 +118,19 @@
    </properties>
   </tile>
  </tileset>
- <layer name="Snow" width="30" height="20" visible="0">
+ <layer name="Snow" width="30" height="20">
   <data encoding="base64" compression="zlib">
-   eJzjZmBg4B7FIxqX0tGuIiAuBuJoKC6hk/0gu+LR6Gg62QvCsUhsetg7iinHnIPADaOYdMwxCNxADxwCxKFAHEZne23R8HC3lxIMAACGIqg=
+   eJzjZmBg4B7FIxqX0tGuIiAuBuJoKC6hk/0gu+LR6Gg62QvCsUhsetg7HLA8FA+U/ZyDIAxGMemYYxC4gR44BIhDgTiMzvbaouHhbi8lGAC+1iLQ
   </data>
  </layer>
  <layer name="inputlocations" width="30" height="20">
   <data encoding="base64" compression="zlib">
-   eJzFlskKwjAQQCNeVNqDxX09+wFeCp79AZdDKf6D2/c7A1MYw6RJY2IPjwxhkpeFDEmVUsc/k7bgdGUMbIT+hIjhmwB7IAfW5E8EQjl35EPuwAt4k99lrdUafdzoewAF8SS/njdk8ZRYEVKODXTdtLYQ8jIWz4A5sACWhhwXL1KymHulPXSILrW/3PXA0F+3B9OYJudtmsNnzJbAuG+h55FjGsO9vuCZVe/X9UxCeLMaL7/HkYpX23Rvk3djQ1pviPpkc0r1uKqlufquoSFrtzTPCTgDF+AayStx0IjhCO1t48+Bzg+6S5B2
+   eJzVlskKwjAQhiNeVOxBcV/PfQAvgmfP7ksR38Ht+f0HphjCxG6pxcNHpmHSb0LoNJ5SavljvAKccWmDiTBfZ/LwdcAMzMGY/XUBV06ffcQNPMGL/XFqDWtM4ybfHQTMg/1mXkOLu8yIkXKiINfVGAMhr6nFPdAHAzC05MTxEhct1r3SHkpMmccsZ12zzH/bg22N78CbZM2U8TV3NYJKihzzWfKmhc6Xvt0VOEfkuvTS+a7BBhzByagpjFvq01+yOkO2YAf24GDUZFuT1C31w4WBi72YTqkf27wue3eS9+Txz/h3irhzkPMNAwuSzQ==
+  </data>
+ </layer>
+ <layer name="collisionlayer" width="30" height="20" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYBwgTG8wau/gsZcWbsNnJiMWmlg3ElJLyF5GItWiq2GmwF5aglF7R+0djPY6oeHhbi+5gFJ73bFgWttLrp3I9g4EBgCZswVL
   </data>
  </layer>
 </map>

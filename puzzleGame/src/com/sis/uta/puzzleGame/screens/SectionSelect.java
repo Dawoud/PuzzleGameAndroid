@@ -18,6 +18,8 @@ import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
+import com.sis.uta.puzzleGame.puzzleGame;
+import com.sis.uta.puzzleGame.controller.TiledMapInputProcesser;
 
 public class SectionSelect extends MapScreen {
 
@@ -58,6 +60,7 @@ public class SectionSelect extends MapScreen {
 		
 		batch.begin();
 		background.draw(batch);
+		((puzzleGame)game).getMenubutton().draw(batch);
 		batch.end();
 		
 		stage.act();
