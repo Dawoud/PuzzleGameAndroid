@@ -10,8 +10,11 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
+import com.badlogic.gdx.scenes.scene2d.ui.ImageButton.ImageButtonStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
@@ -19,6 +22,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
+import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
+import com.sis.uta.puzzleGame.puzzleAudio;
 
 public class MainMenu implements Screen {
 
@@ -36,7 +41,7 @@ public class MainMenu implements Screen {
 	private TextButton buttonPlay, buttonOption, buttonScore, buttonHelp, buttonExit;
 	private BitmapFont white, black;
 	private Label heading;
-	private Texture backgroundTexture;
+	private Texture backgroundTexture, textureMute, textureUnmute;
 	private Sprite background;
 	private SpriteBatch batch;
 	
@@ -84,6 +89,8 @@ public class MainMenu implements Screen {
 		
 		white=new BitmapFont(Gdx.files.internal("font/white.fnt"), false);
 		black=new BitmapFont(Gdx.files.internal("font/black.fnt"), false);
+		textureUnmute = new Texture(Gdx.files.internal("data/unmute_s.png"));                
+		TextureRegion imageUnmute = new TextureRegion(textureUnmute);
 		
 		TextButtonStyle textButtonStyle=new TextButtonStyle();
 		textButtonStyle.up=skin.getDrawable("button.up");
@@ -92,6 +99,11 @@ public class MainMenu implements Screen {
 		textButtonStyle.pressedOffsetY=-1;
 		textButtonStyle.font=black;
 		
+		ImageButtonStyle imageButtonStyleUnmute = new ImageButtonStyle();
+		imageButtonStyleUnmute.imageUp = new TextureRegionDrawable(imageUnmute);
+		imageButtonStyleUnmute.pressedOffsetX=1;
+		imageButtonStyleUnmute.pressedOffsetY=-1;
+				
 		buttonPlay=new TextButton("New Game", textButtonStyle);
 		buttonPlay.addListener(new ClickListener(){
 			
@@ -127,6 +139,15 @@ public class MainMenu implements Screen {
 			}
 		});
 		
+		ImageButton buttonUnmute = new ImageButton(imageButtonStyleUnmute);
+		buttonUnmute.addListener(new ClickListener()
+		{
+			@Override
+			public void clicked(InputEvent event, float x, float y) {
+				puzzleAudio.change();
+			}
+		});
+		
 		LabelStyle headingStyle=new LabelStyle(white, Color.WHITE);
 		
 		heading=new Label("Puzzle Game", headingStyle);
@@ -137,7 +158,9 @@ public class MainMenu implements Screen {
 		table.add(buttonScore).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row();
 		table.add(buttonOption).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row();
 		table.add(buttonHelp).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row();
-		table.add(buttonExit).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row();
+		table.add(buttonExit).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9);
+		table.add(buttonUnmute).right().row();
+				
 		table.debug();
 		stage.addActor(table);
 	}
@@ -159,6 +182,7 @@ public class MainMenu implements Screen {
 
 	@Override
 	public void dispose() {
+		//puzzleAudio.dispose();
 
 	}
 
