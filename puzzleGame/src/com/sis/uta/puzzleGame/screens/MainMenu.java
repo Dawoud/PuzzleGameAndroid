@@ -91,6 +91,8 @@ public class MainMenu implements Screen {
 		black=new BitmapFont(Gdx.files.internal("font/black.fnt"), false);
 		textureUnmute = new Texture(Gdx.files.internal("data/unmute_s.png"));                
 		TextureRegion imageUnmute = new TextureRegion(textureUnmute);
+		textureMute = new Texture(Gdx.files.internal("data/mute_s.png"));                
+		TextureRegion imageMute = new TextureRegion(textureMute);
 		
 		TextButtonStyle textButtonStyle=new TextButtonStyle();
 		textButtonStyle.up=skin.getDrawable("button.up");
@@ -104,6 +106,11 @@ public class MainMenu implements Screen {
 		imageButtonStyleUnmute.pressedOffsetX=1;
 		imageButtonStyleUnmute.pressedOffsetY=-1;
 				
+		ImageButtonStyle imageButtonStyleMute = new ImageButtonStyle();
+		imageButtonStyleMute.imageUp = new TextureRegionDrawable(imageMute);
+		imageButtonStyleMute.pressedOffsetX=1;
+		imageButtonStyleMute.pressedOffsetY=-1;
+		
 		buttonPlay=new TextButton("New Game", textButtonStyle);
 		buttonPlay.addListener(new ClickListener(){
 			
@@ -144,7 +151,16 @@ public class MainMenu implements Screen {
 		{
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
-				puzzleAudio.change();
+				puzzleAudio.playMusic();
+			}
+		});
+		
+		ImageButton buttonMute = new ImageButton(imageButtonStyleMute);
+		buttonUnmute.addListener(new ClickListener()
+		{
+			@Override
+			public void clicked(InputEvent event, float x, float y) {
+				puzzleAudio.dispose();
 			}
 		});
 		
@@ -157,9 +173,10 @@ public class MainMenu implements Screen {
 		table.add(buttonPlay).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row();
 		table.add(buttonScore).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row();
 		table.add(buttonOption).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row();
-		table.add(buttonHelp).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row();
+		table.add(buttonHelp).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9);
+		table.add(buttonUnmute).row();
 		table.add(buttonExit).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9);
-		table.add(buttonUnmute).right().row();
+		table.add(buttonMute).row();
 				
 		table.debug();
 		stage.addActor(table);
