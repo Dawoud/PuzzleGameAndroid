@@ -160,7 +160,7 @@ public class MainMenu implements Screen {
 		{
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
-				puzzleAudio.dispose();
+				puzzleAudio.stopMusic();
 			}
 		});
 		
