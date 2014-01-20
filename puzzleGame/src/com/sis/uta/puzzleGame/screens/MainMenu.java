@@ -116,7 +116,6 @@ public class MainMenu implements Screen {
 			
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
-				// TODO Auto-generated method stub
 				((Game)Gdx.app.getApplicationListener()).setScreen(new SectionSelect(game));
 			}
 		});
@@ -127,7 +126,6 @@ public class MainMenu implements Screen {
 			
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
-				// TODO Auto-generated method stub
 				((Game)Gdx.app.getApplicationListener()).setScreen(new OptionMenu(game));
 			}
 		});
@@ -141,7 +139,7 @@ public class MainMenu implements Screen {
 		{
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
-				// TODO Auto-generated method stub
+				//puzzleAudio.dispose();
 				Gdx.app.exit();
 			}
 		});
@@ -160,8 +158,8 @@ public class MainMenu implements Screen {
 		{
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
-				//puzzleAudio.stopMusic();
-				puzzleAudio.playMusic();
+				puzzleAudio.stopMusic();
+				//puzzleAudio.playMusic();
 			}
 		});
 		
