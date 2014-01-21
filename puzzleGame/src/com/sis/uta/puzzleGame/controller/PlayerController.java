@@ -92,7 +92,6 @@ public class PlayerController extends TiledMapInputProcesser {
 
 	@Override
 	public boolean keyTyped(char character) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
@@ -134,19 +133,16 @@ public class PlayerController extends TiledMapInputProcesser {
 
 	@Override
 	public boolean touchDragged(int screenX, int screenY, int pointer) {
-		
 		return false;
 	}
 
 	@Override
 	public boolean mouseMoved(int screenX, int screenY) {
-		
 		return false;
 	}
 
 	@Override
 	public boolean scrolled(int amount) {
-		
 		return false;
 	}
 	
@@ -159,5 +155,4 @@ public class PlayerController extends TiledMapInputProcesser {
 		if(controlmode < 3 && controlmode > 0)
 			this.controlmode = controlmode;
 	}
-
 }

@@ -100,7 +100,6 @@ public class ThirdPuzzle implements Screen {
 				}
 			}
 			
-//			((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
 		}
 		
 		renderer.begin(ShapeType.Filled);

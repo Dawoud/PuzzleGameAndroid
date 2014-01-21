@@ -62,7 +62,12 @@ public class Splash implements Screen {
 			@Override
 			public void onEvent(int arg0, BaseTween<?> arg1) {
 				// TODO Auto-generated method stub
-				((Game)Gdx.app.getApplicationListener()).setScreen(new MainMenu(game));
+				SectionSelect startup = new SectionSelect(game);
+				
+				((Game)Gdx.app.getApplicationListener()).setScreen(startup);
+				
+				startup.startDialog("Welcome to SIS Adventures!\n Start by selecting a building with tapping it,\n you can also change the bulding" +
+						" by swiping the screen.");
 			}
 		}).start(tweenManager);
 //		Tween.to(splash, SpriteAccessor.ALPHA, 2).target(0).delay(2).start(tweenManager);

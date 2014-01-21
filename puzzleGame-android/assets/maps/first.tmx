@@ -59,6 +59,11 @@
     <property name="puzzle2" value=""/>
    </properties>
   </tile>
+  <tile id="2">
+   <properties>
+    <property name="puzzle2" value=""/>
+   </properties>
+  </tile>
   <tile id="5">
    <properties>
     <property name="blocked" value=""/>
@@ -97,6 +102,11 @@
     <property name="puzzle3" value=""/>
    </properties>
   </tile>
+  <tile id="6">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
   <tile id="23">
    <properties>
     <property name="puzzle3" value=""/>
@@ -130,7 +140,7 @@
  </layer>
  <layer name="collisionlayer" width="30" height="20" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjZGBgYBwgTG8wau/gsZcWbsNnJiMWmlg3ElJLyF5GItWiq2GmwF5aglF7R+0djPY6oeHhbi+5gFJ73bFgWttLrp3I9g4EBgCZswVL
+   eJxjZGBgYBwgTG8wau/gsZcWbsNnJkg8EY0m1o2E1BKyF4RjybCXmQJ7aQlG7R21dzDa6wTF9lCa3vbCML3sJRdQaq87Fkxre8m1E9negcAA4AIGyA==
   </data>
  </layer>
 </map>

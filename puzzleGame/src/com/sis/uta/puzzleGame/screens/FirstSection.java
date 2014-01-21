@@ -154,6 +154,11 @@ public class FirstSection extends MapScreen {
 //		buttondown.setBounds(Gdx.graphics.getWidth()-stepX, middleY-stepY*2, stepX, stepY*2); // down
 //		buttonleft.setBounds(0, middleY-stepY*2, stepX, stepY*2); // left
 //		buttonright.setBounds(Gdx.graphics.getWidth()-stepX, middleY, stepX, stepY*2); // right
+
+		buttondown.rotate90(true);
+		buttondown.rotate90(true);
+		buttonleft.rotate90(false);
+		buttonright.rotate90(true);
 		
 		/* Set inputprocessor to playercontroller to move player around */
 		Gdx.input.setInputProcessor(new PlayerController(player, game));

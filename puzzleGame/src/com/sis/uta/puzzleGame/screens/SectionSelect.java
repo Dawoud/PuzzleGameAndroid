@@ -8,6 +8,7 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.input.GestureDetector;
 import com.badlogic.gdx.maps.MapLayer;
 import com.badlogic.gdx.maps.MapProperties;
 import com.badlogic.gdx.maps.objects.PolygonMapObject;
@@ -19,14 +20,19 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.sis.uta.puzzleGame.puzzleGame;
+import com.sis.uta.puzzleGame.controller.SectionSelectController;
 import com.sis.uta.puzzleGame.controller.TiledMapInputProcesser;
 
 public class SectionSelect extends MapScreen {
 
 	
+	public final static int LINNA = 0, PAATALO = 1, PINNI = 2;
 	private OrthogonalTiledMapRenderer renderer;
 	private OrthographicCamera camera;
 	
+	/* */
+	private Sprite[] buildings;
+	private int currentBuilding;
 
 	/* Variables when we have bigger maps and need to check scrolling */
 	private MapProperties prop;
@@ -59,45 +65,22 @@ public class SectionSelect extends MapScreen {
 		
 		
 		batch.begin();
-		background.draw(batch);
+		buildings[currentBuilding].draw(batch);
 		((puzzleGame)game).getMenubutton().draw(batch);
 		batch.end();
 		
 		stage.act();
 		stage.draw();
-		
-		/*renderer.setView(camera);
-		renderer.render();*/
-		
-//		if(Gdx.input.justTouched())
-//		{
-//			Gdx.app.log("SectionSelect", "Map clicked");
-//			checkInputLocation();
-//		}
 	}
 
 	@Override
 	public void resize(int width, int height) {
-		/* reset camera when resized */
-		
-		scale = width/height;
-//		
-//		camera.viewportHeight = height;
-//		camera.viewportWidth = width;
-//		
-//		camera.position.set(width / 2f, height / 2f ,0);
-//		
-//		camera.update();
 	}
 
 	@Override
 	public void show() {
 		
 		batch=new SpriteBatch();
-		
-		backgroundTexture=new Texture("maps/ilmakuva450_2.png");
-		background=new Sprite(backgroundTexture);
-		background.setSize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 
 		/* Load map, created by Tiled */
 		map = new TmxMapLoader().load("maps/puzzleselectionbetter.tmx");
@@ -111,7 +94,7 @@ public class SectionSelect extends MapScreen {
 		/* camera */
 		camera = new OrthographicCamera();
 		
-		Gdx.input.setInputProcessor(new TiledMapInputProcesser(game));
+//		Gdx.input.setInputProcessor(new TiledMapInputProcesser(game));
 		
 		/* Stuff that is needed if our map expands so we need scrolling */
 		prop = map.getProperties();
@@ -131,8 +114,16 @@ public class SectionSelect extends MapScreen {
 		
 		camera.update();
 		
+		buildings = new Sprite[] {new Sprite(new Texture("maps/linna2.png")),
+			new Sprite(new Texture("maps/paatalo2.png")), 
+			new Sprite(new Texture("maps/pinni2.png"))};
+
+		for(int i = 0; i < buildings.length; ++i)
+		{
+			buildings[i].setBounds(0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+		}
 		
-		
+		Gdx.input.setInputProcessor(new GestureDetector(new SectionSelectController(game, this)));
 	}
 
 	@Override
@@ -143,13 +134,11 @@ public class SectionSelect extends MapScreen {
 
 	@Override
 	public void pause() {
-		// TODO Auto-generated method stub
-
+		
 	}
 
 	@Override
 	public void resume() {
-		// TODO Auto-generated method stub
 
 	}
 
@@ -249,18 +238,47 @@ public class SectionSelect extends MapScreen {
 
 	@Override
 	public void startDialog(String string) {
+		final SectionSelect a = this;
 		Gdx.input.setInputProcessor(stage);
 		Skin skin = new Skin(Gdx.files.internal("data/uiskin.json"));
 		Dialog dialog = new Dialog("Information", skin)
 		{
 			protected void result (Object object)
 			{
-				Gdx.input.setInputProcessor(new TiledMapInputProcesser(game));
+				Gdx.input.setInputProcessor(new GestureDetector(new SectionSelectController(game, a)));
 			}
 		}
 		.text(string).button("  OK  ").show(stage);
+				
+	}
+
+	public void nextBuilding() {
+	
+		if(currentBuilding == buildings.length - 1)
+		{
+			currentBuilding = 0;
+		}
+		else
+		{
+			++currentBuilding;
+		}
+	}
+
+	public void previousBuilding() {
+		if(currentBuilding == 0)
+		{
+			currentBuilding = buildings.length-1;
+		}
+		else
+		{
+			--currentBuilding;
+		}
 		
+	}
+
+	public int getCurrentBuilding() {
 		
+		return currentBuilding;
 	}
 
 }

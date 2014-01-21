@@ -4,6 +4,7 @@ import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
+import com.badlogic.gdx.math.Rectangle;
 import com.sis.uta.puzzleGame.screens.SectionSelect;
 import com.sis.uta.puzzleGame.screens.Splash;
 
@@ -12,6 +13,8 @@ public class puzzleGame extends Game {
 	private PuzzlePreferences preferences;
 	
 	private Sprite menubutton;
+
+	private Rectangle menurectangle;
 	
 	
 	public puzzleGame()
@@ -28,7 +31,9 @@ public class puzzleGame extends Game {
 	@Override
 	public void create() {
 		menubutton = new Sprite(new Texture("maps/character.png"));
-		menubutton.setBounds(Gdx.graphics.getWidth() - 30, Gdx.graphics.getHeight() - 30, 30 , 30);
+		menurectangle = new Rectangle(Gdx.graphics.getWidth() - 100, Gdx.graphics.getHeight() - 100, 100 , 100);
+		menubutton.setBounds(menurectangle.getX(), menurectangle.getY(), menurectangle.getWidth(), menurectangle.getHeight());
+		menurectangle.setY(0);
 		
 		setScreen(new Splash(this));
 		
@@ -67,6 +72,10 @@ public class puzzleGame extends Game {
 	
 	public Sprite getMenubutton() {
 		return menubutton;
+	}
+
+	public Rectangle getMenurectangle() {
+		return menurectangle;
 	}
 
 

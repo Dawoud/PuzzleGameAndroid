@@ -2,6 +2,7 @@ package com.sis.uta.puzzleGame.controller;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.maps.MapLayer;
@@ -12,6 +13,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Window;
 import com.badlogic.gdx.scenes.scene2d.ui.Window.WindowStyle;
+import com.sis.uta.puzzleGame.puzzleGame;
 import com.sis.uta.puzzleGame.screens.FirstPuzzle;
 import com.sis.uta.puzzleGame.screens.FirstSection;
 import com.sis.uta.puzzleGame.screens.MainMenu;
@@ -28,10 +30,16 @@ public class TiledMapInputProcesser implements InputProcessor {
 	{
 		super();
 		this.game = game;
+		
+//		Gdx.input.setCatchBackKey(true);
 	}
 	
 	@Override
 	public boolean keyDown(int keycode) {
+//		if(keycode == Keys.BACK)
+//		{
+//			
+//		}
 		return false;
 	}
 
@@ -102,7 +110,7 @@ public class TiledMapInputProcesser implements InputProcessor {
 		}
 		
 		/* Menu button at topright corner */
-		if(Gdx.input.getX() > Gdx.graphics.getWidth()-30 && Gdx.input.getY() < 30)
+		if(((puzzleGame)game).getMenurectangle().contains(screenX, screenY))
 		{
 			game.setScreen(new MainMenu(game));
 		}

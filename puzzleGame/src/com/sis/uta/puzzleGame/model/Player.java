@@ -20,7 +20,10 @@ public class Player extends Sprite {
 	private int mapPixelWidth, mapPixelHeight;
 	private puzzleGame game;
 	
+	
 	private int collidecheckstepsize = 2;
+	private String collisionKey; 
+	private String puzzleKey;
 	
 	/** movement velocity */
 	private Vector2 velocity = new Vector2();
@@ -37,6 +40,9 @@ public class Player extends Sprite {
 		this.collisionlayer = collisionlayer;
 
 		this.game = (puzzleGame)game;
+		
+		collisionKey = "blocked";
+		puzzleKey = "puzzle";
 		
 		setX(100);
 		setY(100);
@@ -55,6 +61,7 @@ public class Player extends Sprite {
 		
 		float oldX = getX();
 		float oldY = getY();
+		
 		
 		boolean collisionX = false, collisionY = false;
 		
@@ -127,13 +134,13 @@ public class Player extends Sprite {
 	{
 		Cell cell = collisionlayer.getCell((int) (x / collisionlayer.getTileWidth()), (int) (y / collisionlayer.getTileHeight()));
 		if (cell != null) {
-			if (cell.getTile().getProperties().containsKey("blocked")) {
+			if (cell.getTile().getProperties().containsKey(collisionKey)) {
 				return BLOCKED;
 			} 
 			else {
 				for(int i = 1; i < 3; ++i)
 				{
-					if(cell.getTile().getProperties().containsKey("puzzle" + i)) {
+					if(cell.getTile().getProperties().containsKey(puzzleKey + i)) {
 						Gdx.app.log("Player", "puzzle" + i);
 						return i;
 					}
@@ -152,6 +159,8 @@ public class Player extends Sprite {
 		for(float step = 0; step < getWidth(); step += collisionlayer.getTileWidth() / collidecheckstepsize)
 		{
 			int cellType = checkCellType(getX() + step, getY() + getHeight());
+			Gdx.app.log("Player", "Celltype: " + cellType);
+			
 			if(cellType == BLOCKED)
 			{
 				return true;
@@ -159,7 +168,36 @@ public class Player extends Sprite {
 			
 			if(cellType > BLOCKED)
 			{
+				switch(cellType)
+				{
+				case PUZZLE1:
+					game.setScreen(new FirstPuzzle(game));
+					break;
+				case PUZZLE2:
+					game.setScreen(new SecondPuzzle(game));
+					break;
+				case PUZZLE3:
+					game.setScreen(new ThirdPuzzle(game));
+					break;
+				}
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	public boolean collidesBottom()
+	{
+		for(float step = 0; step < getWidth(); step += collisionlayer.getTileWidth() / collidecheckstepsize)
+		{
+			int cellType = checkCellType(getX() + step, getY());
+			if(cellType == BLOCKED)
+			{
+				return true;
+			}
 				
+			if(cellType > BLOCKED)
+			{
 				switch(cellType)
 				{
 				case PUZZLE1:
@@ -173,36 +211,6 @@ public class Player extends Sprite {
 					break;
 				}
 			}
-		}
-		return false;
-	}
-	
-	public boolean collidesBottom()
-	{
-		for(float step = 0; step < getWidth(); step += collisionlayer.getTileWidth() / collidecheckstepsize)
-		{
-			int cellType = checkCellType(getX() + step, getY());
-				if(cellType == BLOCKED)
-				{
-					return true;
-				}
-				
-				if(cellType > BLOCKED)
-				{
-					
-					switch(cellType)
-					{
-					case PUZZLE1:
-						game.setScreen(new FirstPuzzle(game));
-						break;
-					case PUZZLE2:
-						game.setScreen(new SecondPuzzle(game));
-						break;
-					case PUZZLE3:
-						game.setScreen(new ThirdPuzzle(game));
-						break;
-					}
-				}
 		}
 		return false;
 	}
