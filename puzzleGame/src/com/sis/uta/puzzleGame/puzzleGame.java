@@ -30,7 +30,7 @@ public class puzzleGame extends Game {
 	
 	@Override
 	public void create() {
-		menubutton = new Sprite(new Texture("maps/character.png"));
+		menubutton = new Sprite(new Texture("maps/optionsbutton.png"));
 		menurectangle = new Rectangle(Gdx.graphics.getWidth() - 100, Gdx.graphics.getHeight() - 100, 100 , 100);
 		menubutton.setBounds(menurectangle.getX(), menurectangle.getY(), menurectangle.getWidth(), menurectangle.getHeight());
 		menurectangle.setY(0);

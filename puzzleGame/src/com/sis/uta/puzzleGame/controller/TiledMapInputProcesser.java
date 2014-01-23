@@ -142,13 +142,15 @@ public class TiledMapInputProcesser implements InputProcessor {
 		
 		for(int i = 0; i < 4; ++i)
 		{
-		
-			if(clickableLayers.getCell(x,y ) != null)
+			if(clickableLayers != null)
 			{
-				if(clickableLayers.getCell( x, y ).getTile().getProperties().containsKey("puzzle" + i) )
+				if(clickableLayers.getCell(x,y ) != null)
 				{
-					answer = i;
-					break;
+					if(clickableLayers.getCell( x, y ).getTile().getProperties().containsKey("puzzle" + i) )
+					{
+						answer = i;
+						break;
+					}
 				}
 			}
 		}

@@ -9,13 +9,15 @@ import com.badlogic.gdx.maps.tiled.TiledMapTileLayer.Cell;
 import com.badlogic.gdx.math.Vector2;
 import com.sis.uta.puzzleGame.puzzleGame;
 import com.sis.uta.puzzleGame.screens.FirstPuzzle;
+import com.sis.uta.puzzleGame.screens.FourthPuzzle;
 import com.sis.uta.puzzleGame.screens.SecondPuzzle;
 import com.sis.uta.puzzleGame.screens.ThirdPuzzle;
 
 public class Player extends Sprite {
 
 	public final int UP = 1, DOWN = 2, LEFT = 3,  RIGHT = 4;
-	public final int NULLTILE = -1, BLOCKED = 0, PUZZLE1 = 1, PUZZLE2 = 2, PUZZLE3 = 3;
+	public final int NULLTILE = -1, BLOCKED = 0, PUZZLE1 = 1, PUZZLE2 = 2, PUZZLE3 = 3,
+			PUZZLE4 = 4;
 	
 	private int mapPixelWidth, mapPixelHeight;
 	private puzzleGame game;
@@ -44,7 +46,7 @@ public class Player extends Sprite {
 		collisionKey = "blocked";
 		puzzleKey = "puzzle";
 		
-		setX(100);
+		setX(300);
 		setY(100);
 	}
 
@@ -138,7 +140,7 @@ public class Player extends Sprite {
 				return BLOCKED;
 			} 
 			else {
-				for(int i = 1; i < 3; ++i)
+				for(int i = 1; i < 5; ++i)
 				{
 					if(cell.getTile().getProperties().containsKey(puzzleKey + i)) {
 						Gdx.app.log("Player", "puzzle" + i);
@@ -159,7 +161,6 @@ public class Player extends Sprite {
 		for(float step = 0; step < getWidth(); step += collisionlayer.getTileWidth() / collidecheckstepsize)
 		{
 			int cellType = checkCellType(getX() + step, getY() + getHeight());
-			Gdx.app.log("Player", "Celltype: " + cellType);
 			
 			if(cellType == BLOCKED)
 			{
@@ -168,6 +169,7 @@ public class Player extends Sprite {
 			
 			if(cellType > BLOCKED)
 			{
+				Gdx.app.log("Player", "Puzzletile noticed!");
 				switch(cellType)
 				{
 				case PUZZLE1:
@@ -179,6 +181,8 @@ public class Player extends Sprite {
 				case PUZZLE3:
 					game.setScreen(new ThirdPuzzle(game));
 					break;
+				case PUZZLE4:
+					game.setScreen(new FourthPuzzle(game));
 				}
 				return true;
 			}
@@ -198,6 +202,7 @@ public class Player extends Sprite {
 				
 			if(cellType > BLOCKED)
 			{
+				Gdx.app.log("Player", "Puzzletile noticed!");
 				switch(cellType)
 				{
 				case PUZZLE1:
@@ -209,7 +214,10 @@ public class Player extends Sprite {
 				case PUZZLE3:
 					game.setScreen(new ThirdPuzzle(game));
 					break;
+				case PUZZLE4:
+					game.setScreen(new FourthPuzzle(game));
 				}
+				return true;
 			}
 		}
 		return false;
@@ -219,8 +227,29 @@ public class Player extends Sprite {
 	{
 		for(float step = 0; step < getHeight(); step += collisionlayer.getTileHeight() / collidecheckstepsize)
 		{
-			if(checkCellType(getX(), getY() + step) == BLOCKED)
+			int cellType = checkCellType(getX(), getY() + step);
+			if(cellType == BLOCKED)
 			{
+				return true;
+			}
+			
+			if(cellType > BLOCKED)
+			{
+				Gdx.app.log("Player", "Puzzletile noticed!");
+				switch(cellType)
+				{
+				case PUZZLE1:
+					game.setScreen(new FirstPuzzle(game));
+					break;
+				case PUZZLE2:
+					game.setScreen(new SecondPuzzle(game));
+					break;
+				case PUZZLE3:
+					game.setScreen(new ThirdPuzzle(game));
+					break;
+				case PUZZLE4:
+					game.setScreen(new FourthPuzzle(game));
+				}
 				return true;
 			}
 		}
@@ -231,8 +260,30 @@ public class Player extends Sprite {
 	{
 		for(float step = 0; step < getHeight(); step += collisionlayer.getTileHeight() / collidecheckstepsize)
 		{
-			if(checkCellType(getX() + getWidth(), getY() + step) == BLOCKED)
+			int cellType = checkCellType(getX() + getWidth(), getY() + step); 
+			if(cellType == BLOCKED)
 			{
+				return true;
+			}
+			
+			if(cellType > BLOCKED)
+			{
+				Gdx.app.log("Player", "Puzzletile noticed!");
+				switch(cellType)
+				{
+				
+				case PUZZLE1:
+					game.setScreen(new FirstPuzzle(game));
+					break;
+				case PUZZLE2:
+					game.setScreen(new SecondPuzzle(game));
+					break;
+				case PUZZLE3:
+					game.setScreen(new ThirdPuzzle(game));
+					break;
+				case PUZZLE4:
+					game.setScreen(new FourthPuzzle(game));
+				}
 				return true;
 			}
 		}

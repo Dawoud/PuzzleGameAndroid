@@ -61,9 +61,9 @@ public class FirstSection extends MapScreen {
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		
 		/* Set up the camera so it follows the player */
-//		camera.position.set(player.getX(), player.getY(), 0);
-//		
-//		camera.update();
+		camera.position.set(player.getX() + player.getWidth()/2f, player.getY() + player.getHeight()/2f, 0);
+		
+		camera.update();
 		
 		renderer.setView(camera);
 		renderer.render();
@@ -74,7 +74,10 @@ public class FirstSection extends MapScreen {
 		/* draw player */
 		renderer.getSpriteBatch().begin();
 		player.draw(renderer.getSpriteBatch());
+		renderer.renderTileLayer((TiledMapTileLayer) map.getLayers().get("frontlayer"));
 		renderer.getSpriteBatch().end();
+		
+		
 		
 		/* draw buttons */
 		spriteBatch.begin();
@@ -98,7 +101,7 @@ public class FirstSection extends MapScreen {
 	public void show() {
 
 		/* Load map, created by Tiled */
-		map = new TmxMapLoader().load("maps/first.tmx");
+		map = new TmxMapLoader().load("maps/linnabuilding.tmx");
 
 		/* create new renderer with the map */
 		renderer = new OrthogonalTiledMapRenderer(map);
@@ -126,10 +129,10 @@ public class FirstSection extends MapScreen {
 		player = new Player(new Sprite(new Texture("maps/character.png")), mapPixelWidth - tilePixelWidth, mapPixelHeight - tilePixelHeight, (TiledMapTileLayer)map.getLayers().get("collisionlayer"), game);
 		
 		/* Buttons to move player around */
-		buttonup = new Sprite(new Texture("maps/character.png"));
-		buttondown = new Sprite(new Texture("maps/character.png"));
-		buttonleft = new Sprite(new Texture("maps/character.png"));
-		buttonright = new Sprite(new Texture("maps/character.png"));
+		buttonup = new Sprite(new Texture("maps/movebutton.png"));
+		buttondown = new Sprite(new Texture("maps/movebutton.png"));
+		buttonleft = new Sprite(new Texture("maps/movebutton.png"));
+		buttonright = new Sprite(new Texture("maps/movebutton.png"));
 		
 		/* Variables to create spritebounds */
 		float stepX = Gdx.graphics.getWidth()/8;
@@ -155,9 +158,9 @@ public class FirstSection extends MapScreen {
 //		buttonleft.setBounds(0, middleY-stepY*2, stepX, stepY*2); // left
 //		buttonright.setBounds(Gdx.graphics.getWidth()-stepX, middleY, stepX, stepY*2); // right
 
-		buttondown.rotate90(true);
-		buttondown.rotate90(true);
-		buttonleft.rotate90(false);
+		buttondown.rotate90(false);
+		buttonup.rotate90(true);
+		buttonright.rotate90(true);
 		buttonright.rotate90(true);
 		
 		/* Set inputprocessor to playercontroller to move player around */
@@ -165,15 +168,8 @@ public class FirstSection extends MapScreen {
 		
 		
 		// Set up the camera
-//		camera.viewportHeight = Gdx.graphics.getHeight()/3f;
-//		camera.viewportWidth = Gdx.graphics.getWidth()/3f;
-		
-		camera.viewportHeight = mapPixelHeight;
-		camera.viewportWidth = mapPixelWidth;
-		
-		camera.position.set(mapPixelWidth/2f, mapPixelHeight/2f, 0);
-		
-		camera.update();
+		camera.viewportHeight = tilePixelHeight*20f;
+		camera.viewportWidth = tilePixelWidth*20f;
 	}
 
 	@Override
