@@ -12,6 +12,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.sis.uta.puzzleGame.puzzleAudio;
 import com.sis.uta.puzzleGame.tween.SpriteAccessor;
 
 public class Splash implements Screen {
@@ -47,6 +48,8 @@ public class Splash implements Screen {
 
 	@Override
 	public void show() {
+		
+		puzzleAudio.playMusic();
 
 		batch=new SpriteBatch();
 		tweenManager=new TweenManager();
