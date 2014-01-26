@@ -25,11 +25,8 @@ public class puzzleAudio {
 		
 	}
 	
-	public static void change() {
-		if(song.isPlaying())  
-			dispose();
-		else
-			playMusic();
+	public static void pause() {
+		song.pause();
 		
 	}
 
