@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<textpuzzles>
+    <textpuzzle id="1">
+        <question>1+1=</question>
+        <answerone>1</answerone>
+        <answertwo>4</answertwo>
+        <answerthree>5</answerthree>
+        <rightanswer>2</rightanswer>
+    </textpuzzle>
+    <textpuzzle id="2">
+        <question>1+2=</question>
+        <answerone>1</answerone>
+        <answertwo>4</answertwo>
+        <answerthree>5</answerthree>
+        <rightanswer>3</rightanswer>
+    </textpuzzle>   
+</textpuzzles>
