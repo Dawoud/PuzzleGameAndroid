@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <textpuzzles>
     <textpuzzle id="1">
-        <question>1+1=</question>
-        <answerone>1</answerone>
-        <answertwo>4</answertwo>
-        <answerthree>5</answerthree>
-        <rightanswer>2</rightanswer>
+        <question>A teacher asked the following question to a student :
+"Father is 11 times the age of his son. The age of his son is 10 times the age of his daughter.His wife is 100 times the age of his daughter.
+What is the sum of all the ages in the family?"</question>
+        <answerone>75</answerone>
+        <answertwo>60</answertwo>
+        <answerthree>70</answerthree>
+        <rightanswer>65</rightanswer>
     </textpuzzle>
     <textpuzzle id="2">
         <question>1+2=</question>
