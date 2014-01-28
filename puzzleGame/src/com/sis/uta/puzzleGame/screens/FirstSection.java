@@ -197,7 +197,6 @@ public class FirstSection extends MapScreen {
 	@Override
 	public void dispose() {
 		map.dispose();
-		renderer.dispose();
 		player.getTexture().dispose();
 		buttondown.getTexture().dispose();
 		buttonup.getTexture().dispose();
