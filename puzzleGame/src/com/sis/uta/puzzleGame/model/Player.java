@@ -10,7 +10,7 @@ import com.badlogic.gdx.math.Vector2;
 import com.sis.uta.puzzleGame.puzzleGame;
 import com.sis.uta.puzzleGame.screens.FirstPuzzle;
 import com.sis.uta.puzzleGame.screens.FourthPuzzle;
-import com.sis.uta.puzzleGame.screens.SecondPuzzle;
+import com.sis.uta.puzzleGame.screens.TextPuzzleScreen;
 import com.sis.uta.puzzleGame.screens.ThirdPuzzle;
 
 public class Player extends Sprite {
@@ -176,7 +176,7 @@ public class Player extends Sprite {
 					game.setScreen(new FirstPuzzle(game));
 					break;
 				case PUZZLE2:
-					game.setScreen(new SecondPuzzle(game));
+					game.setScreen(new TextPuzzleScreen(game));
 					break;
 				case PUZZLE3:
 					game.setScreen(new ThirdPuzzle(game));
@@ -209,7 +209,7 @@ public class Player extends Sprite {
 					game.setScreen(new FirstPuzzle(game));
 					break;
 				case PUZZLE2:
-					game.setScreen(new SecondPuzzle(game));
+					game.setScreen(new TextPuzzleScreen(game));
 					break;
 				case PUZZLE3:
 					game.setScreen(new ThirdPuzzle(game));
@@ -242,7 +242,7 @@ public class Player extends Sprite {
 					game.setScreen(new FirstPuzzle(game));
 					break;
 				case PUZZLE2:
-					game.setScreen(new SecondPuzzle(game));
+					game.setScreen(new TextPuzzleScreen(game));
 					break;
 				case PUZZLE3:
 					game.setScreen(new ThirdPuzzle(game));
@@ -276,7 +276,7 @@ public class Player extends Sprite {
 					game.setScreen(new FirstPuzzle(game));
 					break;
 				case PUZZLE2:
-					game.setScreen(new SecondPuzzle(game));
+					game.setScreen(new TextPuzzleScreen(game));
 					break;
 				case PUZZLE3:
 					game.setScreen(new ThirdPuzzle(game));
