@@ -9,7 +9,7 @@ import com.badlogic.gdx.maps.tiled.TiledMapTileLayer.Cell;
 import com.badlogic.gdx.math.Vector2;
 import com.sis.uta.puzzleGame.puzzleGame;
 import com.sis.uta.puzzleGame.screens.FirstPuzzle;
-import com.sis.uta.puzzleGame.screens.FourthPuzzle;
+import com.sis.uta.puzzleGame.screens.PicturePuzzle;
 import com.sis.uta.puzzleGame.screens.TextPuzzleScreen;
 import com.sis.uta.puzzleGame.screens.ThirdPuzzle;
 
@@ -182,7 +182,7 @@ public class Player extends Sprite {
 					game.setScreen(new ThirdPuzzle(game));
 					break;
 				case PUZZLE4:
-					game.setScreen(new FourthPuzzle(game));
+					game.setScreen(new PicturePuzzle(game));
 				}
 				return true;
 			}
@@ -215,7 +215,7 @@ public class Player extends Sprite {
 					game.setScreen(new ThirdPuzzle(game));
 					break;
 				case PUZZLE4:
-					game.setScreen(new FourthPuzzle(game));
+					game.setScreen(new PicturePuzzle(game));
 				}
 				return true;
 			}
@@ -248,7 +248,7 @@ public class Player extends Sprite {
 					game.setScreen(new ThirdPuzzle(game));
 					break;
 				case PUZZLE4:
-					game.setScreen(new FourthPuzzle(game));
+					game.setScreen(new PicturePuzzle(game));
 				}
 				return true;
 			}
@@ -282,7 +282,7 @@ public class Player extends Sprite {
 					game.setScreen(new ThirdPuzzle(game));
 					break;
 				case PUZZLE4:
-					game.setScreen(new FourthPuzzle(game));
+					game.setScreen(new PicturePuzzle(game));
 				}
 				return true;
 			}

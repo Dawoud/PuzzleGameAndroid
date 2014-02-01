@@ -4,15 +4,18 @@
 		<name>o1</name>
 		<x>115</x>
 		<y>105</y>
+		<r>10</r>
 	</object>
 	<object>
 		<name>o2</name>
 		<x>350</x>
 		<y>270</y>
+		<r>10</r>
 	</object>
 	<object>
 		<name>o3</name>
 		<x>100</x>
 		<y>460</y>
+		<r>10</r>
 	</object>
 </objectlist>
