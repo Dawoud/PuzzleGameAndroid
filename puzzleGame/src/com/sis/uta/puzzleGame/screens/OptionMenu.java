@@ -139,7 +139,7 @@ batch=new SpriteBatch();
 		table.add(labelSound).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/10).row();
 		table.add(soundSlider).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/10).row();
 //		table.add(buttonSound).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row();
-		table.add(languageBox).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row().pad(0, 0, 20, 0);
+//		table.add(languageBox).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row().pad(0, 0, 20, 0);
 		table.add(buttonBack).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row().pad(20,0,0,0);
 		
 		stage.addActor(table);
