@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectlist>
+	<object>
+		<name>Monitor</name>
+		<x>221</x>
+		<y>83</y>
+		<r>50</r>
+	</object>
+	<object>
+		<name>Case</name>
+		<x>193</x>
+		<y>338</y>
+		<r>60</r>
+	</object>
+	<object>
+		<name>HDMI cable</name>
+		<x>503</x>
+		<y>306</y>
+		<r>30</r>
+	</object>
+	<object>
+		<name>Mouse</name>
+		<x>490</x>
+		<y>475</y>
+		<r>30</r>
+	</object>
+</objectlist>

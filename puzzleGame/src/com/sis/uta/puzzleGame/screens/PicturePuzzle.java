@@ -10,16 +10,25 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import com.badlogic.gdx.math.Vector3;
+import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.Label;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
+import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
+import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.XmlReader;
 import com.badlogic.gdx.utils.XmlReader.Element;
 
 public class PicturePuzzle implements Screen {
+	
+	private BitmapFont white_normal=new BitmapFont(Gdx.files.internal("font/white_normal.fnt"), false);
+	private LabelStyle normalStyle=new LabelStyle(white_normal, Color.WHITE);
 	
 	public class SpotObject
 	{
@@ -28,6 +37,7 @@ public class PicturePuzzle implements Screen {
 		private int coordY;
 		private int rad;
 		private boolean found;
+		private Label label;
 		
 		public SpotObject()
 		{
@@ -36,6 +46,7 @@ public class PicturePuzzle implements Screen {
 			coordY=0;
 			rad=0;
 			found=false;
+//			label=new Label("", normalStyle);
 		}
 		
 		public SpotObject(String n, int x, int y, int r)
@@ -45,11 +56,13 @@ public class PicturePuzzle implements Screen {
 			coordY=y;
 			rad=r;
 			found=false;
+//			label=new Label(name, normalStyle);
 		}
 		
 		public void setName(String n)
 		{
 			name=n;
+//			label.setText(name);
 		}
 		
 		public void setX(int x)
@@ -97,6 +110,11 @@ public class PicturePuzzle implements Screen {
 			return found;
 		}
 		
+//		public Label getLabel()
+//		{
+//			return label;
+//		}
+		
 	}
 
 	public PicturePuzzle(Game game)
@@ -115,6 +133,10 @@ public class PicturePuzzle implements Screen {
 	private ShapeRenderer renderer;
 	
 	private OrthographicCamera camera;
+	
+	private Table table;
+	private Stage stage;
+	private Skin skin;
 
 	private float middleX;
 	private float middleY;
@@ -151,6 +173,10 @@ public class PicturePuzzle implements Screen {
 		renderer.flush();
 		renderer.end();
 		
+		getLabels();
+		stage.act(delta);
+		stage.draw();
+		
 		if (Gdx.input.justTouched())
 		{
 			
@@ -169,6 +195,16 @@ public class PicturePuzzle implements Screen {
 						o.setFound(true);
 					}
 				}
+			}
+			
+			boolean allfound=true;
+			for (SpotObject o: objectList)
+			{
+				allfound=allfound && o.getFound();
+			}
+			if (allfound)
+			{
+				game.setScreen(new FirstSection(game));
 			}
 		}
 		
@@ -210,7 +246,16 @@ public class PicturePuzzle implements Screen {
 		
 		renderer.setProjectionMatrix(camera.combined);
 		
-		imgTexture=new Texture("puzzle/test4p.png");
+		stage=new Stage();
+		
+		skin=new Skin(Gdx.files.internal("data/uiskin.json"));
+		
+		table=new Table(skin);
+		table.setBounds(0, Gdx.graphics.getHeight()-Gdx.graphics.getHeight()/6, Gdx.graphics.getWidth(), Gdx.graphics.getWidth()/6);
+		
+		stage.addActor(table);
+		
+		imgTexture=new Texture("puzzle/comproom.png");
 		img=new Sprite(imgTexture);
 		img.setSize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 		
@@ -223,7 +268,7 @@ public class PicturePuzzle implements Screen {
 		
 		objectList=new ArrayList<PicturePuzzle.SpotObject>();
 		
-		getObjectsFromXml("puzzle/test4pdesc.xml");
+		getObjectsFromXml("puzzle/comproomdesc.xml");
 		
 //		objectList.add(new SpotObject("o1", (int) (Math.round((115.0/500.0)*Gdx.graphics.getWidth())), (int)(Math.round((105.0/500.0)*Gdx.graphics.getHeight()))));
 //		objectList.add(new SpotObject("o2", (int) (Math.round((350.0/500.0)*Gdx.graphics.getWidth())), (int)(Math.round((270.0/500.0)*Gdx.graphics.getHeight()))));
@@ -273,6 +318,19 @@ public class PicturePuzzle implements Screen {
 		}
 		
 		
+	}
+	
+	public void getLabels()
+	{
+		table.clear();
+		
+		for(SpotObject o : objectList)
+		{
+			if (!o.getFound())
+			{
+				table.add(o.getName()).minWidth(100).minHeight(20);
+			}
+		}
 	}
 
 }

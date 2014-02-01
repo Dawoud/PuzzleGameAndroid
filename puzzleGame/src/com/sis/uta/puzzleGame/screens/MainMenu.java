@@ -38,7 +38,8 @@ public class MainMenu implements Screen {
 	private TextureAtlas atlas;
 	private Skin skin;
 	private Table table;
-	private TextButton buttonPlay, buttonOption, buttonScore, buttonHelp, buttonExit;
+	private TextButton buttonPlay, buttonOption, buttonExit;
+//	private TextButton buttonScore, buttonHelp;
 	private BitmapFont white, black;
 	private Label heading;
 	private Texture backgroundTexture, textureMute, textureUnmute;
@@ -111,7 +112,7 @@ public class MainMenu implements Screen {
 		imageButtonStyleMute.pressedOffsetX=1;
 		imageButtonStyleMute.pressedOffsetY=-1;
 		
-		buttonPlay=new TextButton("New Game", textButtonStyle);
+		buttonPlay=new TextButton("Back to Game", textButtonStyle);
 		buttonPlay.addListener(new ClickListener(){
 			
 			@Override
@@ -130,9 +131,9 @@ public class MainMenu implements Screen {
 			}
 		});
 		
-		buttonScore=new TextButton("Scores", textButtonStyle);
-		
-		buttonHelp=new TextButton("Help!", textButtonStyle);
+//		buttonScore=new TextButton("Scores", textButtonStyle);
+//		
+//		buttonHelp=new TextButton("Help!", textButtonStyle);
 		
 		buttonExit=new TextButton("Quit Game", textButtonStyle);
 		buttonExit.addListener(new ClickListener()
@@ -154,7 +155,7 @@ public class MainMenu implements Screen {
 		});
 		
 		ImageButton buttonMute = new ImageButton(imageButtonStyleMute);
-		buttonUnmute.addListener(new ClickListener()
+		buttonMute.addListener(new ClickListener()
 		{
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
@@ -170,9 +171,9 @@ public class MainMenu implements Screen {
 		
 		table.add(heading).row();
 		table.add(buttonPlay).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row();
-		table.add(buttonScore).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row();
-		table.add(buttonOption).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row();
-		table.add(buttonHelp).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9);
+//		table.add(buttonScore).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row();
+		table.add(buttonOption).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9);
+//		table.add(buttonHelp).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9);
 		table.add(buttonUnmute).row();
 		table.add(buttonExit).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9);
 		table.add(buttonMute).row();
