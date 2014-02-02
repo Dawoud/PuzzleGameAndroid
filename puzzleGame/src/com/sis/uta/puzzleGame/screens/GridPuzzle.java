@@ -80,16 +80,16 @@ public class GridPuzzle implements Screen{
 		textFieldStyle.background = skin.getDrawable("button.up");
 		textFieldStyle.font = black;
 		
-		a11 = new TextField("2", textFieldStyle);
-		a12 = new TextField("9", textFieldStyle);
-		a13 = new TextField("4", textFieldStyle);
-		a21 = new TextField("7", textFieldStyle);
-		a22 = new TextField("5", textFieldStyle);
-		a23 = new TextField("3", textFieldStyle);
-		a31 = new TextField("6", textFieldStyle);
-		a32 = new TextField("1", textFieldStyle);
-		a33 = new TextField("8", textFieldStyle);
-		
+		a11 = new TextField("", textFieldStyle); 
+		a12 = new TextField("", textFieldStyle);
+		a13 = new TextField("", textFieldStyle);
+		a21 = new TextField("", textFieldStyle);
+		a22 = new TextField("", textFieldStyle);
+		a23 = new TextField("", textFieldStyle);
+		a31 = new TextField("", textFieldStyle);
+		a32 = new TextField("", textFieldStyle);
+		a33 = new TextField("", textFieldStyle);
+		//possible solution: 2 9 4 7 5 3 6 1 8
 		
 		buttonCheck=new TextButton("Check", textButtonStyle);
 		buttonCheck.addListener(new ClickListener(){
@@ -186,15 +186,15 @@ public class GridPuzzle implements Screen{
 					{
 						protected void result (Object object)
 						{
-							a11.setText("");
-							a12.setText("");
-							a13.setText("");
-							a21.setText("");
-							a22.setText("");
-							a23.setText("");
-							a31.setText("");
-							a32.setText("");
-							a33.setText("");
+//							a11.setText("");
+//							a12.setText("");
+//							a13.setText("");
+//							a21.setText("");
+//							a22.setText("");
+//							a23.setText("");
+//							a31.setText("");
+//							a32.setText("");
+//							a33.setText("");
 						}
 					}
 					.text("     Do your best!     ").button("  OK  ").show(stage);
