@@ -64,11 +64,6 @@ public class GridPuzzle implements Screen{
 		atlas=new TextureAtlas("ui/button.pack");
 		skin=new Skin(atlas);
 		
-		table=new Table(skin);
-		table.setBounds(0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
-		table.layout();
-		table.left();
-		
 		white=new BitmapFont(Gdx.files.internal("font/white.fnt"), false);
 		black=new BitmapFont(Gdx.files.internal("font/black.fnt"), false);
 		
@@ -218,29 +213,36 @@ public class GridPuzzle implements Screen{
 		
 		LabelStyle headingStyle=new LabelStyle(white, Color.WHITE);
 		
-		heading=new Label("Use once numbers from 1 to 9 to fill the table in. The sum of numbers in each row, column and diagonal must be equal to 15.", headingStyle);
-		heading.setFontScale(0.6f);
+		heading=new Label("Use once numbers from 1 to 9 to fill the table. Sum of numbers in each row, column, diagonal must be equal to 15", headingStyle);
+		//heading.setFontScale(0.6f);
 		heading.setWrap(true);
 		heading.setColor(Color.WHITE);
 		heading.setWidth(0);
 		
-		table.row().minWidth(Gdx.graphics.getWidth());
-		table.add(heading).colspan(3);
+		table = new Table(skin);
+		table.setBounds(0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+		table.layout();
+		table.left();
+		table.top();
+		
 		table.row();
-		table.add(a11);
-		table.add(a12);
-		table.add(a13);
+		table.add(heading).colspan(4).width(Gdx.graphics.getWidth()).height(Gdx.graphics.getHeight()/3);
+		
 		table.row();
-		table.add(a21);
-		table.add(a22);
-		table.add(a23);
+		table.add(a11).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
+		table.add(a12).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
+		table.add(a13).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
+		table.add().width(Gdx.graphics.getWidth()*7/10).height(Gdx.graphics.getWidth()/10);
 		table.row();
-		table.add(a31);
-		table.add(a32);
-		table.add(a33);
+		table.add(a21).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
+		table.add(a22).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
+		table.add(a23).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
+		table.add(buttonCheck).width(Gdx.graphics.getWidth()/4).height(Gdx.graphics.getWidth()/10);
 		table.row();
-		table.add(buttonCheck).minWidth(Gdx.graphics.getWidth()/3).minHeight(Gdx.graphics.getHeight()/9);
-		table.add(buttonBack).minWidth(Gdx.graphics.getWidth()/3).minHeight(Gdx.graphics.getHeight()/9);
+		table.add(a31).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
+		table.add(a32).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
+		table.add(a33).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
+		table.add(buttonBack).width(Gdx.graphics.getWidth()/4).height(Gdx.graphics.getWidth()/10);
 		
 		stage.addActor(table);
 		
