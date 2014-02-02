@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
@@ -23,10 +24,6 @@ public class GridPuzzle implements Screen{
 	
 	private Game game;
 	
-	public GridPuzzle(Game game) {
-		this.game = game;
-	}
-
 	private Stage stage;
 	private TextureAtlas atlas;
 	private Skin skin;
@@ -36,6 +33,10 @@ public class GridPuzzle implements Screen{
 	private Label heading;
 	private TextField a11, a12, a13, a21, a22, a23, a31, a32, a33;
 	int i11,i12,i13,i21,i22,i23,i31,i32,i33;
+	
+	public GridPuzzle(Game game) {
+		this.game = game;
+	}
 
 	@Override
 	public void render(float delta) {
@@ -171,21 +172,38 @@ public class GridPuzzle implements Screen{
 				}
 				
 				
+				Skin skind = new Skin(Gdx.files.internal("data/uiskin.json"));
+				
 				if(correctanswer) {
-					((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
+					Dialog dialog = new Dialog("Scored", skind)
+					{
+						protected void result (Object object)
+						{
+							((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
+						}
+					}
+					.text("     Congratulations!     ").button("  OK  ").show(stage);
+								        
 				}
 				else
 				{
-					a11.setText("");
-					a12.setText("");
-					a13.setText("");
-					a21.setText("");
-					a22.setText("");
-					a23.setText("");
-					a31.setText("");
-					a32.setText("");
-					a33.setText("");
-					
+					Dialog dialog = new Dialog("Failed", skind)
+					{
+						protected void result (Object object)
+						{
+							a11.setText("");
+							a12.setText("");
+							a13.setText("");
+							a21.setText("");
+							a22.setText("");
+							a23.setText("");
+							a31.setText("");
+							a32.setText("");
+							a33.setText("");
+						}
+					}
+					.text("     Do your best!     ").button("  OK  ").show(stage);
+										
 				}
 			}
 		});
@@ -194,7 +212,6 @@ public class GridPuzzle implements Screen{
 		buttonBack.addListener(new ClickListener(){
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
-				// TODO Auto-generated method stub
 				((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
 			}
 		});
