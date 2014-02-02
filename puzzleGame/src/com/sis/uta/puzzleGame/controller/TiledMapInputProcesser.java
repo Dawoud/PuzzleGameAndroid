@@ -14,13 +14,13 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Window;
 import com.badlogic.gdx.scenes.scene2d.ui.Window.WindowStyle;
 import com.sis.uta.puzzleGame.puzzleGame;
-import com.sis.uta.puzzleGame.screens.FirstPuzzle;
 import com.sis.uta.puzzleGame.screens.FirstSection;
+import com.sis.uta.puzzleGame.screens.GraphPuzzle;
+import com.sis.uta.puzzleGame.screens.GridPuzzle;
 import com.sis.uta.puzzleGame.screens.MainMenu;
 import com.sis.uta.puzzleGame.screens.MapScreen;
 import com.sis.uta.puzzleGame.screens.SecondPuzzle;
 import com.sis.uta.puzzleGame.screens.SectionSelect;
-import com.sis.uta.puzzleGame.screens.ThirdPuzzle;
 
 public class TiledMapInputProcesser implements InputProcessor {
 
@@ -98,13 +98,13 @@ public class TiledMapInputProcesser implements InputProcessor {
 					((Game)Gdx.app.getApplicationListener()).setScreen(new SectionSelect(game));
 					break;
 				case 1:
-					((Game)Gdx.app.getApplicationListener()).setScreen(new FirstPuzzle(game));
+					((Game)Gdx.app.getApplicationListener()).setScreen(new GridPuzzle(game));
 					break;
 				case 2:
 					((Game)Gdx.app.getApplicationListener()).setScreen(new SecondPuzzle(game));
 					break;
 				case 3:
-					((Game)Gdx.app.getApplicationListener()).setScreen(new ThirdPuzzle(game));
+					((Game)Gdx.app.getApplicationListener()).setScreen(new GraphPuzzle(game));
 					break;
 			}	
 		}
