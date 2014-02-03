@@ -13,17 +13,32 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
+import com.badlogic.gdx.input.GestureDetector;
+import com.badlogic.gdx.input.GestureDetector.GestureListener;
 import com.badlogic.gdx.math.Vector3;
+import com.badlogic.gdx.scenes.scene2d.Event;
+import com.badlogic.gdx.scenes.scene2d.EventListener;
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.Button;
+import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
+import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
+import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
+import com.badlogic.gdx.scenes.scene2d.ui.Window;
+import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.utils.Timer;
+import com.badlogic.gdx.utils.Timer.Task;
 import com.badlogic.gdx.utils.XmlReader;
 import com.badlogic.gdx.utils.XmlReader.Element;
+import com.sis.uta.puzzleGame.controller.SectionSelectController;
 
 public class PicturePuzzle implements Screen {
 	
@@ -147,6 +162,8 @@ public class PicturePuzzle implements Screen {
 	private Sprite backButton;
 	private Texture backTexture;
 	
+	private Dialog dialog;
+	
 	private ArrayList<SpotObject> objectList;
 	
 	@Override
@@ -204,7 +221,15 @@ public class PicturePuzzle implements Screen {
 			}
 			if (allfound)
 			{
-				game.setScreen(new FirstSection(game));
+				float delay=2;
+				Timer.schedule(new Task()
+				{
+
+					@Override
+					public void run() {
+						// TODO Auto-generated method stub
+						game.setScreen(new FirstSection(game));
+					}}, delay);
 			}
 		}
 		
@@ -250,6 +275,8 @@ public class PicturePuzzle implements Screen {
 		
 		skin=new Skin(Gdx.files.internal("data/uiskin.json"));
 		
+		showDialog();
+		
 		table=new Table(skin);
 		table.setBounds(0, Gdx.graphics.getHeight()-Gdx.graphics.getHeight()/6, Gdx.graphics.getWidth(), Gdx.graphics.getWidth()/6);
 		
@@ -264,15 +291,15 @@ public class PicturePuzzle implements Screen {
 		backButton.setSize(60, 30);
 		backButton.setPosition(Gdx.graphics.getWidth()-60, 0);
 		
-		Gdx.input.setInputProcessor(null);
-		
 		objectList=new ArrayList<PicturePuzzle.SpotObject>();
 		
 		getObjectsFromXml("puzzle/comproomdesc.xml");
 		
-//		objectList.add(new SpotObject("o1", (int) (Math.round((115.0/500.0)*Gdx.graphics.getWidth())), (int)(Math.round((105.0/500.0)*Gdx.graphics.getHeight()))));
-//		objectList.add(new SpotObject("o2", (int) (Math.round((350.0/500.0)*Gdx.graphics.getWidth())), (int)(Math.round((270.0/500.0)*Gdx.graphics.getHeight()))));
-//		objectList.add(new SpotObject("o3", (int) (Math.round((100.0/500.0)*Gdx.graphics.getWidth())), (int)(Math.round((460.0/500.0)*Gdx.graphics.getHeight()))));
+		
+		
+		//Gdx.input.setInputProcessor(null);
+		
+		
 	}
 
 	@Override
@@ -331,6 +358,22 @@ public class PicturePuzzle implements Screen {
 				table.add(o.getName()).minWidth(100).minHeight(20);
 			}
 		}
+	}
+	
+	public void showDialog()
+	{
+		Gdx.input.setInputProcessor(stage);
+		dialog=new Dialog("Info", skin, "dialog")
+		{
+			protected void result (Object object)
+			{
+				Gdx.input.setInputProcessor(null);
+				dialog.setVisible(false);
+			}
+		};
+		dialog.text("Help the professor find his objects.");
+		dialog.button("OK", true);
+		dialog.show(stage);
 	}
 
 }
