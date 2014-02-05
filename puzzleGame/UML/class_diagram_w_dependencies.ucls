@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.4" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
+  <class id="1" language="java" name="com.sis.uta.puzzleGame.PuzzlePreferences" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/PuzzlePreferences.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="275" width="156" x="437" y="2718"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.sis.uta.puzzleGame.screens.MainMenu" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/MainMenu.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="491" width="164" x="33" y="324"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.sis.uta.puzzleGame.controller.SectionSelectController" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/controller/SectionSelectController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="239" width="258" x="218" y="27"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.sis.uta.puzzleGame.puzzleGame" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/puzzleGame.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="275" width="205" x="437" y="2241"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.sis.uta.puzzleGame.screens.ReadXMLFile" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/ReadXMLFile.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="95" width="255" x="797" y="1692"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.sis.uta.puzzleGame.screens.GridPuzzle" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/GridPuzzle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="707" width="150" x="688" y="945"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.sis.uta.puzzleGame.screens.GraphPuzzle.Triangle" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/GraphPuzzle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="221" width="282" x="1332" y="1692"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.sis.uta.puzzleGame.screens.TextPuzzle" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/TextPuzzle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="437" width="254" x="933" y="2241"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.sis.uta.puzzleGame.model.Player" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/model/Player.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="581" width="245" x="920" y="324"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.sis.uta.puzzleGame.screens.FirstSection" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/FirstSection.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="509" width="218" x="518" y="1692"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.sis.uta.puzzleGame.controller.TiledMapInputProcesser" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/controller/TiledMapInputProcesser.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="257" width="183" x="689" y="27"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.sis.uta.puzzleGame.screens.SecondPuzzle" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/SecondPuzzle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="455" width="150" x="518" y="324"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="com.sis.uta.puzzleGame.screens.Splash" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/Splash.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="275" width="179" x="218" y="2718"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="com.sis.uta.puzzleGame.puzzleAudio" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/puzzleAudio.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="167" width="114" x="-26" y="3033"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="com.sis.uta.puzzleGame.controller.PlayerController" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/controller/PlayerController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="401" width="183" x="1227" y="2241"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="com.sis.uta.puzzleGame.screens.PicturePuzzle" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/PicturePuzzle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="545" width="182" x="1134" y="945"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="com.sis.uta.puzzleGame.screens.TextPuzzleScreen" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/TextPuzzleScreen.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="437" width="153" x="920" y="945"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="com.sis.uta.puzzleGame.screens.OptionMenu" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/OptionMenu.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="581" width="164" x="14" y="945"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="com.sis.uta.puzzleGame.screens.SectionSelect" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/SectionSelect.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="689" width="218" x="218" y="945"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="com.sis.uta.puzzleGame.screens.PicturePuzzle.SpotObject" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/PicturePuzzle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="383" width="158" x="1134" y="1692"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="com.sis.uta.puzzleGame.screens.GraphPuzzle" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/GraphPuzzle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="563" width="172" x="1356" y="945"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="com.sis.uta.puzzleGame.screens.MapScreen" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/MapScreen.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="131" width="150" x="307" y="324"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="23">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="21"/>  
+  </dependency>  
+  <dependency id="24">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <association id="25">    
+    <bendpoint x="889" y="945"/>    
+    <bendpoint x="766" y="1692"/>    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="26" name="game"/>      
+      <multiplicity id="27" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="28">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <association id="29">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="30" name="trianglesclasses"/>      
+      <multiplicity id="31" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="32">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <dependency id="33">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="34">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="35">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <dependency id="36">    
+    <bendpoint x="1195" y="324"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="21"/>  
+  </dependency>  
+  <generalization id="37">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="22"/>  
+  </generalization>  
+  <dependency id="38">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <dependency id="39">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <association id="40">    
+    <bendpoint x="227" y="324"/>    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="41" name="view"/>      
+      <multiplicity id="42" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="43">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <dependency id="44">    
+    <bendpoint x="529" y="945"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <dependency id="45">    
+    <bendpoint x="227" y="2241"/>    
+    <bendpoint x="227" y="1692"/>    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <dependency id="46">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="18"/>  
+  </dependency>  
+  <dependency id="47">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <association id="48">    
+    <bendpoint x="1082" y="1692"/>    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="49" name="list"/>      
+      <multiplicity id="50" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="51">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="7"/>  
+  </nesting>  
+  <association id="52">    
+    <bendpoint x="1103" y="1692"/>    
+    <bendpoint x="1103" y="945"/>    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="53" name="player"/>      
+      <multiplicity id="54" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="55">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="56">    
+    <bendpoint x="-38" y="324"/>    
+    <bendpoint x="-38" y="945"/>    
+    <bendpoint x="4" y="1692"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="57">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <association id="58">    
+    <bendpoint x="868" y="945"/>    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="59" name="player"/>      
+      <multiplicity id="60" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="61">    
+    <bendpoint x="657" y="945"/>    
+    <bendpoint x="698" y="324"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="62">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <dependency id="63">    
+    <bendpoint x="276" y="324"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <dependency id="64">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="65">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <generalization id="66">    
+    <bendpoint x="508" y="945"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="22"/>  
+  </generalization>  
+  <association id="67">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="68" name="objectList"/>      
+      <multiplicity id="69" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="70">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="71">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <generalization id="72">    
+    <bendpoint x="1654" y="1692"/>    
+    <bendpoint x="1654" y="945"/>    
+    <bendpoint x="1654" y="324"/>    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <dependency id="73">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <association id="74">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="75" name="adjacentTriangles"/>      
+      <multiplicity id="76" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="77">    
+    <bendpoint x="487" y="324"/>    
+    <bendpoint x="487" y="945"/>    
+    <bendpoint x="487" y="1692"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="78">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="79">    
+    <bendpoint x="336" y="1692"/>    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="80">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <dependency id="81">    
+    <bendpoint x="719" y="324"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="82">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <nesting id="83">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="20"/>  
+  </nesting>  
+  <dependency id="84">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="85">    
+    <bendpoint x="-17" y="945"/>    
+    <bendpoint x="-17" y="1692"/>    
+    <bendpoint x="-17" y="2241"/>    
+    <bendpoint x="-17" y="2718"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="86">    
+    <bendpoint x="255" y="324"/>    
+    <bendpoint x="466" y="945"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <dependency id="87">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <association id="88">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="89" name="preferences"/>      
+      <multiplicity id="90" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

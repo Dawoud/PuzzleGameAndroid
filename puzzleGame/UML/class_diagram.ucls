@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.4" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="com.sis.uta.puzzleGame.PuzzlePreferences" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/PuzzlePreferences.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="275" width="156" x="2188" y="2215"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.sis.uta.puzzleGame.screens.MainMenu" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/MainMenu.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="491" width="164" x="519" y="-197"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.sis.uta.puzzleGame.controller.SectionSelectController" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/controller/SectionSelectController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="239" width="258" x="1208" y="-197"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.sis.uta.puzzleGame.puzzleGame" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/puzzleGame.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="275" width="205" x="2188" y="1900"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.sis.uta.puzzleGame.screens.ReadXMLFile" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/ReadXMLFile.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="95" width="255" x="723" y="-197"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.sis.uta.puzzleGame.screens.GridPuzzle" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/GridPuzzle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="707" width="150" x="1018" y="-197"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.sis.uta.puzzleGame.screens.GraphPuzzle.Triangle" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/GraphPuzzle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="221" width="282" x="3178" y="550"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.sis.uta.puzzleGame.screens.TextPuzzle" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/TextPuzzle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="437" width="254" x="2884" y="550"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.sis.uta.puzzleGame.model.Player" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/model/Player.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="581" width="245" x="2188" y="1279"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.sis.uta.puzzleGame.screens.FirstSection" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/FirstSection.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="509" width="218" x="2051" y="550"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.sis.uta.puzzleGame.controller.TiledMapInputProcesser" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/controller/TiledMapInputProcesser.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="257" width="183" x="2463" y="-197"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.sis.uta.puzzleGame.screens.SecondPuzzle" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/SecondPuzzle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="455" width="150" x="1506" y="-197"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="com.sis.uta.puzzleGame.screens.Splash" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/Splash.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="275" width="179" x="1696" y="-197"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="com.sis.uta.puzzleGame.puzzleAudio" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/puzzleAudio.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="167" width="114" x="2105" y="-197"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="com.sis.uta.puzzleGame.controller.PlayerController" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/controller/PlayerController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="401" width="183" x="2325" y="550"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="com.sis.uta.puzzleGame.screens.PicturePuzzle" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/PicturePuzzle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="545" width="182" x="2686" y="-197"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="com.sis.uta.puzzleGame.screens.TextPuzzleScreen" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/TextPuzzleScreen.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="437" width="153" x="2908" y="-197"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="com.sis.uta.puzzleGame.screens.OptionMenu" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/OptionMenu.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="581" width="164" x="2259" y="-197"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="com.sis.uta.puzzleGame.screens.SectionSelect" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/SectionSelect.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="689" width="218" x="1562" y="550"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="com.sis.uta.puzzleGame.screens.PicturePuzzle.SpotObject" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/PicturePuzzle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="383" width="158" x="2686" y="550"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="com.sis.uta.puzzleGame.screens.GraphPuzzle" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/GraphPuzzle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="563" width="172" x="3178" y="-197"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="com.sis.uta.puzzleGame.screens.MapScreen" project="puzzleGame" 
+    file="/puzzleGame/src/com/sis/uta/puzzleGame/screens/MapScreen.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="131" width="150" x="1915" y="-197"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="23">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="24" name="preferences"/>      
+      <multiplicity id="25" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="26">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="27" name="trianglesclasses"/>      
+      <multiplicity id="28" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="29">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="30" name="view"/>      
+      <multiplicity id="31" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="32">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="33" name="adjacentTriangles"/>      
+      <multiplicity id="34" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="35">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="36" name="objectList"/>      
+      <multiplicity id="37" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="38">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="22"/>  
+  </generalization>  
+  <association id="39">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="40" name="player"/>      
+      <multiplicity id="41" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="42">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="22"/>  
+  </generalization>  
+  <association id="43">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="44" name="game"/>      
+      <multiplicity id="45" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="46">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="47" name="player"/>      
+      <multiplicity id="48" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="49">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="20"/>  
+  </nesting>  
+  <generalization id="50">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <association id="51">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="52" name="list"/>      
+      <multiplicity id="53" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="54">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="7"/>  
+  </nesting>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
