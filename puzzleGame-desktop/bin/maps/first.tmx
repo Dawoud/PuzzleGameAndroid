@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="30" height="20" tilewidth="16" tileheight="16">
- <tileset firstgid="1" name="Snow town" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="puzzle1" tilewidth="16" tileheight="16">
   <image source="snowtiles_1.gif" trans="000000" width="160" height="48"/>
   <tile id="0">
    <properties>
-    <property name="puzzleID" value="1"/>
+    <property name="blocked" value=""/>
+    <property name="puzzle1" value=""/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="puzzle1" value=""/>
    </properties>
   </tile>
   <tile id="5">
    <properties>
-    <property name="puzzleID" value="2"/>
+    <property name="" value=""/>
    </properties>
   </tile>
   <tile id="19">
@@ -17,31 +23,124 @@
     <property name="puzzleID" value="0"/>
    </properties>
   </tile>
+  <tile id="22">
+   <properties>
+    <property name="puzzle1" value=""/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="puzzle1" value=""/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="puzzle1" value=""/>
+   </properties>
+  </tile>
+  <tile id="27">
+   <properties>
+    <property name="puzzle1" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="31" name="puzzle0" tilewidth="16" tileheight="16">
+  <image source="snowtiles_1.gif" width="160" height="48"/>
+  <tile id="0">
+   <properties>
+    <property name="puzzle0" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="61" name="puzzle2" tilewidth="16" tileheight="16">
+  <image source="snowtiles_1.gif" width="160" height="48"/>
+  <tile id="0">
+   <properties>
+    <property name="puzzle2" value=""/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="puzzle2" value=""/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="puzzle2" value=""/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="puzzle2" value=""/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="puzzle2" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="91" name="puzzle3" tilewidth="16" tileheight="16">
+  <image source="snowtiles_1.gif" width="160" height="48"/>
+  <tile id="0">
+   <properties>
+    <property name="puzzle3" value=""/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="puzzle3" value=""/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="puzzle3" value=""/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="puzzle3" value=""/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="puzzle3" value=""/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="puzzle3" value=""/>
+   </properties>
+  </tile>
+  <tile id="26">
+   <properties>
+    <property name="puzzle3" value=""/>
+   </properties>
+  </tile>
  </tileset>
  <layer name="Snow" width="30" height="20">
   <data encoding="base64" compression="zlib">
-   eJzjZmBg4B7Fo3gUj+JRjII5B4EbRjHpmGMQuGEUj2IQBgANWxnE
+   eJzjZmBg4B7FIxqX0tGuIiAuBuJoKC6hk/0gu+LR6Gg62QvCsUhsetg7HLA8FA+U/ZyDIAxGMemYYxC4gR44BIhDgTiMzvbaouHhbi8lGAC+1iLQ
   </data>
  </layer>
- <layer name="Tile Layer 1" width="30" height="20">
+ <layer name="inputlocations" width="30" height="20">
   <data encoding="base64" compression="zlib">
-   eJzFln0LgyAQxo2obVF/JG3tpe37f8ydcIIcd3mZ1gM/DFGfR8OrwRyv4QRPre7Aj+nvkRJ+D2AGFuCL/j1DTs3IE/ig96LM6jOmyPm9gBZ5oz/VyGSlGUejVwU0pL0w4yyTlWa0Ri+/zzp4Dn25PVRIje0edUL/2h6kOVvOW1ojZc6EON0iXBPGSHNC31S5M/P3V3smOXztim/4HidTrrZR3y33JiYub476FPPk6rFUn3LWbm4dqT6V+mZ4tYSjtMf3jH8O5/kHOX0Ilg==
+   eJzVlskKwjAQhiNeVOxBcV/PfQAvgmfP7ksR38Ht+f0HphjCxG6pxcNHpmHSb0LoNJ5SavljvAKccWmDiTBfZ/LwdcAMzMGY/XUBV06ffcQNPMGL/XFqDWtM4ybfHQTMg/1mXkOLu8yIkXKiINfVGAMhr6nFPdAHAzC05MTxEhct1r3SHkpMmccsZ12zzH/bg22N78CbZM2U8TV3NYJKihzzWfKmhc6Xvt0VOEfkuvTS+a7BBhzByagpjFvq01+yOkO2YAf24GDUZFuT1C31w4WBi72YTqkf27wue3eS9+Txz/h3irhzkPMNAwuSzQ==
   </data>
  </layer>
- <objectgroup name="Object Layer 1" width="30" height="20">
-  <object name="puzzleHouse3" x="96" y="98">
-   <polygon points="0,0 0,31 95,29 96,-33 48,-55 0,-32"/>
-  </object>
-  <object name="puzzleHouse1" x="304" y="70" width="66" height="57">
-   <properties>
-    <property name="ID" value="1"/>
-   </properties>
-  </object>
-  <object name="puzzleHouse0" x="429" y="143" width="35" height="51">
-   <properties>
-    <property name="ID" value="0"/>
-   </properties>
-  </object>
-  <object x="240" y="238" width="64" height="65"/>
- </objectgroup>
+ <layer name="collisionlayer" width="30" height="20" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYBwgTG8wau/gsZcWbsNnJkg8EY0m1o2E1BKyF4RjybCXmQJ7aQlG7R21dzDa6wTF9lCa3vbCML3sJRdQaq87Fkxre8m1E9negcAA4AIGyA==
+  </data>
+ </layer>
 </map>
