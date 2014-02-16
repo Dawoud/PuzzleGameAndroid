@@ -29,6 +29,11 @@ public class puzzleAudio {
 		song.pause();
 		
 	}
+	
+	public static boolean isPlaying()
+	{
+		return song.isPlaying();
+	}
 
 }
 

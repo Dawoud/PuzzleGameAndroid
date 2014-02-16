@@ -69,7 +69,7 @@ public class Splash implements Screen {
 				
 				((Game)Gdx.app.getApplicationListener()).setScreen(startup);
 				
-				startup.startDialog("Welcome to SIS Adventures!\n Start by selecting a building with tapping it,\n you can also change the bulding" +
+				startup.startDialog("Welcome to SIS Adventures!\n\nSolve all the puzzles to get a study place at the\nUniversity of Tampere.\n\nStart by selecting a building with tapping it,\n you can also change the bulding" +
 						" by swiping the screen.");
 			}
 		}).start(tweenManager);

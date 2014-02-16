@@ -39,10 +39,12 @@ public class MainMenu implements Screen {
 	private Skin skin;
 	private Table table;
 	private TextButton buttonPlay, buttonOption, buttonExit;
+	private ImageButton buttonMute, buttonInfo;
+	private ImageButtonStyle imageButtonStyleMute, imageButtonStyleUnmute, imageButtonStyleInfo;
 //	private TextButton buttonScore, buttonHelp;
 	private BitmapFont white, black;
 	private Label heading;
-	private Texture backgroundTexture, textureMute, textureUnmute;
+	private Texture backgroundTexture, textureMute, textureUnmute, textureInfo;
 	private Sprite background;
 	private SpriteBatch batch;
 	
@@ -95,6 +97,9 @@ public class MainMenu implements Screen {
 		textureMute = new Texture(Gdx.files.internal("data/mute_s.png"));                
 		TextureRegion imageMute = new TextureRegion(textureMute);
 		
+		textureInfo=new Texture(Gdx.files.internal("data/info.png"));
+		TextureRegion imageInfo=new TextureRegion(textureInfo);
+		
 		TextButtonStyle textButtonStyle=new TextButtonStyle();
 		textButtonStyle.up=skin.getDrawable("button.up");
 		textButtonStyle.down=skin.getDrawable("button.down");
@@ -102,15 +107,20 @@ public class MainMenu implements Screen {
 		textButtonStyle.pressedOffsetY=-1;
 		textButtonStyle.font=black;
 		
-		ImageButtonStyle imageButtonStyleUnmute = new ImageButtonStyle();
+		imageButtonStyleUnmute = new ImageButtonStyle();
 		imageButtonStyleUnmute.imageUp = new TextureRegionDrawable(imageUnmute);
 		imageButtonStyleUnmute.pressedOffsetX=1;
 		imageButtonStyleUnmute.pressedOffsetY=-1;
 				
-		ImageButtonStyle imageButtonStyleMute = new ImageButtonStyle();
+		imageButtonStyleMute = new ImageButtonStyle();
 		imageButtonStyleMute.imageUp = new TextureRegionDrawable(imageMute);
 		imageButtonStyleMute.pressedOffsetX=1;
 		imageButtonStyleMute.pressedOffsetY=-1;
+		
+		imageButtonStyleInfo=new ImageButtonStyle();
+		imageButtonStyleInfo.imageUp=new TextureRegionDrawable(imageInfo);
+		imageButtonStyleInfo.pressedOffsetX=1;
+		imageButtonStyleInfo.pressedOffsetY=-1;
 		
 		buttonPlay=new TextButton("Back to Game", textButtonStyle);
 		buttonPlay.addListener(new ClickListener(){
@@ -145,22 +155,35 @@ public class MainMenu implements Screen {
 			}
 		});
 		
-		ImageButton buttonUnmute = new ImageButton(imageButtonStyleUnmute);
-		buttonUnmute.addListener(new ClickListener()
-		{
-			@Override
-			public void clicked(InputEvent event, float x, float y) {
-				puzzleAudio.playMusic();
-			}
-		});
 		
-		ImageButton buttonMute = new ImageButton(imageButtonStyleMute);
+		buttonMute = new ImageButton(imageButtonStyleMute);
+		if (!puzzleAudio.isPlaying())
+			buttonMute.setStyle(imageButtonStyleUnmute);
 		buttonMute.addListener(new ClickListener()
 		{
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
-				puzzleAudio.pause();
+				if (puzzleAudio.isPlaying())
+				{
+					puzzleAudio.pause();
+					buttonMute.setStyle(imageButtonStyleUnmute);
+				}
+				else
+				{
+					puzzleAudio.playMusic();
+					buttonMute.setStyle(imageButtonStyleMute);
+				}
+				
 				//puzzleAudio.playMusic();
+			}
+		});
+		
+		buttonInfo=new ImageButton(imageButtonStyleInfo);
+		buttonInfo.addListener(new ClickListener()
+		{
+			@Override
+			public void clicked(InputEvent event, float x, float y) {
+				((Game)Gdx.app.getApplicationListener()).setScreen(new InfoScreen(game));
 			}
 		});
 		
@@ -174,9 +197,9 @@ public class MainMenu implements Screen {
 //		table.add(buttonScore).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row();
 		table.add(buttonOption).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9);
 //		table.add(buttonHelp).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9);
-		table.add(buttonUnmute).row();
-		table.add(buttonExit).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9);
 		table.add(buttonMute).row();
+		table.add(buttonExit).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9);
+		table.add(buttonInfo).row();
 				
 		table.debug();
 		stage.addActor(table);
