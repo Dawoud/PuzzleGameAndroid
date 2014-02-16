@@ -11,13 +11,14 @@ import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
+import com.badlogic.gdx.scenes.scene2d.ui.SelectBox;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle;
-import com.badlogic.gdx.scenes.scene2d.ui.TextField;
-import com.badlogic.gdx.scenes.scene2d.ui.TextField.TextFieldStyle;
+//import com.badlogic.gdx.scenes.scene2d.ui.TextField;
+//import com.badlogic.gdx.scenes.scene2d.ui.TextField.TextFieldStyle;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 
 public class GridPuzzle implements Screen{
@@ -31,7 +32,8 @@ public class GridPuzzle implements Screen{
 	private TextButton buttonBack, buttonCheck;
 	private BitmapFont white, black;
 	private Label heading;
-	private TextField a11, a12, a13, a21, a22, a23, a31, a32, a33;
+	//private TextField a11, a12, a13, a21, a22, a23, a31, a32, a33;
+	private SelectBox a11, a12, a13, a21, a22, a23, a31, a32, a33;
 	int i11,i12,i13,i21,i22,i23,i31,i32,i33;
 	
 	public GridPuzzle(Game game) {
@@ -64,6 +66,8 @@ public class GridPuzzle implements Screen{
 		atlas=new TextureAtlas("ui/button.pack");
 		skin=new Skin(atlas);
 		
+		final Skin skind = new Skin(Gdx.files.internal("data/uiskin.json"));
+		
 		white=new BitmapFont(Gdx.files.internal("font/white.fnt"), false);
 		black=new BitmapFont(Gdx.files.internal("font/black.fnt"), false);
 		
@@ -74,72 +78,73 @@ public class GridPuzzle implements Screen{
 		textButtonStyle.pressedOffsetY=-1;
 		textButtonStyle.font=black;
 		
-		TextFieldStyle textFieldStyle= new TextFieldStyle();
-		textFieldStyle.fontColor = Color.WHITE;
-		textFieldStyle.focusedFontColor = Color.PINK;
-		textFieldStyle.background = skin.getDrawable("button.up");
-		textFieldStyle.font = black;
+//		TextFieldStyle textFieldStyle= new TextFieldStyle();
+//		textFieldStyle.fontColor = Color.WHITE;
+//		textFieldStyle.background = skin.getDrawable("button.up");
+//		textFieldStyle.font = black;
+//		
+//		a11 = new TextField("", textFieldStyle); etc
 		
-		a11 = new TextField("", textFieldStyle); 
-		a12 = new TextField("", textFieldStyle);
-		a13 = new TextField("", textFieldStyle);
-		a21 = new TextField("", textFieldStyle);
-		a22 = new TextField("", textFieldStyle);
-		a23 = new TextField("", textFieldStyle);
-		a31 = new TextField("", textFieldStyle);
-		a32 = new TextField("", textFieldStyle);
-		a33 = new TextField("", textFieldStyle);
 		//possible solution: 2 9 4 7 5 3 6 1 8
+		
+		final SelectBox a11 = new SelectBox(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}, skind);
+		final SelectBox a12 = new SelectBox(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}, skind);
+		final SelectBox a13 = new SelectBox(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}, skind);
+		final SelectBox a21 = new SelectBox(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}, skind);
+		final SelectBox a22 = new SelectBox(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}, skind);
+		final SelectBox a23 = new SelectBox(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}, skind);
+		final SelectBox a31 = new SelectBox(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}, skind);
+		final SelectBox a32 = new SelectBox(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}, skind);
+		final SelectBox a33 = new SelectBox(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}, skind);
 		
 		buttonCheck=new TextButton("Check", textButtonStyle);
 		buttonCheck.addListener(new ClickListener(){
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
-				// TODO Auto-generated method stub
-								
 				//check the result
 				
-				boolean correctanswer;
-				correctanswer = true;
+				boolean correctanswer = true;
 				
-				//1. textfields are not empty
-				if(a11==null || a12==null || a13==null || a21==null || a22==null || a23==null || a31==null || a32==null || a33==null
-						|| a11.getText().length()==0 || a12.getText().length()==0 || a13.getText().length()==0
-						|| a21.getText().length()==0 || a22.getText().length()==0 || a23.getText().length()==0
-						|| a31.getText().length()==0 || a32.getText().length()==0 || a33.getText().length()==0) {
-					correctanswer = false;
-				}
-				
-				//2. input = 1..9
-				if(correctanswer) {
-					if(!(a11.getText().charAt(0) >= 49 && a11.getText().charAt(0) <= 57
-							&& a12.getText().charAt(0) >= 49 && a12.getText().charAt(0) <= 57
-							&& a13.getText().charAt(0) >= 49 && a13.getText().charAt(0) <= 57
-							&& a21.getText().charAt(0) >= 49 && a21.getText().charAt(0) <= 57
-							&& a22.getText().charAt(0) >= 49 && a22.getText().charAt(0) <= 57
-							&& a23.getText().charAt(0) >= 49 && a23.getText().charAt(0) <= 57
-							&& a31.getText().charAt(0) >= 49 && a31.getText().charAt(0) <= 57
-							&& a32.getText().charAt(0) >= 49 && a32.getText().charAt(0) <= 57
-							&& a33.getText().charAt(0) >= 49 && a33.getText().charAt(0) <= 57)){
-						correctanswer = false;
-					}	
-				}
+//				//1. fields are not empty
+//				if(a11==null || a12==null || a13==null || a21==null || a22==null || a23==null || a31==null || a32==null || a33==null
+//						|| a11.getText().length()==0 || a12.getText().length()==0 || a13.getText().length()==0
+//						|| a21.getText().length()==0 || a22.getText().length()==0 || a23.getText().length()==0
+//						|| a31.getText().length()==0 || a32.getText().length()==0 || a33.getText().length()==0) {
+//					correctanswer = false;
+//				}
+//				
+//				//2. input = 1..9
+//				if(correctanswer) {
+//					if(!(a11.getText().charAt(0) >= 49 && a11.getText().charAt(0) <= 57
+//							&& a12.getText().charAt(0) >= 49 && a12.getText().charAt(0) <= 57
+//							&& a13.getText().charAt(0) >= 49 && a13.getText().charAt(0) <= 57
+//							&& a21.getText().charAt(0) >= 49 && a21.getText().charAt(0) <= 57
+//							&& a22.getText().charAt(0) >= 49 && a22.getText().charAt(0) <= 57
+//							&& a23.getText().charAt(0) >= 49 && a23.getText().charAt(0) <= 57
+//							&& a31.getText().charAt(0) >= 49 && a31.getText().charAt(0) <= 57
+//							&& a32.getText().charAt(0) >= 49 && a32.getText().charAt(0) <= 57
+//							&& a33.getText().charAt(0) >= 49 && a33.getText().charAt(0) <= 57)){
+//						correctanswer = false;
+//					}	
+//				}
 				
 				//3. only numbers admitted
-				if(correctanswer){
+				//if(correctanswer){
 					try {
-						i11 = Integer.parseInt(a11.getText());
-						i12 = Integer.parseInt(a12.getText());
-						i13 = Integer.parseInt(a13.getText());
-						i21 = Integer.parseInt(a21.getText());
-						i22 = Integer.parseInt(a22.getText());
-						i23 = Integer.parseInt(a23.getText());
-						i31 = Integer.parseInt(a31.getText());
-						i32 = Integer.parseInt(a32.getText());
-						i33 = Integer.parseInt(a33.getText());
+						//i11 = Integer.parseInt(a11.getText()); etc
+						i11 = a11.getSelectionIndex()+1;
+						i12 = a12.getSelectionIndex()+1;
+						i13 = a13.getSelectionIndex()+1;
+						i21 = a21.getSelectionIndex()+1;
+						i22 = a22.getSelectionIndex()+1;
+						i23 = a23.getSelectionIndex()+1;
+						i31 = a31.getSelectionIndex()+1;
+						i32 = a32.getSelectionIndex()+1;
+						i33 = a33.getSelectionIndex()+1;
 					}
 					catch (NumberFormatException e) {
 						correctanswer = false;
+						System.out.print("NumberFormatException");
 					}
 				
 					//3.1. sums = 15
@@ -148,6 +153,8 @@ public class GridPuzzle implements Screen{
 								&& i11+i21+i31 == 15 && i12+i22+i32 == 15 && i13+i23+i33 == 15
 								&& i11+i22+i33 == 15 && i13+i22+i31 == 15)){
 									correctanswer = false;
+									System.out.print("Sum error");
+									
 						}	
 					}
 				
@@ -162,12 +169,12 @@ public class GridPuzzle implements Screen{
 							|| i23 == i31 || i23 == i32 || i23 == i33 || i31 == i32 || i31 == i33
 							|| i32 == i33){
 							correctanswer = false;
+							System.out.print("Similar numbers");
 						} 
 					}
-				}
+				//}
 				
-				
-				Skin skind = new Skin(Gdx.files.internal("data/uiskin.json"));
+				//Skin skind = new Skin(Gdx.files.internal("data/uiskin.json"));
 				
 				if(correctanswer) {
 					Dialog dialog = new Dialog("Scored", skind)
@@ -177,7 +184,7 @@ public class GridPuzzle implements Screen{
 							((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
 						}
 					}
-					.text("     Congratulations!     ").button("  OK  ").show(stage);
+					.text("        Congratulations!        ").button("  OK  ").show(stage);
 								        
 				}
 				else
@@ -186,18 +193,10 @@ public class GridPuzzle implements Screen{
 					{
 						protected void result (Object object)
 						{
-//							a11.setText("");
-//							a12.setText("");
-//							a13.setText("");
-//							a21.setText("");
-//							a22.setText("");
-//							a23.setText("");
-//							a31.setText("");
-//							a32.setText("");
-//							a33.setText("");
+							//a11.setText(""); etc
 						}
 					}
-					.text("     Do your best!     ").button("  OK  ").show(stage);
+					.text("        Do your best!        ").button("  OK  ").show(stage);
 										
 				}
 			}
@@ -220,29 +219,31 @@ public class GridPuzzle implements Screen{
 		heading.setWidth(0);
 		
 		table = new Table(skin);
-		table.setBounds(0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+		table.setBounds(5, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 		table.layout();
-		table.left();
-		table.top();
+		//table.center();
+		//table.top();
+		table.align(1);
 		
 		table.row();
 		table.add(heading).colspan(4).width(Gdx.graphics.getWidth()).height(Gdx.graphics.getHeight()/3);
 		
+		//a11.setScale(0.6f);
 		table.row();
-		table.add(a11).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
-		table.add(a12).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
-		table.add(a13).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
-		table.add().width(Gdx.graphics.getWidth()*7/10).height(Gdx.graphics.getWidth()/10);
+		table.add(a11).align(16).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
+		table.add(a12).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
+		table.add(a13).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
+		table.add().width(Gdx.graphics.getWidth()*5/8).height(Gdx.graphics.getWidth()/8);
 		table.row();
-		table.add(a21).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
-		table.add(a22).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
-		table.add(a23).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
-		table.add(buttonCheck).width(Gdx.graphics.getWidth()/4).height(Gdx.graphics.getWidth()/10);
+		table.add(a21).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
+		table.add(a22).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
+		table.add(a23).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
+		table.add(buttonCheck).width(Gdx.graphics.getWidth()/4).height(Gdx.graphics.getWidth()/8);
 		table.row();
-		table.add(a31).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
-		table.add(a32).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
-		table.add(a33).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
-		table.add(buttonBack).width(Gdx.graphics.getWidth()/4).height(Gdx.graphics.getWidth()/10);
+		table.add(a31).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
+		table.add(a32).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
+		table.add(a33).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
+		table.add(buttonBack).width(Gdx.graphics.getWidth()/4).height(Gdx.graphics.getWidth()/8);
 		
 		stage.addActor(table);
 		
