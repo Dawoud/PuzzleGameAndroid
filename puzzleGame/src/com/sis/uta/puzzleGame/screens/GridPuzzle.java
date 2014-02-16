@@ -1,5 +1,7 @@
 package com.sis.uta.puzzleGame.screens;
 
+import java.awt.Container;
+
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
@@ -212,8 +214,8 @@ public class GridPuzzle implements Screen{
 		
 		LabelStyle headingStyle=new LabelStyle(white, Color.WHITE);
 		
-		heading=new Label("Use once numbers from 1 to 9 to fill the table. Sum of numbers in each row, column, diagonal must be equal to 15", headingStyle);
-		//heading.setFontScale(0.6f);
+		heading=new Label("Use once each number to fill the table. Sum of numbers in each row, column, diagonal must be equal to 15", headingStyle);
+		//heading.setFontScale(0.5f);
 		heading.setWrap(true);
 		heading.setColor(Color.WHITE);
 		heading.setWidth(0);
@@ -221,16 +223,15 @@ public class GridPuzzle implements Screen{
 		table = new Table(skin);
 		table.setBounds(5, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 		table.layout();
-		//table.center();
-		//table.top();
-		table.align(1);
+		table.top();
+//		table.setTransform(true);
+//		table.setScale(1.8f);
 		
 		table.row();
 		table.add(heading).colspan(4).width(Gdx.graphics.getWidth()).height(Gdx.graphics.getHeight()/3);
 		
-		//a11.setScale(0.6f);
 		table.row();
-		table.add(a11).align(16).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
+		table.add(a11).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
 		table.add(a12).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
 		table.add(a13).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
 		table.add().width(Gdx.graphics.getWidth()*5/8).height(Gdx.graphics.getWidth()/8);
