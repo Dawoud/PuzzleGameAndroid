@@ -14,15 +14,17 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import com.badlogic.gdx.math.Polygon;
+import com.sis.uta.puzzleGame.puzzleGame;
 
 public class GraphPuzzle implements Screen {
 
-	public GraphPuzzle(Game game) {
+	public GraphPuzzle(puzzleGame game) {
 		super();
 		this.game = game;
+		game.Screen=game.GRAPHPUZZLE;
 	}
 
-	private Game game;
+	private puzzleGame game;
 	
 	private Triangle[] trianglesclasses;
 	

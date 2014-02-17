@@ -23,6 +23,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.TextField.TextFieldStyle;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
+import com.sis.uta.puzzleGame.puzzleGame;
 import com.sis.uta.puzzleGame.controller.SectionSelectController;
 
 
@@ -30,10 +31,11 @@ import com.sis.uta.puzzleGame.controller.SectionSelectController;
 
 public class TextPuzzleScreen implements Screen{
 	
-	private Game game;
+	private puzzleGame game;
 	
-	public TextPuzzleScreen(Game game) {
+	public TextPuzzleScreen(puzzleGame game) {
 		this.game = game;
+		game.Screen=game.TEXTPUZZLE;
 	}
 	
 	private Stage stage;

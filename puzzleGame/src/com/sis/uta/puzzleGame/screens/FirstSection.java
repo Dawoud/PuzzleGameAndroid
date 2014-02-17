@@ -26,15 +26,16 @@ import com.sis.uta.puzzleGame.model.Player;
 
 public class FirstSection extends MapScreen {
 
-	public FirstSection(Game game) {
+	public FirstSection(puzzleGame game) {
 		super();
 		this.game = game;
+		game.Screen=game.FIRSTSECTION;
 	}
 
 	private OrthogonalTiledMapRenderer renderer;
 	private OrthographicCamera camera;
 	
-	private Game game;
+	private puzzleGame game;
 	
 	private Player player;
 

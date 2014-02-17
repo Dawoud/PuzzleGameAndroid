@@ -50,11 +50,12 @@ public class SectionSelect extends MapScreen {
 	private float scale;
 	private Stage stage;
 	
-	private Game game;
+	private puzzleGame game;
 	
-	public SectionSelect(Game game)
+	public SectionSelect(puzzleGame game)
 	{
 		this.game = game;
+		game.Screen=game.SECTIONSELECT;
 	}
 	
 	@Override

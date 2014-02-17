@@ -19,14 +19,14 @@ import com.sis.uta.puzzleGame.screens.GraphPuzzle;
 import com.sis.uta.puzzleGame.screens.GridPuzzle;
 import com.sis.uta.puzzleGame.screens.MainMenu;
 import com.sis.uta.puzzleGame.screens.MapScreen;
-import com.sis.uta.puzzleGame.screens.SecondPuzzle;
 import com.sis.uta.puzzleGame.screens.SectionSelect;
+import com.sis.uta.puzzleGame.screens.TextPuzzleScreen;
 
 public class TiledMapInputProcesser implements InputProcessor {
 
-	private Game game;
+	private puzzleGame game;
 	
-	public TiledMapInputProcesser(Game game)
+	public TiledMapInputProcesser(puzzleGame game)
 	{
 		super();
 		this.game = game;
@@ -101,7 +101,7 @@ public class TiledMapInputProcesser implements InputProcessor {
 					((Game)Gdx.app.getApplicationListener()).setScreen(new GridPuzzle(game));
 					break;
 				case 2:
-					((Game)Gdx.app.getApplicationListener()).setScreen(new SecondPuzzle(game));
+					((Game)Gdx.app.getApplicationListener()).setScreen(new TextPuzzleScreen(game));
 					break;
 				case 3:
 					((Game)Gdx.app.getApplicationListener()).setScreen(new GraphPuzzle(game));

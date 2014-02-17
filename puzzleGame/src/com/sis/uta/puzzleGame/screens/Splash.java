@@ -13,15 +13,17 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.sis.uta.puzzleGame.puzzleAudio;
+import com.sis.uta.puzzleGame.puzzleGame;
 import com.sis.uta.puzzleGame.tween.SpriteAccessor;
 
 public class Splash implements Screen {
 	
-	public Splash(Game game) {
+	public Splash(puzzleGame game) {
 		this.game = game;
+		game.Screen=game.SPLASH;
 	}
 
-	private Game game;
+	private puzzleGame game;
 	
 	private SpriteBatch batch;
 	private Sprite splash;

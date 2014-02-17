@@ -17,10 +17,11 @@ import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle;
 import com.badlogic.gdx.scenes.scene2d.utils.Align;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
+import com.sis.uta.puzzleGame.puzzleGame;
 
 public class InfoScreen implements Screen {
 	
-	private Game game;
+	private puzzleGame game;
 	
 	private Stage stage;
 	private TextureAtlas atlas;
@@ -29,9 +30,10 @@ public class InfoScreen implements Screen {
 	private TextButton buttonBack;
 	private BitmapFont white, black;
 
-	public InfoScreen(Game game)
+	public InfoScreen(puzzleGame game)
 	{
 		this.game=game;
+		game.Screen=game.INFO;
 	}
 	
 	@Override

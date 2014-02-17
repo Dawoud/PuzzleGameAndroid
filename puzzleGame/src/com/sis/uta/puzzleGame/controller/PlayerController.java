@@ -5,6 +5,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.math.Rectangle;
+import com.sis.uta.puzzleGame.puzzleGame;
 import com.sis.uta.puzzleGame.model.Player;
 
 public class PlayerController extends TiledMapInputProcesser {
@@ -15,13 +16,13 @@ public class PlayerController extends TiledMapInputProcesser {
 	
 	private int controlmode;
 
-	private Game game;
+	private puzzleGame game;
 
 	private Rectangle[] buttons1;
 	private Rectangle[] buttons2;
 	
 	
-	public PlayerController(Player player, Game game) {
+	public PlayerController(Player player, puzzleGame game) {
 		super(game);
 		this.game = game;
 		this.player = player;

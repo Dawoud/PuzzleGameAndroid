@@ -22,10 +22,11 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle;
 //import com.badlogic.gdx.scenes.scene2d.ui.TextField;
 //import com.badlogic.gdx.scenes.scene2d.ui.TextField.TextFieldStyle;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
+import com.sis.uta.puzzleGame.puzzleGame;
 
 public class GridPuzzle implements Screen{
 	
-	private Game game;
+	private puzzleGame game;
 	
 	private Stage stage;
 	private TextureAtlas atlas;
@@ -38,8 +39,9 @@ public class GridPuzzle implements Screen{
 	private SelectBox a11, a12, a13, a21, a22, a23, a31, a32, a33;
 	int i11,i12,i13,i21,i22,i23,i31,i32,i33;
 	
-	public GridPuzzle(Game game) {
+	public GridPuzzle(puzzleGame game) {
 		this.game = game;
+		game.Screen=game.GRIDPUZZLE;
 	}
 
 	@Override

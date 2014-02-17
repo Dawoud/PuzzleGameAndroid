@@ -21,15 +21,17 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
+import com.sis.uta.puzzleGame.puzzleGame;
 
 public class OptionMenu implements Screen {
 	
-	public OptionMenu(Game game) {
+	public OptionMenu(puzzleGame game) {
 
 		this.game = game;
+		game.Screen=game.OPTIONS;
 	}
 
-	private Game game;
+	private puzzleGame game;
 	
 	private Stage stage;
 	private TextureAtlas atlas;

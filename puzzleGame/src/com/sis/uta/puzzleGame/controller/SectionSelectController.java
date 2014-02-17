@@ -13,10 +13,10 @@ import com.sis.uta.puzzleGame.screens.SectionSelect;
 
 public class SectionSelectController implements GestureListener {
 
-	private Game game;
+	private puzzleGame game;
 	private SectionSelect view;
 	
-	public SectionSelectController(Game game, SectionSelect view) {
+	public SectionSelectController(puzzleGame game, SectionSelect view) {
 //		super(game);
 		this.game = game;
 		this.view = view;

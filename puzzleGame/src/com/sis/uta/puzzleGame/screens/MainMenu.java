@@ -24,15 +24,17 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.sis.uta.puzzleGame.puzzleAudio;
+import com.sis.uta.puzzleGame.puzzleGame;
 
 public class MainMenu implements Screen {
 
-	public MainMenu(Game game) {
+	public MainMenu(puzzleGame game) {
 		
 		this.game = game;
+		game.Screen=game.MAINMENU;
 	}
 
-	private Game game;
+	private puzzleGame game;
 	
 	private Stage stage;
 	private TextureAtlas atlas;

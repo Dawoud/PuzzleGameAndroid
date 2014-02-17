@@ -38,6 +38,7 @@ import com.badlogic.gdx.utils.Timer;
 import com.badlogic.gdx.utils.Timer.Task;
 import com.badlogic.gdx.utils.XmlReader;
 import com.badlogic.gdx.utils.XmlReader.Element;
+import com.sis.uta.puzzleGame.puzzleGame;
 import com.sis.uta.puzzleGame.controller.SectionSelectController;
 
 public class PicturePuzzle implements Screen {
@@ -132,16 +133,16 @@ public class PicturePuzzle implements Screen {
 		
 	}
 
-	public PicturePuzzle(Game game)
+	public PicturePuzzle(puzzleGame game)
 	{
 		super();
 		this.game=game;
-
+		game.Screen=game.PICTUREPUZZLE;
 	}
 	
 	
 	
-	private Game game;
+	private puzzleGame game;
 	
 	private SpriteBatch batch;
 	
