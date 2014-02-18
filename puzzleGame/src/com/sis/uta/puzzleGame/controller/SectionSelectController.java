@@ -1,8 +1,5 @@
 package com.sis.uta.puzzleGame.controller;
 
-import javax.swing.text.View;
-
-import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.input.GestureDetector.GestureListener;
 import com.badlogic.gdx.math.Vector2;
