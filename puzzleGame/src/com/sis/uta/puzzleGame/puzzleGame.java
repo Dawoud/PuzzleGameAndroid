@@ -49,11 +49,13 @@ public class puzzleGame extends Game implements InputProcessor {
 		
 		Texture.setEnforcePotImages(false);
 		
-		menubutton = new Sprite(new Texture("maps/optionsbutton.png"));
-		menubutton.setSize(100, 100);
-		menurectangle = new Rectangle(Gdx.graphics.getWidth() - 100, Gdx.graphics.getHeight() - 100, 100 , 100);
+		menubutton = new Sprite(new Texture("maps/configure-3.png"));
+		menubutton.setSize(50, 50);
+		menurectangle = new Rectangle(Gdx.graphics.getWidth() - 50, Gdx.graphics.getHeight() - 50, 50 , 50);
 		menubutton.setBounds(menurectangle.getX(), menurectangle.getY(), menurectangle.getWidth(), menurectangle.getHeight());
 		menurectangle.setY(0);
+		
+		
 		
 		Gdx.input.setInputProcessor(this);
 		Gdx.input.setCatchBackKey(true);

@@ -7,8 +7,9 @@ import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.math.Rectangle;
 import com.sis.uta.puzzleGame.puzzleGame;
 import com.sis.uta.puzzleGame.model.Player;
+import com.sis.uta.puzzleGame.screens.MainMenu;
 
-public class PlayerController extends TiledMapInputProcesser {
+public class PlayerController implements InputProcessor {
 
 	public final int UP = 1, DOWN = 2, LEFT = 3,  RIGHT = 4;
 	
@@ -23,10 +24,10 @@ public class PlayerController extends TiledMapInputProcesser {
 	
 	
 	public PlayerController(Player player, puzzleGame game) {
-		super(game);
+
 		this.game = game;
 		this.player = player;
-		controlmode = 2;
+		controlmode = 1;
 		
 		float stepX = Gdx.graphics.getWidth()/8;
 		float stepY = Gdx.graphics.getHeight()/6; 
@@ -55,7 +56,6 @@ public class PlayerController extends TiledMapInputProcesser {
 	
 	@Override
 	public boolean keyDown(int keycode) {
-		super.keyDown(keycode);
 		switch(keycode)
 		{
 		case Keys.W:
@@ -76,7 +76,7 @@ public class PlayerController extends TiledMapInputProcesser {
 
 	@Override
 	public boolean keyUp(int keycode) {
-		super.keyUp(keycode);
+
 		switch(keycode)
 		{
 		case Keys.W:
@@ -98,7 +98,7 @@ public class PlayerController extends TiledMapInputProcesser {
 
 	@Override
 	public boolean touchDown(int screenX, int screenY, int pointer, int button) {
-		super.touchDown(screenX, screenY, pointer, button);
+
 		// up and down buttons are at top and bottom of the screen
 		if(controlmode == 1)
 		{
@@ -121,12 +121,17 @@ public class PlayerController extends TiledMapInputProcesser {
 				}
 			}
 		}
+		
+		if(game.getMenurectangle().contains(screenX, screenY))
+		{
+			game.setScreen(new MainMenu(game));
+		}
 		return true;
 	}
 
 	@Override
 	public boolean touchUp(int screenX, int screenY, int pointer, int button) {
-		super.touchUp(screenX, screenY, pointer, button);
+
 		player.setVelocityX(0f);
 		player.setVelocityY(0f);
 		return true;

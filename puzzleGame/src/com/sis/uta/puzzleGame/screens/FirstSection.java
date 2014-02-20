@@ -1,27 +1,20 @@
 package com.sis.uta.puzzleGame.screens;
 
-import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.maps.MapLayer;
 import com.badlogic.gdx.maps.MapProperties;
-import com.badlogic.gdx.maps.objects.RectangleMapObject;
-import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
-import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.sis.uta.puzzleGame.puzzleGame;
 import com.sis.uta.puzzleGame.controller.PlayerController;
-import com.sis.uta.puzzleGame.controller.TiledMapInputProcesser;
 import com.sis.uta.puzzleGame.model.Player;
 
 public class FirstSection extends MapScreen {
@@ -41,13 +34,8 @@ public class FirstSection extends MapScreen {
 
 	/* Variables when we have bigger maps and need to check scrolling */
 	private MapProperties prop;
-	private int mapWidth;
-	private int mapHeight;
 	private int tilePixelWidth;
 	private int tilePixelHeight;
-
-	private int mapPixelWidth;
-	private int mapPixelHeight;
 	
 	private Stage stage;
 	private SpriteBatch spriteBatch;
@@ -55,6 +43,8 @@ public class FirstSection extends MapScreen {
 	private Sprite buttondown;
 	private Sprite buttonleft;
 	private Sprite buttonright;
+	private PlayerController controller;
+	protected TiledMapTileLayer collisionlayer;
 
 	@Override
 	public void render(float delta) {
@@ -117,17 +107,14 @@ public class FirstSection extends MapScreen {
 		/* Stuff that is needed if our map expands so we need scrolling */
 		prop = map.getProperties();
 		
-		mapWidth = prop.get("width", Integer.class);
-		mapHeight = prop.get("height", Integer.class);
 		tilePixelWidth = prop.get("tilewidth", Integer.class);
 		tilePixelHeight = prop.get("tileheight", Integer.class);
 
-		mapPixelWidth = mapWidth * tilePixelWidth;
-		mapPixelHeight = mapHeight * tilePixelHeight;
 		
-		
+		collisionlayer = (TiledMapTileLayer)map.getLayers().get("collisionlayer");
 		/* PLayer */
-		player = new Player(new Sprite(new Texture("maps/character.png")), mapPixelWidth - tilePixelWidth, mapPixelHeight - tilePixelHeight, (TiledMapTileLayer)map.getLayers().get("collisionlayer"), game);
+		player = Player.getInstance(collisionlayer, game);
+		controller = new PlayerController(player, game);
 		
 		/* Buttons to move player around */
 		buttonup = new Sprite(new Texture("maps/movebutton.png"));
@@ -143,10 +130,10 @@ public class FirstSection extends MapScreen {
 		float middleY = Gdx.graphics.getHeight()/2;
 		
 		/* These are normal set positioned on the screen left on left side and up at top etc. */
-		buttonleft.setBounds(0, middleY-stepY, stepX,stepY*2);
-		buttonup.setBounds(middleX-stepX, Gdx.graphics.getHeight()-stepY, stepX*2,stepY);
-		buttonright.setBounds(Gdx.graphics.getWidth()-stepX, middleY-stepY, stepX, stepY*2);
-		buttondown.setBounds(middleX-stepX, 0, stepX*2, stepY);
+//		buttonleft.setBounds(0, middleY-stepY, stepX,stepY*2);
+//		buttonup.setBounds(middleX-stepX, Gdx.graphics.getHeight()-stepY, stepX*2,stepY);
+//		buttonright.setBounds(Gdx.graphics.getWidth()-stepX, middleY-stepY, stepX, stepY*2);
+//		buttondown.setBounds(middleX-stepX, 0, stepX*2, stepY);
 		
 		/* REMEMBER TO CHANGE CONTROLMODE TO 1 /\ OR 2 || IF YOU CHANGE THESE
 		 * AND THIS IS AT PLAYERCONTROLLER 	   ||      \/ 
@@ -154,10 +141,10 @@ public class FirstSection extends MapScreen {
 		
 		/* these are more easily to access, left and up on the left side of the screen
 		 * and down and right on the other side */
-//		buttonup.setBounds(0, middleY, stepX, stepY*2); // up
-//		buttondown.setBounds(Gdx.graphics.getWidth()-stepX, middleY-stepY*2, stepX, stepY*2); // down
-//		buttonleft.setBounds(0, middleY-stepY*2, stepX, stepY*2); // left
-//		buttonright.setBounds(Gdx.graphics.getWidth()-stepX, middleY, stepX, stepY*2); // right
+		buttonup.setBounds(0, middleY, stepX, stepY*2); // up
+		buttondown.setBounds(Gdx.graphics.getWidth()-stepX, middleY-stepY*2, stepX, stepY*2); // down
+		buttonleft.setBounds(0, middleY-stepY*2, stepX, stepY*2); // left
+		buttonright.setBounds(Gdx.graphics.getWidth()-stepX, middleY, stepX, stepY*2); // right
 
 		buttondown.rotate90(false);
 		buttonup.rotate90(true);
@@ -165,7 +152,7 @@ public class FirstSection extends MapScreen {
 		buttonright.rotate90(true);
 		
 		/* Set inputprocessor to playercontroller to move player around */
-		Gdx.input.setInputProcessor(new PlayerController(player, game));
+		Gdx.input.setInputProcessor(controller);
 		
 		
 		// Set up the camera
@@ -213,9 +200,10 @@ public class FirstSection extends MapScreen {
 		Skin skin = new Skin(Gdx.files.internal("data/uiskin.json"));
 		Dialog dialog = new Dialog("Information", skin)
 		{
+
 			protected void result (Object object)
 			{
-				Gdx.input.setInputProcessor(new TiledMapInputProcesser(game));
+				Gdx.input.setInputProcessor(new PlayerController(Player.getInstance(collisionlayer, game), game));
 			}
 		}
 		.text(string).button("  OK  ").show(stage);

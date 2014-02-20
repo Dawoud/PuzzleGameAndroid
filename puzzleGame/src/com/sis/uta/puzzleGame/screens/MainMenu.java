@@ -129,7 +129,7 @@ public class MainMenu implements Screen {
 			
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
-				((Game)Gdx.app.getApplicationListener()).setScreen(new SectionSelect(game));
+				game.setScreen(new FirstSection(game));
 			}
 		});
 		

@@ -1,7 +1,7 @@
 package com.sis.uta.puzzleGame.model;
 
-import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
@@ -13,15 +13,16 @@ import com.sis.uta.puzzleGame.screens.GridPuzzle;
 import com.sis.uta.puzzleGame.screens.PicturePuzzle;
 import com.sis.uta.puzzleGame.screens.TextPuzzleScreen;
 
-public class Player extends Sprite {
-
+ 
+ public class Player extends Sprite{
+	
 	public final int UP = 1, DOWN = 2, LEFT = 3,  RIGHT = 4;
 	public final int NULLTILE = -1, BLOCKED = 0, PUZZLE1 = 1, PUZZLE2 = 2, PUZZLE3 = 3,
 			PUZZLE4 = 4;
 	
-	private int mapPixelWidth, mapPixelHeight;
 	private puzzleGame game;
 	
+	private static Player instance = null; 
 	
 	private int collidecheckstepsize = 2;
 	private String collisionKey; 
@@ -33,15 +34,14 @@ public class Player extends Sprite {
 	private float speed = 60 * 2;
 
 	private TiledMapTileLayer collisionlayer;
-	
-	
-	public Player(Sprite sprite, int mapPixelWidth, int mapPixelHeight, TiledMapTileLayer collisionlayer, Game game) {
-		super(sprite);
-		this.mapPixelWidth = mapPixelWidth;
-		this.mapPixelHeight = mapPixelHeight;
-		this.collisionlayer = collisionlayer;
 
-		this.game = (puzzleGame)game;
+	
+	private Player(TiledMapTileLayer collisionlayer, puzzleGame game) {
+		super(new Sprite(new Texture("maps/character.png")));
+
+		this.collisionlayer = collisionlayer;
+		
+		this.game = game;
 		
 		collisionKey = "blocked";
 		puzzleKey = "puzzle";
@@ -49,13 +49,25 @@ public class Player extends Sprite {
 		setX(300);
 		setY(100);
 	}
+	
+	public static Player getInstance(TiledMapTileLayer collisionlayer, puzzleGame game)
+	{
+		if(instance == null)
+		{
+			return instance = new Player(collisionlayer, game);
+		}
+		else
+		{
+			instance.setTexture(new Texture("maps/character.png"));
+			return instance;
+		}
+	}
 
 	@Override
 	public void draw(SpriteBatch spriteBatch) {
 		
 		update(Gdx.graphics.getDeltaTime());
 		super.draw(spriteBatch);
-		
 	}
 
 	/* Update place */
