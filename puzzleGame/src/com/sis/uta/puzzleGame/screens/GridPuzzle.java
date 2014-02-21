@@ -1,7 +1,5 @@
 package com.sis.uta.puzzleGame.screens;
 
-import java.awt.Container;
-
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
@@ -86,7 +84,6 @@ public class GridPuzzle implements Screen{
 //		textFieldStyle.fontColor = Color.WHITE;
 //		textFieldStyle.background = skin.getDrawable("button.up");
 //		textFieldStyle.font = black;
-//		
 //		a11 = new TextField("", textFieldStyle); etc
 		
 		//possible solution: 2 9 4 7 5 3 6 1 8
@@ -217,7 +214,6 @@ public class GridPuzzle implements Screen{
 		LabelStyle headingStyle=new LabelStyle(white, Color.WHITE);
 		
 		heading=new Label("Use once each number to fill the table. Sum of numbers in each row, column, diagonal must be equal to 15", headingStyle);
-		//heading.setFontScale(0.5f);
 		heading.setWrap(true);
 		heading.setColor(Color.WHITE);
 		heading.setWidth(0);
@@ -230,23 +226,23 @@ public class GridPuzzle implements Screen{
 //		table.setScale(1.8f);
 		
 		table.row();
-		table.add(heading).colspan(4).width(Gdx.graphics.getWidth()).height(Gdx.graphics.getHeight()/3);
+		table.add(heading).colspan(4).width(Gdx.graphics.getWidth()).height(Gdx.graphics.getHeight()*0.4f);
 		
+		table.row().center();
+		table.add(a11).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
+		table.add(a12).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
+		table.add(a13).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
+		table.add().width(Gdx.graphics.getWidth()*7/10).height(Gdx.graphics.getWidth()/10);
 		table.row();
-		table.add(a11).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
-		table.add(a12).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
-		table.add(a13).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
-		table.add().width(Gdx.graphics.getWidth()*5/8).height(Gdx.graphics.getWidth()/8);
+		table.add(a21).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
+		table.add(a22).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
+		table.add(a23).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
+		table.add(buttonCheck).width(Gdx.graphics.getWidth()/5).height(Gdx.graphics.getWidth()/10);
 		table.row();
-		table.add(a21).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
-		table.add(a22).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
-		table.add(a23).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
-		table.add(buttonCheck).width(Gdx.graphics.getWidth()/4).height(Gdx.graphics.getWidth()/8);
-		table.row();
-		table.add(a31).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
-		table.add(a32).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
-		table.add(a33).width(Gdx.graphics.getWidth()/8).height(Gdx.graphics.getWidth()/8);
-		table.add(buttonBack).width(Gdx.graphics.getWidth()/4).height(Gdx.graphics.getWidth()/8);
+		table.add(a31).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
+		table.add(a32).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
+		table.add(a33).width(Gdx.graphics.getWidth()/10).height(Gdx.graphics.getWidth()/10);
+		table.add(buttonBack).width(Gdx.graphics.getWidth()/5).height(Gdx.graphics.getWidth()/10);
 		
 		stage.addActor(table);
 		
