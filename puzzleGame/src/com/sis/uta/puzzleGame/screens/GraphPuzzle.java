@@ -92,86 +92,19 @@ public class GraphPuzzle implements Screen {
 		renderer.flush();
 		renderer.end();
 		
-//		if(Gdx.input.justTouched())
-//		{
-//
-//			Gdx.app.log("Thirdpuzzle", "checking puzzles, total of "+ trianglesclasses().length);
-//			for(int i = 0; i < trianglesclasses().length; ++i)
-//			{
-//				
-//				if(trianglesclasses()[i].contains(Gdx.input.getX(), Gdx.graphics.getHeight()-Gdx.input.getY()))
-//				{
-//					Gdx.app.log("Thirdpuzzle", "found one!");
-//					trianglesclasses()[i].setColour(chosencolor);
-//					break;
-//				}
-//			}
-//			
-//		}
-		
+		// render current color button
 		renderer.begin(ShapeType.Filled);
-//		renderer.setColor(new Color(Color.CYAN));
-//		renderer.rect(0, Gdx.graphics.getHeight()-100, 100, 100);
 		renderer.setColor(new Color(chosencolor));
 		renderer.rect(0, 0, 100, 100);
-//		renderer.setColor(new Color(Color.PINK));
-//		renderer.rect(Gdx.graphics.getWidth()-100, Gdx.graphics.getHeight()-100, 100, 100);
 		renderer.flush();
 		renderer.end();
 		
-		
-		
+		// render other buttons
 		batch.begin();
 		checkButton.draw(batch);
 		backButton.draw(batch);
 		batch.flush();
 		batch.end();
-		
-		
-//		if(Gdx.input.justTouched())
-//		{
-//			if(Gdx.input.getX() < 100)
-//			{
-//				if(Gdx.input.getY() < 100)
-//				{	
-//			
-//					boolean allok = false;
-//					Gdx.app.log("Thirdpuzzle", "Checking triangle colours");
-//					for(int i = 0; i < trianglesclasses().length; ++i)
-//					{
-//						if(!trianglesclasses()[i].checkTriangles())
-//						{
-//							Gdx.app.log("Thirdpuzzle", "Two triangles adjacent each other have the same color :(");
-//							allok = false;
-//							break;
-//						}
-//						else
-//						{
-//							allok = true;
-//						}
-//						
-//					}
-//					if(allok)
-//					{
-//						
-//						game.setScreen(new FirstSection(game));
-//					}
-//				}
-//				else if(Gdx.input.getY() > (Gdx.graphics.getHeight() - 100))
-//				{
-//					if(chosencolor.equals(Color.GREEN))
-//						chosencolor = new Color(Color.BLUE);
-//					else if (chosencolor.equals(Color.BLUE))
-//						chosencolor = new Color(Color.MAGENTA);
-//					else if (chosencolor.equals(Color.MAGENTA))
-//						chosencolor = new Color(Color.GREEN);
-//				}
-//			}
-//			else if(Gdx.input.getX() > Gdx.graphics.getWidth()-100 && Gdx.input.getY() < 100)
-//			{
-//				game.setScreen(new FirstSection(game));
-//			}
-//		}
 		
 	}
 
@@ -189,6 +122,7 @@ public class GraphPuzzle implements Screen {
 		
 		batch=new SpriteBatch();
 	
+		// Button rectangles for controller
 		buttonsArray = new Rectangle[3];
 		
 		buttonsArray[0] = new Rectangle(0, 0, 100, 100);
@@ -205,6 +139,7 @@ public class GraphPuzzle implements Screen {
 		backButton.setSize(100, 100);
 		backButton.setPosition(Gdx.graphics.getWidth()-100, Gdx.graphics.getHeight()-100);
 		
+		// camera configuration
 		camera = new OrthographicCamera();
 		
 		camera.viewportHeight = Gdx.graphics.getHeight();
@@ -220,6 +155,7 @@ public class GraphPuzzle implements Screen {
 		
 		renderer.setProjectionMatrix(camera.combined);
 		
+		// create triangles 
 		createTriangles();
 		
 		trianglesclasses = new PuzzleTriangle[triangles.length/6];
@@ -263,34 +199,9 @@ public class GraphPuzzle implements Screen {
 		trianglesclasses[22].setAdjacentTriangles(trianglesclasses()[21], trianglesclasses()[23], null);
 		trianglesclasses[23].setAdjacentTriangles(trianglesclasses()[22], null, trianglesclasses()[17]);
 		
-//		while(createStaticTriangles()) {};
-		
-//		Create random colours to triangles, just because
-		Random rand = new Random();
-		
-		float r = rand.nextFloat();
-		float g = rand.nextFloat();
-		float b = rand.nextFloat();
-		
-		Color randomColor = new Color(r, g, b, 1 );
-		
-		colours = new Color[trianglescount];
-		
-		colours[0] = randomColor;
-		
-		for(int i = 1; i < trianglescount; ++i)
-		{
-			r = rand.nextFloat();
-			g = rand.nextFloat();
-			b = rand.nextFloat();
-		
-			randomColor = new Color(r, g, b, 1 );
-			
-			colours[i] = randomColor;
-		}
-		
 		chosencolor = new Color(Color.GREEN);
 		
+		// set inputprocessor
 		Gdx.input.setInputProcessor( new GestureDetector( new GraphPuzzleController( game, this )));
 		
 	}
@@ -305,19 +216,17 @@ public class GraphPuzzle implements Screen {
 
 	@Override
 	public void pause() {
-		// TODO Auto-generated method stub
+		game.saveGame();
 
 	}
 
 	@Override
 	public void resume() {
-		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void dispose() {
-		//renderer.dispose();
 
 	}
 	

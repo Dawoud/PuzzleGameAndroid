@@ -59,7 +59,7 @@ public class FirstSection extends MapScreen {
 		renderer.setView(camera);
 		renderer.render();
 		
-		stage.act();
+		stage.act(delta);
 		stage.draw();
 		
 		/* draw player */
@@ -68,10 +68,9 @@ public class FirstSection extends MapScreen {
 		renderer.renderTileLayer((TiledMapTileLayer) map.getLayers().get("frontlayer"));
 		renderer.getSpriteBatch().end();
 		
-		
-		
 		/* draw buttons */
 		spriteBatch.begin();
+		game.drawPoints(spriteBatch);
 		buttondown.draw(spriteBatch);
 		buttonup.draw(spriteBatch);
 		buttonleft.draw(spriteBatch);
@@ -83,9 +82,7 @@ public class FirstSection extends MapScreen {
 
 	@Override
 	public void resize(int width, int height) {
-		/* reset camera when resized */
-		
-		
+
 	}
 
 	@Override
@@ -101,17 +98,18 @@ public class FirstSection extends MapScreen {
 		camera = new OrthographicCamera();
 		
 		/* Create stage for dialog */
-		stage = new Stage();		
+		stage = new Stage();	
 		spriteBatch = new SpriteBatch();
-		
+				
 		/* Stuff that is needed if our map expands so we need scrolling */
 		prop = map.getProperties();
 		
 		tilePixelWidth = prop.get("tilewidth", Integer.class);
 		tilePixelHeight = prop.get("tileheight", Integer.class);
 
-		
+		// collisionlayer for player
 		collisionlayer = (TiledMapTileLayer)map.getLayers().get("collisionlayer");
+		
 		/* PLayer */
 		player = Player.getInstance(collisionlayer, game);
 		controller = new PlayerController(player, game);
@@ -162,23 +160,17 @@ public class FirstSection extends MapScreen {
 
 	@Override
 	public void hide() {
+		game.saveGame();
 		dispose();
-		buttondown.getTexture().dispose();
-		buttonup.getTexture().dispose();
-		buttonleft.getTexture().dispose();
-		buttonright.getTexture().dispose();
-
 	}
 
 	@Override
 	public void pause() {
-		// TODO Auto-generated method stub
-
+		game.saveGame();
 	}
 
 	@Override
 	public void resume() {
-		// TODO Auto-generated method stub
 
 	}
 
@@ -190,10 +182,8 @@ public class FirstSection extends MapScreen {
 		buttonup.getTexture().dispose();
 		buttonleft.getTexture().dispose();
 		buttonright.getTexture().dispose();
-
 	}
 	
-
 	@Override
 	public void startDialog(String string) {
 		Gdx.input.setInputProcessor(stage);

@@ -64,7 +64,13 @@ public class PuzzleTriangle extends Polygon {
 
 	public void setColour(Color colour) {
 		if(changeable)
+		{
 			this.colour = colour;
+		}
+		else
+		{
+			// here should be something to inform the player that triangle cannot be changed
+		}
 	}
 
 	

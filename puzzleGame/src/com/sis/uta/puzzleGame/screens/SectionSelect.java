@@ -58,7 +58,7 @@ public class SectionSelect extends MapScreen {
 		
 		batch.begin();
 		buildings[currentBuilding].draw(batch);
-		((puzzleGame)game).getMenubutton().draw(batch);
+		game.getMenubutton().draw(batch);
 		batch.end();
 		
 		stage.act();
@@ -84,8 +84,6 @@ public class SectionSelect extends MapScreen {
 		
 		/* camera */
 		camera = new OrthographicCamera();
-		
-//		Gdx.input.setInputProcessor(new TiledMapInputProcesser(game));
 		
 		/* Stuff that is needed if our map expands so we need scrolling */
 		prop = map.getProperties();
@@ -139,35 +137,6 @@ public class SectionSelect extends MapScreen {
 		renderer.dispose();
 
 	}
-	
-	public void changeScreen(int input)
-	{
-		switch(input)
-		{
-			/* empty space, continue */
-			case -1:
-				break;
-				
-			/* Main menu area clicked, return */
-			case 0:
-				((Game)Gdx.app.getApplicationListener()).setScreen(new MainMenu(game));
-				break;
-			
-			/* Puzzle area clicked, start first puzzle */
-			case 1:
-				((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
-				break;
-			
-			case 2:
-				
-				Gdx.app.log("SectionSelect", "Second section not implemented yet");
-				break;
-			case 3:
-				Gdx.app.log("SectionSelect", "Third section not implemented yet");
-				break;
-		}
-	}
-	
 
 	@Override
 	public void startDialog(String string) {

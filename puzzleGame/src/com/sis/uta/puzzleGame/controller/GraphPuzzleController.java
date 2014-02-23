@@ -47,7 +47,6 @@ public class GraphPuzzleController implements GestureListener {
 					
 					if(view.trianglesclasses()[i].contains(Gdx.input.getX(), Gdx.graphics.getHeight()-Gdx.input.getY()))
 					{
-						Gdx.app.log("Thirdpuzzle", "found one!");
 						view.trianglesclasses()[i].setColour(view.getChosencolor());
 						break;
 					}
@@ -64,6 +63,7 @@ public class GraphPuzzleController implements GestureListener {
 			{
 				if( view.checkTriangles() )
 				{
+					game.puzzleCompleted(3);
 					game.setScreen(new FirstSection(game));
 				}
 			}
