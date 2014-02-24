@@ -5,13 +5,184 @@
         <answer1>75</answer1>
         <answer2>60</answer2>
         <answer3>70</answer3>
+        <answer4>65</answer4>
         <rightanswer>65</rightanswer>
     </textpuzzle0>
     <textpuzzle1>
-        <question>1+2=</question>
+        <question>What are the next two numbers in the sequence?
+            7, 5, 8, 4, 9, 3</question>
+        <answer1>2,7</answer1>
+        <answer2>3,2</answer2>
+        <answer3>10,2</answer3>
+        <answer4>5,3</answer4>
+        <rightanswer>10,2</rightanswer>
+    </textpuzzle1>
+    <textpuzzle2>
+        <question>What is the next number in the sequence?
+            1,11,21,1211,111221,312211</question>
+        <answer1>13112121</answer1>
+        <answer2>13112211</answer2>
+        <answer3>11322222</answer3>
+        <answer4>13112221</answer4>
+        <rightanswer>13112211</rightanswer>
+    </textpuzzle2>
+    <textpuzzle3>
+        <question>What is the next number in the sequence?
+            8273,3872,2387</question>
+        <answer1>7238</answer1>
+        <answer2>3728</answer2>
+        <answer3>7328</answer3>
+        <answer4>3287</answer4>
+        <rightanswer>7238</rightanswer>
+    </textpuzzle3>   
+    <textpuzzle4>
+        <question>Two trains, 200 km apart, are moving toward each other at the speed of 50 km/hour each. A fly takes off
+from one train flying straight toward the other at the speed of 75 km/hour. Having reached the other train,
+the fly bounces off it and flies back to the first train. The fly repeats the trip until the trains collide
+and the bug is squashed.
+What distance has the fly traveled until its death?</question>
+        <answer1>120</answer1>
+        <answer2>130</answer2>
+        <answer3>140</answer3>
+        <answer4>150</answer4>
+        <rightanswer>150</rightanswer>
+    </textpuzzle4>
+    <textpuzzle5>
+        <question>If it were two hours later, it would be half as long until midnight as it would be if it were an hour later. What time is it now?
+                </question>
+        <answer1>9 pm</answer1>
+        <answer2>8 pm</answer2>
+        <answer3>7 pm</answer3>
+        <answer4>6 pm</answer4>
+        <rightanswer>9 pm</rightanswer>  
+    </textpuzzle5>
+    <textpuzzle6>
+        <question>Using Vigenère ciphering method, decipher the message "xmbhpm" with the key "bit" using Latin alphabet from 'a' to 'z'
+                </question>
+        <answer1>people</answer1>
+        <answer2>weight</answer2>
+        <answer3>ciphe</answer3>
+        <answer4>coding</answer4>
+        <rightanswer>weight</rightanswer>  
+    </textpuzzle6>
+    <textpuzzle7>
+        <question>If 2 painters can paint 2 rooms in 2 hours, how many painters will paint 18 rooms in 6 hours
+                options:</question>
+        <answer1>4</answer1>
+        <answer2>6</answer2>
+        <answer3>10</answer3>
+        <answer4>18</answer4>
+        <rightanswer>6</rightanswer>  
+    </textpuzzle7>
+    <textpuzzle8>
+        <question>Sean caught a prize fish last weekend. He was going to measure it but realized that his ruler was not long enough. He was able to
+measure the head and discovered that it was 9cm long, he then measured the tail and found that it was the length of the head plus
+half the length of the body. If the body was the length of the head plus the tail, what is the total length of the fish?</question>
+        <answer1>44cm</answer1>
+        <answer2>72cm</answer2>
+        <answer3>82cm</answer3>
+        <answer4>84cm</answer4>
+        <rightanswer>72cm</rightanswer>  
+    </textpuzzle8>
+    <textpuzzle9>
+        <question>Gill’s puppy was growing fast. In the first five days since she got it it had eaten 100 dog biscuits. If each day it had eaten 6
+more than the previous day, how many biscuits had it eaten on the first day?</question>
         <answer1>1</answer1>
-        <answer2>4</answer2>
+        <answer2>2</answer2>
+        <answer3>4</answer3>
+        <answer4>8</answer4>
+        <rightanswer>8</rightanswer>  
+    </textpuzzle9>
+    <textpuzzle10>
+        <question>Simon, Steve and Stewart are all apple farmers who pool their crop each year to make cider. For this year’s harvest, Steve
+supplied three times as many apples as Stewart, and Simon supplied twice as many apples as Steve.If the total number of apples
+supplied is 900 tonnes, how many did each of them contribute? options:</question>
+        <answer1>Steve = 270 Simon = 540 Stewart = 90</answer1>
+        <answer2>Steve = 200 Simon = 510 Stewart = 190</answer2>
+        <answer3>Steve = 100 Simon = 400 Stewart = 200</answer3>
+        <answer4>Steve = 270 Simon = 540 Stewart = 100</answer4>
+        <rightanswer>Steve = 270 Simon = 540 Stewart = 90</rightanswer>
+    </textpuzzle10>
+    <textpuzzle11>
+        <question>There is a number which is greater than the aggregate of its third, tenth and the twelfth parts by 58. Can you find the number?</question>
+        <answer1>120</answer1>
+        <answer2>80</answer2>
+        <answer3>92</answer3>
+        <answer4>102</answer4>
+        <rightanswer>120</rightanswer>  
+    </textpuzzle11>
+    <textpuzzle12>
+        <question>What digit is the most frequent between the numbers 1 and 1,000 (inclusive)?</question>
+        <answer1>1</answer1>
+        <answer2>0</answer2>
+        <answer3>2</answer3>
+        <answer4>9</answer4>
+        <rightanswer>9</rightanswer>  
+    </textpuzzle12>
+    <textpuzzle13>
+        <question>What digit is the most frequent between the numbers 1 and 1,000 (inclusive)?</question>
+        <answer1>1</answer1>
+        <answer2>2</answer2>
+        <answer3>0</answer3>
+        <answer4>5</answer4>
+        <rightanswer>0</rightanswer>  
+    </textpuzzle13> 
+    <textpuzzle14>
+        <question>In 1940, a correspondent proposed the following question: A man's age at death was one twenty-ninth of the year of his birth. How old was he in 1900?</question>
+        <answer1>30</answer1>
+        <answer2>55</answer2>
+        <answer3>44</answer3>
+        <answer4>23</answer4>
+        <rightanswer>44</rightanswer>  
+    </textpuzzle14> 
+    <textpuzzle15>
+        <question>A fast food restaurant sells chicken in orders of 6, 9, and 20. What is the largest number of pieces of chicken you cannot order from this restaurant?</question>
+        <answer1>25</answer1>
+        <answer2>57</answer2>
+        <answer3>37</answer3>
+        <answer4>43</answer4>
+        <rightanswer>43</rightanswer>  
+	</textpuzzle15> 
+	<textpuzzle16>
+        <question>Complete the sequence: 1=3, 2=3, 3=5, 4=4, 5=4, 6=3, 7=5, 8=5, 9=4, 10=3, 11=?
+            Options: </question>
+        <answer1>6</answer1>
+        <answer2>2</answer2>
         <answer3>5</answer3>
-        <rightanswer>3</rightanswer>
-    </textpuzzle1>   
+        <answer4>9</answer4>
+        <rightanswer>6</rightanswer>  
+	</textpuzzle16> 
+	<textpuzzle17>
+        <question>A woman has 7 daughters and they each have a brother, how many children does she have?
+Options:</question>
+        <answer1>14</answer1>
+        <answer2>8</answer2>
+        <answer3>15</answer3>
+        <answer4>9</answer4>
+        <rightanswer>8</rightanswer>  
+	</textpuzzle17> 
+	<textpuzzle18>
+        <question>A boy is twice as old as his sister, and half as old as their father. In 50 years, his sister will be half as old as their father. How old is the boy now?</question>
+        <answer1>20</answer1>
+        <answer2>44</answer2>
+        <answer3>50</answer3>
+        <answer4>18</answer4>
+        <rightanswer>50</rightanswer>  
+	</textpuzzle18> 
+	<textpuzzle19>
+        <question>What is the next numbers in this series? 4, 6, 12, 18, 30, 42, 60, 72, 102, 108,...?</question>
+        <answer1>138</answer1>
+        <answer2>124</answer2>
+        <answer3>114</answer3>
+        <answer4>202</answer4>
+        <rightanswer>138</rightanswer>  
+	</textpuzzle19>
+	<textpuzzle20>
+        <question>What is the next number in this series? 0, 1, 1, 2, 3, 5,...?</question>
+        <answer1>7</answer1>
+        <answer2>8</answer2>
+        <answer3>10</answer3>
+        <answer4>9</answer4>
+        <rightanswer>8</rightanswer>  
+	</textpuzzle20>    
 </textpuzzles>

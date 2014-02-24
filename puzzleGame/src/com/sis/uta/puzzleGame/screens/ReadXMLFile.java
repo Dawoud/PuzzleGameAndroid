@@ -20,13 +20,14 @@ public class ReadXMLFile {
 		 
 		 Element root = xml.parse(Gdx.files.internal("data/text.xml"));
 		 
-		 for(;i<2;i++){
+		 for(;i<=20;i++){
 		 Element textpuzzle = root.getChildByName("textpuzzle"+ i);		 
 		 tp = new TextPuzzle();
 		 tp.setQuestion(textpuzzle.get("question"));
-		 tp.setAnsewer1(textpuzzle.get("answer1"));
-		 tp.setAnsewer2(textpuzzle.get("answer2"));
-		 tp.setAnsewer3(textpuzzle.get("answer3"));
+		 tp.setAnswer1(textpuzzle.get("answer1"));
+		 tp.setAnswer2(textpuzzle.get("answer2"));
+		 tp.setAnswer3(textpuzzle.get("answer3"));
+		 tp.setAnswer4(textpuzzle.get("answer4"));
 		 tp.setRightanswer(textpuzzle.get("rightanswer"));
 		 list.add(tp);
 		 }
