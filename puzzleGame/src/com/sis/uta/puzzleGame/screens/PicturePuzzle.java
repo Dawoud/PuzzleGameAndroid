@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
@@ -153,6 +154,8 @@ public class PicturePuzzle implements Screen {
 	private Table table;
 	private Stage stage;
 	private Skin skin;
+	
+	private InputMultiplexer multiplexer;
 
 	private float middleX;
 	private float middleY;
@@ -276,6 +279,9 @@ public class PicturePuzzle implements Screen {
 		
 		skin=new Skin(Gdx.files.internal("data/uiskin.json"));
 		
+		multiplexer=new InputMultiplexer();
+		multiplexer.addProcessor(game);
+		
 		showDialog();
 		
 		table=new Table(skin);
@@ -363,12 +369,17 @@ public class PicturePuzzle implements Screen {
 	
 	public void showDialog()
 	{
-		Gdx.input.setInputProcessor(stage);
+		//Gdx.input.setInputProcessor(stage);
+		multiplexer.addProcessor(stage);
+		Gdx.input.setInputProcessor(multiplexer);
+		
 		dialog=new Dialog("Info", skin, "dialog")
 		{
 			protected void result (Object object)
 			{
-				Gdx.input.setInputProcessor(null);
+				//Gdx.input.setInputProcessor(null);
+				multiplexer.removeProcessor(stage);
+				
 				dialog.setVisible(false);
 			}
 		};

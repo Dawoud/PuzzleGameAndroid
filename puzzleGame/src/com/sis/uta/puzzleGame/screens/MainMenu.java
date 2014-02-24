@@ -2,6 +2,7 @@ package com.sis.uta.puzzleGame.screens;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
@@ -84,7 +85,11 @@ public class MainMenu implements Screen {
 		
 		stage=new Stage();
 		
-		Gdx.input.setInputProcessor(stage);
+		//Gdx.input.setInputProcessor(stage);
+		InputMultiplexer multiplexer=new InputMultiplexer();
+		multiplexer.addProcessor(stage);
+		multiplexer.addProcessor(game);
+		Gdx.input.setInputProcessor(multiplexer);
 		
 		atlas=new TextureAtlas("ui/button.pack");
 		skin=new Skin(atlas);

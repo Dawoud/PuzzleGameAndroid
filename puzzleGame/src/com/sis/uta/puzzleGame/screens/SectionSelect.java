@@ -2,6 +2,7 @@ package com.sis.uta.puzzleGame.screens;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
@@ -112,7 +113,11 @@ public class SectionSelect extends MapScreen {
 			buildings[i].setBounds(0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 		}
 		
-		Gdx.input.setInputProcessor(new GestureDetector(new SectionSelectController(game, this)));
+		//Gdx.input.setInputProcessor(new GestureDetector(new SectionSelectController(game, this)));
+		InputMultiplexer multiplexer=new InputMultiplexer();
+		multiplexer.addProcessor(new GestureDetector(new SectionSelectController(game, this)));
+		multiplexer.addProcessor(game);
+		Gdx.input.setInputProcessor(multiplexer);
 	}
 
 	@Override

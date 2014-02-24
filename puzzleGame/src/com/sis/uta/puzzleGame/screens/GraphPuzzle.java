@@ -3,6 +3,7 @@ package com.sis.uta.puzzleGame.screens;
 import java.util.Random;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Color;
@@ -202,8 +203,11 @@ public class GraphPuzzle implements Screen {
 		chosencolor = new Color(Color.GREEN);
 		
 		// set inputprocessor
-		Gdx.input.setInputProcessor( new GestureDetector( new GraphPuzzleController( game, this )));
-		
+		//Gdx.input.setInputProcessor( new GestureDetector( new GraphPuzzleController( game, this )));
+		InputMultiplexer multiplexer=new InputMultiplexer();
+		multiplexer.addProcessor(new GestureDetector( new GraphPuzzleController( game, this )));
+		multiplexer.addProcessor(game);
+		Gdx.input.setInputProcessor(multiplexer);
 	}
 
 

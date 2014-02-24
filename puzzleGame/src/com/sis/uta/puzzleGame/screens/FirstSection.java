@@ -1,6 +1,7 @@
 package com.sis.uta.puzzleGame.screens;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
@@ -150,8 +151,11 @@ public class FirstSection extends MapScreen {
 		buttonright.rotate90(true);
 		
 		/* Set inputprocessor to playercontroller to move player around */
-		Gdx.input.setInputProcessor(controller);
-		
+		//Gdx.input.setInputProcessor(controller);
+		InputMultiplexer multiplexer=new InputMultiplexer();
+		multiplexer.addProcessor(controller);
+		multiplexer.addProcessor(game);
+		Gdx.input.setInputProcessor(multiplexer);
 		
 		// Set up the camera
 		camera.viewportHeight = tilePixelHeight*20f;
