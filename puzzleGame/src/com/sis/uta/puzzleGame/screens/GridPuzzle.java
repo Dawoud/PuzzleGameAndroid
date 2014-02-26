@@ -187,7 +187,8 @@ public class GridPuzzle implements Screen{
 					{
 						protected void result (Object object)
 						{
-							((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
+							game.puzzleCompleted(1);
+							game.setScreen(new FirstSection(game));
 						}
 					}
 					.text("        Congratulations!        ").button("  OK  ").show(stage);

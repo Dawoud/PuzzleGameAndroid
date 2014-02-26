@@ -274,6 +274,12 @@ public class puzzleGame extends Game implements InputProcessor {
 		}
 		
 	}
+	
+	public void puzzleSubSectionCompleted(int points)
+	{
+		scores += points;
+		scoresString = "Puzzles: " + puzzlesSolved + "/" + puzzles.length + " Score: "+ scores;
+	}
 		
 	/** Draws current score on top left corner of the screen.
 	 * @param batch for drawing the fonts

@@ -66,6 +66,10 @@ public class GraphPuzzleController implements GestureListener {
 					game.puzzleCompleted(3);
 					game.setScreen(new FirstSection(game));
 				}
+				else
+				{
+					view.startDialog("There is two adjacent triangles with same color\n or you haven't picked color for each triangle");
+				}
 			}
 		}
 		

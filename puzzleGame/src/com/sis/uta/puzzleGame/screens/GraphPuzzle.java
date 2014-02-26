@@ -6,25 +6,36 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import com.badlogic.gdx.input.GestureDetector;
 import com.badlogic.gdx.math.Rectangle;
+import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.sis.uta.puzzleGame.puzzleGame;
 import com.sis.uta.puzzleGame.controller.GraphPuzzleController;
+import com.sis.uta.puzzleGame.controller.PlayerController;
+import com.sis.uta.puzzleGame.model.Player;
 import com.sis.uta.puzzleGame.model.PuzzleTriangle;
 
 public class GraphPuzzle implements Screen {
 
+	private GraphPuzzle parent;
+	
 	public GraphPuzzle(puzzleGame game) {
 		super();
 		this.game = game;
+		this.parent = this;
 		game.Screen=game.GRAPHPUZZLE;
 	}
 
@@ -59,6 +70,18 @@ public class GraphPuzzle implements Screen {
 	
 	/* Rectangles for buttons, numbering starting from bottom left and moving up and right */
 	private Rectangle[] buttonsArray;
+
+	private Stage stage;
+
+	private TextureAtlas atlas;
+
+	private Skin skin;
+
+	private BitmapFont instructionsFont;
+
+	private float scoresString;
+
+	private String[] instructionsString;
 	
 	@Override
 	public void render(float delta) {
@@ -104,8 +127,18 @@ public class GraphPuzzle implements Screen {
 		batch.begin();
 		checkButton.draw(batch);
 		backButton.draw(batch);
+		
+		//draw instructions
+		instructionsFont.setColor(new Color(Color.WHITE));
+		instructionsFont.draw(batch, instructionsString[0], 110, Gdx.graphics.getHeight()-15);
+		instructionsFont.draw(batch, instructionsString[1], 110, Gdx.graphics.getHeight()-30);
 		batch.flush();
 		batch.end();
+		
+		stage.act(delta);
+		stage.draw();
+		
+
 		
 	}
 
@@ -123,6 +156,10 @@ public class GraphPuzzle implements Screen {
 		
 		batch=new SpriteBatch();
 	
+		instructionsFont = new BitmapFont();
+		instructionsString = new String[2];
+		instructionsString[0] = "Tap triangles to change their color.";
+		instructionsString[1] = "Color is chosen by the button in bottom left.";
 		// Button rectangles for controller
 		buttonsArray = new Rectangle[3];
 		
@@ -156,6 +193,13 @@ public class GraphPuzzle implements Screen {
 		
 		renderer.setProjectionMatrix(camera.combined);
 		
+		//stage for instructions
+		
+		stage = new Stage();
+		atlas=new TextureAtlas("ui/button.pack");
+		skin=new Skin(atlas);
+		
+				
 		// create triangles 
 		createTriangles();
 		
@@ -168,7 +212,7 @@ public class GraphPuzzle implements Screen {
 			{
 				changeable = false;
 			}
-			PuzzleTriangle triangle = new PuzzleTriangle(new float[] {triangles[i], triangles[i+1], triangles[i+2], triangles[i+3], triangles[i+4], triangles[i+5]},  changeable);
+			PuzzleTriangle triangle = new PuzzleTriangle(new float[] {triangles[i], triangles[i+1], triangles[i+2], triangles[i+3], triangles[i+4], triangles[i+5]},  changeable, this);
 			trianglesclasses()[n] = triangle;
 			i += 6;
 			n++;
@@ -444,6 +488,24 @@ public class GraphPuzzle implements Screen {
 
 	public Rectangle[] getButtonsArray() {
 		return buttonsArray;
+	}
+	
+	public void startDialog(String string) {
+		Gdx.input.setInputProcessor(stage);
+		Skin skin = new Skin(Gdx.files.internal("data/uiskin.json"));
+		Dialog dialog = new Dialog("Information", skin)
+		{
+
+			protected void result (Object object)
+			{
+				InputMultiplexer multiplexer=new InputMultiplexer();
+				multiplexer.addProcessor(new GestureDetector( new GraphPuzzleController( game, parent )));
+				multiplexer.addProcessor(game);
+				Gdx.input.setInputProcessor(multiplexer);
+			}
+		}
+		.text(string).button("  OK  ").show(stage);
+		
 	}
 
 }

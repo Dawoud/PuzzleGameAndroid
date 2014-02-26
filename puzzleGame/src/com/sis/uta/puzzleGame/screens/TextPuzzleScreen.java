@@ -111,7 +111,7 @@ public class TextPuzzleScreen implements Screen{
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
 				// TODO Auto-generated method stub				
-				((Game)Gdx.app.getApplicationListener()).setScreen(new FirstSection(game));
+				game.setScreen(new FirstSection(game));
 			}
 		});
 		
@@ -138,8 +138,8 @@ public class TextPuzzleScreen implements Screen{
 
 						@Override
 						public void clicked(InputEvent event, float x, float y) {
-							// TODO Auto-generated method stub
-							((Game)Gdx.app.getApplicationListener()).setScreen(new TextPuzzleScreen(game));
+							game.puzzleSubSectionCompleted(1);
+							game.setScreen(new TextPuzzleScreen(game));
 						}
 						
 					});
@@ -178,8 +178,8 @@ public class TextPuzzleScreen implements Screen{
 
 						@Override
 						public void clicked(InputEvent event, float x, float y) {
-							// TODO Auto-generated method stub
-							((Game)Gdx.app.getApplicationListener()).setScreen(new TextPuzzleScreen(game));
+							game.puzzleSubSectionCompleted(1);
+							game.setScreen(new TextPuzzleScreen(game));
 						}
 						
 					});
@@ -218,8 +218,8 @@ public class TextPuzzleScreen implements Screen{
 
 						@Override
 						public void clicked(InputEvent event, float x, float y) {
-							// TODO Auto-generated method stub
-							((Game)Gdx.app.getApplicationListener()).setScreen(new TextPuzzleScreen(game));
+							game.puzzleSubSectionCompleted(1);
+							game.setScreen(new TextPuzzleScreen(game));
 						}
 						
 					});
@@ -258,8 +258,8 @@ public class TextPuzzleScreen implements Screen{
 
 						@Override
 						public void clicked(InputEvent event, float x, float y) {
-							// TODO Auto-generated method stub
-							((Game)Gdx.app.getApplicationListener()).setScreen(new TextPuzzleScreen(game));
+							game.puzzleSubSectionCompleted(1);
+							game.setScreen(new TextPuzzleScreen(game));
 						}
 						
 					});

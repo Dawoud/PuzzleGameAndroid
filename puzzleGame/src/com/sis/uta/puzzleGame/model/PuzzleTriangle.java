@@ -2,6 +2,7 @@ package com.sis.uta.puzzleGame.model;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.math.Polygon;
+import com.sis.uta.puzzleGame.screens.GraphPuzzle;
 
 public class PuzzleTriangle extends Polygon {
 
@@ -9,13 +10,15 @@ public class PuzzleTriangle extends Polygon {
 	private Color colour;
 	private boolean changeable;
 	private float[] vertices;
+	private GraphPuzzle view;
 	
-	public PuzzleTriangle(float[] vertices, boolean changeable)
+	public PuzzleTriangle(float[] vertices, boolean changeable, GraphPuzzle view)
 	{
 		super(vertices);
 		colour = new Color(Color.WHITE);
 		this.vertices = vertices;
 		this.changeable = changeable;
+		this.view = view;
 		
 		if(!changeable)
 		{
@@ -69,7 +72,7 @@ public class PuzzleTriangle extends Polygon {
 		}
 		else
 		{
-			// here should be something to inform the player that triangle cannot be changed
+			view.startDialog("You can't change this triangle's color");
 		}
 	}
 

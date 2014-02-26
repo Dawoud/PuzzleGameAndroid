@@ -231,7 +231,7 @@ public class PicturePuzzle implements Screen {
 
 					@Override
 					public void run() {
-						// TODO Auto-generated method stub
+						game.puzzleCompleted(4);
 						game.setScreen(new FirstSection(game));
 					}}, delay);
 			}
