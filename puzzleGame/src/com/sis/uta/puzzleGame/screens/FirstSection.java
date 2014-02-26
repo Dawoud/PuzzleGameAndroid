@@ -60,8 +60,6 @@ public class FirstSection extends MapScreen {
 		renderer.setView(camera);
 		renderer.render();
 		
-		stage.act(delta);
-		stage.draw();
 		
 		/* draw player */
 		renderer.getSpriteBatch().begin();
@@ -78,6 +76,10 @@ public class FirstSection extends MapScreen {
 		buttonright.draw(spriteBatch);
 		((puzzleGame)game).getMenubutton().draw(spriteBatch);
 		spriteBatch.end();
+		
+
+		stage.act(delta);
+		stage.draw();
 	
 	}
 

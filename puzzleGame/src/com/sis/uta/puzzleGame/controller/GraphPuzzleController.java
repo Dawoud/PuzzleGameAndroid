@@ -64,7 +64,11 @@ public class GraphPuzzleController implements GestureListener {
 				if( view.checkTriangles() )
 				{
 					game.puzzleCompleted(3);
-					game.setScreen(new FirstSection(game));
+					FirstSection first = new FirstSection(game);
+					game.setScreen(first);
+					first.startDialog("Thank you for helping me! If you're looking for something to do, there's\none professor" +
+							"who's in great need of help, you can find him\nin the room other side of the lobby. It used to be a" +
+							"bookstore.");
 				}
 				else
 				{

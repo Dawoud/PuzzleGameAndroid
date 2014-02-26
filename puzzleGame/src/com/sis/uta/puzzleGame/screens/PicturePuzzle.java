@@ -40,6 +40,7 @@ import com.badlogic.gdx.utils.Timer.Task;
 import com.badlogic.gdx.utils.XmlReader;
 import com.badlogic.gdx.utils.XmlReader.Element;
 import com.sis.uta.puzzleGame.puzzleGame;
+import com.sis.uta.puzzleGame.controller.GraphPuzzleController;
 import com.sis.uta.puzzleGame.controller.SectionSelectController;
 
 public class PicturePuzzle implements Screen {
@@ -387,5 +388,20 @@ public class PicturePuzzle implements Screen {
 		dialog.button("OK", true);
 		dialog.show(stage);
 	}
+	
+	public void startDialog(String string) {
+		Gdx.input.setInputProcessor(stage);
+		Skin skin = new Skin(Gdx.files.internal("data/uiskin.json"));
+		Dialog dialog = new Dialog("Information", skin)
+		{
+
+			protected void result (Object object)
+			{
+			}
+		}
+		.text(string).button("  OK  ").show(stage);
+		
+	}
+
 
 }

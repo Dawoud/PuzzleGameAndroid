@@ -8,6 +8,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.input.GestureDetector;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
@@ -22,6 +23,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle;
 //import com.badlogic.gdx.scenes.scene2d.ui.TextField.TextFieldStyle;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.sis.uta.puzzleGame.puzzleGame;
+import com.sis.uta.puzzleGame.controller.GraphPuzzleController;
 
 public class GridPuzzle implements Screen{
 	
@@ -188,7 +190,11 @@ public class GridPuzzle implements Screen{
 						protected void result (Object object)
 						{
 							game.puzzleCompleted(1);
-							game.setScreen(new FirstSection(game));
+							FirstSection first = new FirstSection(game);
+							game.setScreen(first);
+							first.startDialog("Thank you! You really are a great puzzle solver! Almost as good as\n our employee" 
+									+" Jaska. You should go and see him, I heard he has some really hard puzzles to solve.\n"
+									+" Jaska is at the farthest corner of the library");
 						}
 					}
 					.text("        Congratulations!        ").button("  OK  ").show(stage);
@@ -275,6 +281,20 @@ public class GridPuzzle implements Screen{
 	@Override
 	public void dispose() {
 		// TODO Auto-generated method stub
+		
+	}
+	
+	public void startDialog(String string) {
+		Skin skin = new Skin(Gdx.files.internal("data/uiskin.json"));
+		Dialog dialog = new Dialog("Information", skin)
+		{
+
+			protected void result (Object object)
+			{
+				
+			}
+		}
+		.text(string).button("  OK  ").show(stage);
 		
 	}
 

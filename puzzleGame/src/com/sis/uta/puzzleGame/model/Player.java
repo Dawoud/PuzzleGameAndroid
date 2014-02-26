@@ -182,20 +182,7 @@ import com.sis.uta.puzzleGame.screens.TextPuzzleScreen;
 			if(cellType > BLOCKED)
 			{
 				Gdx.app.log("Player", "Puzzletile noticed!");
-				switch(cellType)
-				{
-				case PUZZLE1:
-					game.setScreen(new GridPuzzle(game));
-					break;
-				case PUZZLE2:
-					game.setScreen(new TextPuzzleScreen(game));
-					break;
-				case PUZZLE3:
-					game.setScreen(new GraphPuzzle(game));
-					break;
-				case PUZZLE4:
-					game.setScreen(new PicturePuzzle(game));
-				}
+				startPuzzle(cellType);
 				return true;
 			}
 		}
@@ -215,20 +202,7 @@ import com.sis.uta.puzzleGame.screens.TextPuzzleScreen;
 			if(cellType > BLOCKED)
 			{
 				Gdx.app.log("Player", "Puzzletile noticed!");
-				switch(cellType)
-				{
-				case PUZZLE1:
-					game.setScreen(new GridPuzzle(game));
-					break;
-				case PUZZLE2:
-					game.setScreen(new TextPuzzleScreen(game));
-					break;
-				case PUZZLE3:
-					game.setScreen(new GraphPuzzle(game));
-					break;
-				case PUZZLE4:
-					game.setScreen(new PicturePuzzle(game));
-				}
+				startPuzzle(cellType);
 				return true;
 			}
 		}
@@ -248,20 +222,7 @@ import com.sis.uta.puzzleGame.screens.TextPuzzleScreen;
 			if(cellType > BLOCKED)
 			{
 				Gdx.app.log("Player", "Puzzletile noticed!");
-				switch(cellType)
-				{
-				case PUZZLE1:
-					game.setScreen(new GridPuzzle(game));
-					break;
-				case PUZZLE2:
-					game.setScreen(new TextPuzzleScreen(game));
-					break;
-				case PUZZLE3:
-					game.setScreen(new GraphPuzzle(game));
-					break;
-				case PUZZLE4:
-					game.setScreen(new PicturePuzzle(game));
-				}
+				startPuzzle(cellType);
 				return true;
 			}
 		}
@@ -281,21 +242,7 @@ import com.sis.uta.puzzleGame.screens.TextPuzzleScreen;
 			if(cellType > BLOCKED)
 			{
 				Gdx.app.log("Player", "Puzzletile noticed!");
-				switch(cellType)
-				{
-				
-				case PUZZLE1:
-					game.setScreen(new GridPuzzle(game));
-					break;
-				case PUZZLE2:
-					game.setScreen(new TextPuzzleScreen(game));
-					break;
-				case PUZZLE3:
-					game.setScreen(new GraphPuzzle(game));
-					break;
-				case PUZZLE4:
-					game.setScreen(new PicturePuzzle(game));
-				}
+				startPuzzle(cellType);
 				return true;
 			}
 		}
@@ -308,6 +255,37 @@ import com.sis.uta.puzzleGame.screens.TextPuzzleScreen;
 	
 	public void setVelocityY(float y) {
 		velocity.y = y;
+	}
+	
+	private void startPuzzle(int cellType)
+	{
+		switch(cellType)
+		{
+		
+		case PUZZLE1:
+			GridPuzzle puzzle = new GridPuzzle(game);
+			game.setScreen(puzzle);
+			puzzle.startDialog("Can you help me? I need to solve this gridpuzzle\n to open this safe. My boss forgot to"
+			+" tell me \nthe right code and now I'm stuck with this \" safety \" puzzle");
+			break;
+		case PUZZLE2:
+			TextPuzzleScreen puzzle2 = new TextPuzzleScreen(game);
+			game.setScreen(puzzle2);
+			puzzle2.startDialog("Yea I got couple of puzzles to solve for you,\n but I must worn you, even I struggled with" +
+					"most of them.");
+			
+			// after solving jaska's puzzles player is forwarded into cafeteria for graphpuzzle
+			break;
+		case PUZZLE3:
+			GraphPuzzle puzzle3 = new GraphPuzzle(game); 
+			game.setScreen(puzzle3);
+			puzzle3.startDialog("Thank you for coming! \nI heard that there was someone in the house\nwho's capable to solve puzzles" +
+					". \nI need you to solve this graphpuzzle for me.");
+			break;
+		case PUZZLE4:
+			PicturePuzzle puzzle4 = new PicturePuzzle(game);
+			game.setScreen(puzzle4);
+		}
 	}
 	
 }

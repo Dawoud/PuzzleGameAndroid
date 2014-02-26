@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
@@ -23,6 +24,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.TextField.TextFieldStyle;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.sis.uta.puzzleGame.puzzleGame;
+import com.sis.uta.puzzleGame.controller.GraphPuzzleController;
 
 
 
@@ -559,6 +561,20 @@ public class TextPuzzleScreen implements Screen{
 	@Override
 	public void dispose() {
 		// TODO Auto-generated method stub
+		
+	}
+	
+	public void startDialog(String string) {
+		Skin skin = new Skin(Gdx.files.internal("data/uiskin.json"));
+		Dialog dialog = new Dialog("Information", skin)
+		{
+
+			protected void result (Object object)
+			{
+				
+			}
+		}
+		.text(string).button("  OK  ").show(stage);
 		
 	}
 }

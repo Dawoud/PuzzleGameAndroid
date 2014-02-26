@@ -43,7 +43,9 @@ public class SectionSelectController implements GestureListener {
 			switch(view.getCurrentBuilding())
 			{
 			case SectionSelect.LINNA:
-				game.setScreen(new FirstSection(game));
+				FirstSection first = new FirstSection(game);
+				game.setScreen(first);
+				first.startDialog("I think you should start your journey with seeing\n a librarian and see if he has anything to say");
 				break;
 			case SectionSelect.PAATALO:
 				view.startDialog("Second section hasn't been implemented yet");
