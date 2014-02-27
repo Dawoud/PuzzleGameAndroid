@@ -257,8 +257,9 @@ public class puzzleGame extends Game implements InputProcessor {
 	 */
 	public void puzzleCompleted(int index)
 	{
-		if(index <= puzzles.length && index > 0)
+		if(index <= puzzles.length && index > 0 && puzzles[index-1].equals("0"))
 		{
+			
 			// puzzle solved
 			puzzles[index-1] = "1";
 			
@@ -268,17 +269,16 @@ public class puzzleGame extends Game implements InputProcessor {
 			
 			scoresString = "Puzzles: " + puzzlesSolved + "/" + puzzles.length + " Score: "+ scores;
 		}
-		else
-		{
-			Gdx.app.log("Main", "Puzzle with given index was not found");
-		}
 		
 	}
 	
-	public void puzzleSubSectionCompleted(int points)
+	public void puzzleSubSectionCompleted(int points, int index )
 	{
-		scores += points;
-		scoresString = "Puzzles: " + puzzlesSolved + "/" + puzzles.length + " Score: "+ scores;
+		if(index <= puzzles.length && index > 0 && puzzles[index-1].equals("0"))
+		{
+			scores += points;
+			scoresString = "Puzzles: " + puzzlesSolved + "/" + puzzles.length + " Score: "+ scores;
+		}
 	}
 		
 	/** Draws current score on top left corner of the screen.

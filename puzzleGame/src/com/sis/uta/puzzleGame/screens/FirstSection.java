@@ -190,13 +190,11 @@ public class FirstSection extends MapScreen {
 		buttonright.getTexture().dispose();
 	}
 	
-	@Override
 	public void startDialog(String string) {
 		Gdx.input.setInputProcessor(stage);
 		Skin skin = new Skin(Gdx.files.internal("data/uiskin.json"));
 		Dialog dialog = new Dialog("Information", skin)
 		{
-
 			protected void result (Object object)
 			{
 				Gdx.input.setInputProcessor(new PlayerController(Player.getInstance(collisionlayer, game), game));

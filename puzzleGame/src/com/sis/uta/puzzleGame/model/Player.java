@@ -2,8 +2,10 @@ package com.sis.uta.puzzleGame.model;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer.Cell;
 import com.badlogic.gdx.math.Vector2;
@@ -34,6 +36,13 @@ import com.sis.uta.puzzleGame.screens.TextPuzzleScreen;
 	private float speed = 60 * 2;
 
 	private TiledMapTileLayer collisionlayer;
+	
+	private Animation up, down, left, right;
+	private float animationTime = 0;
+	private TextureRegion currentFrame;
+	private Texture animationsheet;
+	private TextureRegion[] downFrames, upFrames, leftFrames, rightFrames;
+	private static TextureRegion stillFrame;
 
 	
 	private Player(TiledMapTileLayer collisionlayer, puzzleGame game) {
@@ -45,6 +54,8 @@ import com.sis.uta.puzzleGame.screens.TextPuzzleScreen;
 		
 		collisionKey = "blocked";
 		puzzleKey = "puzzle";
+		
+		loadTextures();
 		
 		setX(300);
 		setY(100);
@@ -58,9 +69,34 @@ import com.sis.uta.puzzleGame.screens.TextPuzzleScreen;
 		}
 		else
 		{
-			instance.setTexture(new Texture("maps/character.png"));
+			instance.loadTextures();
 			return instance;
 		}
+	}
+	
+	private void loadTextures()
+	{
+		animationsheet = new Texture("maps/character1.png");
+		
+		TextureRegion[][] tmp = TextureRegion.split(animationsheet, animationsheet.getWidth()/3, animationsheet.getHeight()/4);
+		
+		// size of different states in texture
+		upFrames = new TextureRegion[] {tmp[3][0], tmp[3][1], tmp[3][2]};
+		downFrames = new TextureRegion[] {tmp[2][0], tmp[2][1], tmp[2][2]};
+		leftFrames = new TextureRegion[] {tmp[0][0], tmp[0][1], tmp[0][2]};
+		rightFrames = new TextureRegion[] {tmp[1][0], tmp[1][1], tmp[1][2]};
+		
+		stillFrame = downFrames[1];
+		
+		up = new Animation(1/6f, upFrames);
+		down = new Animation(1/6f, downFrames);
+		left = new Animation(1/6f, leftFrames);
+		right = new Animation(1/6f, rightFrames);
+		
+		up.setPlayMode(Animation.LOOP);
+		down.setPlayMode(Animation.LOOP);
+		left.setPlayMode(Animation.LOOP);
+		right.setPlayMode(Animation.LOOP);
 	}
 
 	@Override
@@ -121,7 +157,34 @@ import com.sis.uta.puzzleGame.screens.TextPuzzleScreen;
 		{
 			velocity.y = speed;
 		}
+			
+		animationTime += deltaTime;
 		
+		currentFrame = stillFrame;
+		// Animations
+		if(velocity.x > 0)
+		{
+			// moving right
+			currentFrame = right.getKeyFrame(animationTime);
+		}
+		else if(velocity.x < 0)
+		{
+			// moving left
+			currentFrame = left.getKeyFrame(animationTime);
+		}
+		
+		if(velocity.y > 0)
+		{
+			// moving up
+			currentFrame = up.getKeyFrame(animationTime);
+		}
+		else if(velocity.y < 0)
+		{
+			//moving down
+			currentFrame = down.getKeyFrame(animationTime);
+		}
+		
+		setRegion(currentFrame);
 	}
 
 	public void move(int direction) {

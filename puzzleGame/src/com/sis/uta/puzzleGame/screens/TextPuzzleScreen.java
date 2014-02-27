@@ -140,7 +140,7 @@ public class TextPuzzleScreen implements Screen{
 
 						@Override
 						public void clicked(InputEvent event, float x, float y) {
-							game.puzzleSubSectionCompleted(1);
+							game.puzzleSubSectionCompleted(1, 2);
 							game.setScreen(new TextPuzzleScreen(game));
 						}
 						
@@ -180,7 +180,7 @@ public class TextPuzzleScreen implements Screen{
 
 						@Override
 						public void clicked(InputEvent event, float x, float y) {
-							game.puzzleSubSectionCompleted(1);
+							game.puzzleSubSectionCompleted(1, 2);
 							game.setScreen(new TextPuzzleScreen(game));
 						}
 						
@@ -220,7 +220,7 @@ public class TextPuzzleScreen implements Screen{
 
 						@Override
 						public void clicked(InputEvent event, float x, float y) {
-							game.puzzleSubSectionCompleted(1);
+							game.puzzleSubSectionCompleted(1, 2);
 							game.setScreen(new TextPuzzleScreen(game));
 						}
 						
@@ -260,7 +260,7 @@ public class TextPuzzleScreen implements Screen{
 
 						@Override
 						public void clicked(InputEvent event, float x, float y) {
-							game.puzzleSubSectionCompleted(1);
+							game.puzzleSubSectionCompleted(1, 2);
 							game.setScreen(new TextPuzzleScreen(game));
 						}
 						
