@@ -334,7 +334,7 @@ import com.sis.uta.puzzleGame.screens.TextPuzzleScreen;
 		case PUZZLE2:
 			TextPuzzleScreen puzzle2 = new TextPuzzleScreen(game);
 			game.setScreen(puzzle2);
-			puzzle2.startDialog("Yea I got couple of puzzles to solve for you,\n but I must worn you, even I struggled with" +
+			puzzle2.startDialog("Yea I got couple of puzzles to solve for you,\n but I must warn you, even I struggled with" +
 					"most of them.");
 			
 			// after solving jaska's puzzles player is forwarded into cafeteria for graphpuzzle
