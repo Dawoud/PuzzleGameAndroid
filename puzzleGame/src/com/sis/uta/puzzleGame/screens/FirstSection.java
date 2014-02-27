@@ -167,12 +167,7 @@ public class FirstSection extends MapScreen {
 		{
 			startDialog("Congratulations!\nYou have completed the first section of this game!\nTake a look at other sections or try " +
 					"old puzzles again.");
-		}
-		else
-		{
-			startDialog("I think you should start your journey with seeing\n a librarian and see if he has anything to say");
-		}
-		
+		}		
 	}
 
 	@Override
