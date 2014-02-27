@@ -167,7 +167,6 @@ public class puzzleGame extends Game implements InputProcessor {
 
 	@Override
 	public boolean keyDown(int keycode) {
-		// TODO Auto-generated method stub
 		if(keycode == Keys.BACK)
 		{
             switch (Screen)
@@ -212,43 +211,36 @@ public class puzzleGame extends Game implements InputProcessor {
 
 	@Override
 	public boolean keyUp(int keycode) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean keyTyped(char character) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean touchDown(int screenX, int screenY, int pointer, int button) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean touchUp(int screenX, int screenY, int pointer, int button) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean touchDragged(int screenX, int screenY, int pointer) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean mouseMoved(int screenX, int screenY) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean scrolled(int amount) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
@@ -270,6 +262,18 @@ public class puzzleGame extends Game implements InputProcessor {
 			scoresString = "Puzzles: " + puzzlesSolved + "/" + puzzles.length + " Score: "+ scores;
 		}
 		
+	}
+	
+	public boolean sectionCompleted(int index)
+	{
+		for(int i = 0; i < puzzles.length; ++i)
+		{
+			if(puzzles[i].equals("0"))
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 	
 	public void puzzleSubSectionCompleted(int points, int index )

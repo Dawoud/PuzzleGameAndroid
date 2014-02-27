@@ -162,6 +162,17 @@ public class FirstSection extends MapScreen {
 		// Set up the camera
 		camera.viewportHeight = tilePixelHeight*20f;
 		camera.viewportWidth = tilePixelWidth*20f;
+		
+		if(game.sectionCompleted(1))
+		{
+			startDialog("Congratulations!\nYou have completed the first section of this game!\nTake a look at other sections or try " +
+					"old puzzles again.");
+		}
+		else
+		{
+			startDialog("I think you should start your journey with seeing\n a librarian and see if he has anything to say");
+		}
+		
 	}
 
 	@Override
@@ -177,7 +188,7 @@ public class FirstSection extends MapScreen {
 
 	@Override
 	public void resume() {
-
+		show();
 	}
 
 	@Override
