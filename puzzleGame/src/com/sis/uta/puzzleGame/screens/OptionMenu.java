@@ -38,7 +38,7 @@ public class OptionMenu implements Screen {
 	private TextureAtlas atlas;
 	private Skin skin;
 	private Table table;
-	private TextButton buttonMusic, buttonSound, buttonLanguage, buttonBack;
+	private TextButton buttonBack;
 	private Slider musicSlider, soundSlider;
 	private SelectBox languageBox;
 	private BitmapFont white, black, white_normal;
@@ -101,17 +101,12 @@ batch=new SpriteBatch();
 		textButtonStyle.pressedOffsetY=-1;
 		textButtonStyle.font=black;
 		
-		buttonMusic=new TextButton("Music", textButtonStyle);
 		
 		Skin sliderSkin=new Skin(Gdx.files.internal("data/uiskin.json"));
 		
 		musicSlider=new Slider(0, 20, 1, false, sliderSkin);
 		
 		soundSlider=new Slider(0, 20, 1, false, sliderSkin);
-		
-		buttonSound=new TextButton("Sound", textButtonStyle);
-		
-		buttonLanguage=new TextButton("Language", textButtonStyle);
 		
 		languageBox=new SelectBox(new String[]{"English", "Suomi"}, sliderSkin);
 		
