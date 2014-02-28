@@ -2,6 +2,7 @@ package com.sis.uta.puzzleGame.screens;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
@@ -47,6 +48,42 @@ public class PicturePuzzle implements Screen {
 	
 	private BitmapFont white_normal=new BitmapFont(Gdx.files.internal("font/white_normal.fnt"), false);
 	private LabelStyle normalStyle=new LabelStyle(white_normal, Color.WHITE);
+	
+	public class PicPuzzle{
+		private String picture;
+		private String description;
+		
+		public PicPuzzle()
+		{
+			picture="";
+			description="";
+		}
+		
+		public PicPuzzle(String pic, String desc)
+		{
+			picture=pic;
+			description=desc;
+		}
+		
+		public void setPicture(String pic)
+		{
+			picture=pic;
+		}
+		
+		public void setDescription(String desc)
+		{
+			description=desc;
+		}
+		
+		public String getPicture()
+		{
+			return picture;
+		}
+		
+		public String getDescription() {
+			return description;
+		}
+	}
 	
 	public class SpotObject
 	{
@@ -134,14 +171,6 @@ public class PicturePuzzle implements Screen {
 //		}
 		
 	}
-
-	public PicturePuzzle(puzzleGame game)
-	{
-		super();
-		this.game=game;
-		game.Screen=game.PICTUREPUZZLE;
-	}
-	
 	
 	
 	private puzzleGame game;
@@ -169,7 +198,21 @@ public class PicturePuzzle implements Screen {
 	
 	private Dialog dialog;
 	
+	private ArrayList<PicPuzzle> puzzleList;
+	
 	private ArrayList<SpotObject> objectList;
+	
+	private PicPuzzle actPuzzle;
+	
+	public PicturePuzzle(puzzleGame game)
+	{
+		super();
+		this.game=game;
+		game.Screen=game.PICTUREPUZZLE;
+		puzzleList=new ArrayList<PicPuzzle>();
+		puzzleList.add(new PicPuzzle("puzzle/comproom.png", "puzzle/comproomdesc.xml"));
+		puzzleList.add(new PicPuzzle("puzzle/office2.png", "puzzle/office2desc.xml"));
+	}
 	
 	@Override
 	public void render(float delta) {
@@ -263,17 +306,6 @@ public class PicturePuzzle implements Screen {
 		camera = new OrthographicCamera(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 		camera.setToOrtho(true, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 		
-//		camera.viewportHeight = Gdx.graphics.getHeight();
-//		camera.viewportWidth = Gdx.graphics.getWidth();
-//		
-//		middleX = Gdx.graphics.getWidth() / 2f;
-//		
-//		middleY = Gdx.graphics.getHeight() / 2f;
-//		
-//		camera.position.set( middleX, middleY ,0);
-//		
-//		camera.update();
-		
 		renderer.setProjectionMatrix(camera.combined);
 		
 		stage=new Stage();
@@ -290,7 +322,12 @@ public class PicturePuzzle implements Screen {
 		
 		stage.addActor(table);
 		
-		imgTexture=new Texture("puzzle/comproom.png");
+		Random rnd=new Random();
+		int rndix=rnd.nextInt(puzzleList.size());
+		
+		actPuzzle=puzzleList.get(rndix);
+		
+		imgTexture=new Texture(actPuzzle.getPicture());
 		img=new Sprite(imgTexture);
 		img.setSize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 		
@@ -301,7 +338,7 @@ public class PicturePuzzle implements Screen {
 		
 		objectList=new ArrayList<PicturePuzzle.SpotObject>();
 		
-		getObjectsFromXml("puzzle/comproomdesc.xml");
+		getObjectsFromXml(actPuzzle.getDescription());
 		
 		
 		
@@ -363,7 +400,7 @@ public class PicturePuzzle implements Screen {
 		{
 			if (!o.getFound())
 			{
-				table.add(o.getName()).minWidth(100).minHeight(20);
+				table.add(o.getName()).minWidth(90).minHeight(20);
 			}
 		}
 	}

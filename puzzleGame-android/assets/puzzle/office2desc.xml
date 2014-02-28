@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectlist>
+	<object>
+		<name>Router</name>
+		<x>252</x>
+		<y>182</y>
+		<r>50</r>
+	</object>
+	<object>
+		<name>HDMI cable</name>
+		<x>128</x>
+		<y>285</y>
+		<r>10</r>
+	</object>
+	<object>
+		<name>Mouse</name>
+		<x>386</x>
+		<y>416</y>
+		<r>30</r>
+	</object>
+	<object>
+		<name>Printer</name>
+		<x>134</x>
+		<y>117</y>
+		<r>60</r>
+	</object>
+	<object>
+		<name>USB cable</name>
+		<x>415</x>
+		<y>489</y>
+		<r>10</r>
+	</object>
+</objectlist>
