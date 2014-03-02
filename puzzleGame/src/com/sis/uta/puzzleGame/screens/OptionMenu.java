@@ -40,7 +40,6 @@ public class OptionMenu implements Screen {
 	private Table table;
 	private TextButton buttonBack;
 	private Slider musicSlider, soundSlider;
-	private SelectBox languageBox;
 	private BitmapFont white, black, white_normal;
 	private Label heading, labelMusic, labelSound;
 	private Texture backgroundTexture;
@@ -78,7 +77,6 @@ batch=new SpriteBatch();
 		
 		stage=new Stage();
 		
-		//Gdx.input.setInputProcessor(stage);
 		InputMultiplexer multiplexer=new InputMultiplexer();
 		multiplexer.addProcessor(stage);
 		multiplexer.addProcessor(game);
@@ -108,8 +106,6 @@ batch=new SpriteBatch();
 		
 		soundSlider=new Slider(0, 20, 1, false, sliderSkin);
 		
-		languageBox=new SelectBox(new String[]{"English", "Suomi"}, sliderSkin);
-		
 		buttonBack=new TextButton("Back", textButtonStyle);
 		buttonBack.addListener(new ClickListener(){
 			@Override
@@ -119,10 +115,6 @@ batch=new SpriteBatch();
 			}
 		});
 		
-//		if (Gdx.input.isKeyPressed(Keys.BACK))
-//		{
-//			((Game)Gdx.app.getApplicationListener()).setScreen(new MainMenu());
-//		}
 		
 		LabelStyle headingStyle=new LabelStyle(white, Color.WHITE);
 		
@@ -140,8 +132,6 @@ batch=new SpriteBatch();
 		table.add(musicSlider).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/10).row();
 		table.add(labelSound).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/10).row();
 		table.add(soundSlider).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/10).row();
-//		table.add(buttonSound).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row();
-//		table.add(languageBox).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row().pad(0, 0, 20, 0);
 		table.add(buttonBack).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row().pad(20,0,0,0);
 		
 		stage.addActor(table);

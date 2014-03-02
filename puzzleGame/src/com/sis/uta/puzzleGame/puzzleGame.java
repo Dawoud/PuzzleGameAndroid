@@ -124,14 +124,6 @@ public class puzzleGame extends Game implements InputProcessor {
 		
 	}
 	
-	
-	@Override
-	public void dispose() {
-		this.saveGame();
-		menubutton.getTexture().dispose();
-		super.dispose();
-		
-	}
 
 	@Override
 	public void render() {		
@@ -155,6 +147,14 @@ public class puzzleGame extends Game implements InputProcessor {
 	public void resume() {
 		
 		super.resume();
+	}
+	
+	@Override
+	public void dispose() {
+		this.saveGame();
+		menubutton.getTexture().dispose();
+		super.dispose();
+		
 	}
 	
 	public Sprite getMenubutton() {

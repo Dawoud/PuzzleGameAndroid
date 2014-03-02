@@ -44,7 +44,6 @@ public class MainMenu implements Screen {
 	private TextButton buttonPlay, buttonOption, buttonExit;
 	private ImageButton buttonMute, buttonInfo;
 	private ImageButtonStyle imageButtonStyleMute, imageButtonStyleUnmute, imageButtonStyleInfo;
-//	private TextButton buttonScore, buttonHelp;
 	private BitmapFont white, black;
 	private Label heading;
 	private Texture backgroundTexture, textureMute, textureUnmute, textureInfo;
@@ -56,9 +55,6 @@ public class MainMenu implements Screen {
 		
 		Gdx.gl.glClearColor(0, 0, 0, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-		
-//		Table.drawDebug(stage);
-		
 		
 		batch.begin();
 		background.draw(batch);
@@ -85,7 +81,6 @@ public class MainMenu implements Screen {
 		
 		stage=new Stage();
 		
-		//Gdx.input.setInputProcessor(stage);
 		InputMultiplexer multiplexer=new InputMultiplexer();
 		multiplexer.addProcessor(stage);
 		multiplexer.addProcessor(game);
@@ -148,16 +143,11 @@ public class MainMenu implements Screen {
 			}
 		});
 		
-//		buttonScore=new TextButton("Scores", textButtonStyle);
-//		
-//		buttonHelp=new TextButton("Help!", textButtonStyle);
-		
 		buttonExit=new TextButton("Quit Game", textButtonStyle);
 		buttonExit.addListener(new ClickListener()
 		{
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
-				//puzzleAudio.dispose();
 				game.saveGame();
 				Gdx.app.exit();
 			}
@@ -181,8 +171,7 @@ public class MainMenu implements Screen {
 					puzzleAudio.playMusic();
 					buttonMute.setStyle(imageButtonStyleMute);
 				}
-				
-				//puzzleAudio.playMusic();
+
 			}
 		});
 		
@@ -202,9 +191,7 @@ public class MainMenu implements Screen {
 		
 		table.add(heading).row();
 		table.add(buttonPlay).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row();
-//		table.add(buttonScore).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9).row();
 		table.add(buttonOption).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9);
-//		table.add(buttonHelp).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9);
 		table.add(buttonMute).row();
 		table.add(buttonExit).minWidth(Gdx.graphics.getWidth()/2).minHeight(Gdx.graphics.getHeight()/9);
 		table.add(buttonInfo).row();
@@ -230,7 +217,6 @@ public class MainMenu implements Screen {
 
 	@Override
 	public void dispose() {
-		//puzzleAudio.dispose();
 
 	}
 

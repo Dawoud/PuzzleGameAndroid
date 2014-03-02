@@ -92,7 +92,6 @@ public class PicturePuzzle implements Screen {
 		private int coordY;
 		private int rad;
 		private boolean found;
-		private Label label;
 		
 		public SpotObject()
 		{
@@ -101,7 +100,6 @@ public class PicturePuzzle implements Screen {
 			coordY=0;
 			rad=0;
 			found=false;
-//			label=new Label("", normalStyle);
 		}
 		
 		public SpotObject(String n, int x, int y, int r)
@@ -111,13 +109,11 @@ public class PicturePuzzle implements Screen {
 			coordY=y;
 			rad=r;
 			found=false;
-//			label=new Label(name, normalStyle);
 		}
 		
 		public void setName(String n)
 		{
 			name=n;
-//			label.setText(name);
 		}
 		
 		public void setX(int x)
@@ -165,11 +161,6 @@ public class PicturePuzzle implements Screen {
 			return found;
 		}
 		
-//		public Label getLabel()
-//		{
-//			return label;
-//		}
-		
 	}
 	
 	
@@ -186,10 +177,6 @@ public class PicturePuzzle implements Screen {
 	private Skin skin;
 	
 	private InputMultiplexer multiplexer;
-
-	private float middleX;
-	private float middleY;
-	
 	private Sprite img;
 	private Texture imgTexture;
 	
@@ -281,12 +268,6 @@ public class PicturePuzzle implements Screen {
 			}
 		}
 		
-		
-//		if (Gdx.input.justTouched())
-//		{
-//			Gdx.app.log("FourthPuzzle", "touched: "+Integer.toString(Gdx.input.getX())+", "+Integer.toString(Gdx.input.getY()));
-//		}
-		
 	}
 
 	@Override
@@ -339,12 +320,7 @@ public class PicturePuzzle implements Screen {
 		objectList=new ArrayList<PicturePuzzle.SpotObject>();
 		
 		getObjectsFromXml(actPuzzle.getDescription());
-		
-		
-		
-		//Gdx.input.setInputProcessor(null);
-		
-		
+
 	}
 
 	@Override
@@ -407,7 +383,6 @@ public class PicturePuzzle implements Screen {
 	
 	public void showDialog()
 	{
-		//Gdx.input.setInputProcessor(stage);
 		multiplexer.addProcessor(stage);
 		Gdx.input.setInputProcessor(multiplexer);
 		
@@ -415,7 +390,6 @@ public class PicturePuzzle implements Screen {
 		{
 			protected void result (Object object)
 			{
-				//Gdx.input.setInputProcessor(null);
 				multiplexer.removeProcessor(stage);
 				
 				dialog.setVisible(false);
